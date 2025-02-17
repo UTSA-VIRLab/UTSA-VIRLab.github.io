@@ -30,8 +30,21 @@
     </a>
     {% endif %}
 
-    {% if include.subtitle %}
-      <span class="card-subtitle">{{ include.subtitle }}</span>
+
+    {% if include.agency %}
+      <span class="card-agency">{{ include.agency }}</span>
+    {% endif %}
+
+    {% if include.award %}
+      <span class="card-award">{{ include.award }}</span>
+    {% endif %}
+
+    {% if include.award %}
+      <span class="card-award">{{ include.award }}</span>
+    {% endif %}
+
+    {% if include.investigator %}
+      <span class="card-investigator">{{ include.investigator }}</span>
     {% endif %}
 
     {% if include.description %}
