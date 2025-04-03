@@ -5,20 +5,95 @@ nav:
   tooltip: Software, datasets, and more
 ---
 
-# {% include icon.html icon="fa-solid fa-wrench" %}Projects
+<!-- Inline CSS to override parent centering, set full-width cards, and style the modal -->
+<style>
+  /* Override any inherited centering */
+  .background, .background *, .feature, .feature * {
+    text-align: left !important;
+  }
+  /* Ensure project cards span full width */
+  .card {
+    width: 100% !important;
+    margin: 0 auto 20px auto !important;
+  }
+  /* Modal styling */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+  }
+  .modal-content {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+  }
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .close:hover {
+    color: black;
+  }
+</style>
 
-{% include tags.html tags="publication, resource, website" %}
+## Current Projects
 
-{% include search-info.html %}
+{% include list.html component="card" data="projects" filter="group == 'current'" %}
 
 {% include section.html %}
 
-## Featured
+## Past Projects
 
-{% include list.html component="card" data="projects" filter="group == 'featured'" %}
+<!-- Remove style="small" so that the full card template is used -->
+{% include list.html component="card" data="projects" filter="group == 'past'" %}
 
-{% include section.html %}
+<!-- Modal Popup Markup for full description -->
+<div id="descriptionModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <div id="modalDescriptionContent"></div>
+  </div>
+</div>
 
-## More
+<!-- JavaScript to handle the modal popup -->
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    var modal = document.getElementById("descriptionModal");
+    var modalContent = document.getElementById("modalDescriptionContent");
+    var closeBtn = document.querySelector(".modal .close");
 
-{% include list.html component="card" data="projects" filter="!group" style="small" %}
+    // Close modal when clicking on the close button
+    closeBtn.onclick = function() {
+      modal.style.display = "none";
+    };
+
+    // Close modal when clicking outside the modal content
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    };
+
+    // Attach click event listeners to all "Show More" buttons
+    var buttons = document.querySelectorAll(".show-description");
+    buttons.forEach(function(button) {
+      button.addEventListener("click", function() {
+        var description = this.getAttribute("data-description");
+        modalContent.innerHTML = description;
+        modal.style.display = "block";
+      });
+    });
+  });
+</script>

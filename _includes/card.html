@@ -1,60 +1,50 @@
 {{ " " }}
-<div class="card" data-style="{{ include.style }}">
-  <a
-    {% if include.link %}
-      href="{{ include.link | relative_url | uri_escape }}"
-    {% endif %}
-    aria-label="{{ include.title | default: "card link" | regex_strip }}"
-    class="card-image"
-  >
-    <img
-      src="{{ include.image | relative_url | uri_escape }}"
-      alt="{{ include.title | default: "card image" | regex_strip }}"
-      loading="lazy"
-      {% include fallback.html %}
-    >
-  </a>
+<div class="card" style="width: 100%; text-align: left;" data-style="{{ include.style }}">
+  <!-- Removed image block -->
 
-  <div class="card-text">
+  <div class="card-text" style="text-align: left;">
     {% if include.title %}
-      <a
-        {% if include.link %}
-          href="{{ include.link | relative_url | uri_escape }}"
-        {% endif %}
-        {% if include.tooltip %}
-          data-tooltip="{{ include.tooltip | xml_escape }}"
-        {% endif %}
-        class="card-title"
-      >
-        {{ include.title }}
+    <a
+            {% if include.link %}
+            href="{{ include.link | relative_url | uri_escape }}"
+            {% endif %}
+            {% if include.tooltip %}
+            data-tooltip="{{ include.tooltip | xml_escape }}"
+            {% endif %}
+            class="card-title"
+            style="display: block; text-align: left;"
+    >
+      {{ include.title }}
     </a>
     {% endif %}
 
-
     {% if include.agency %}
-      <span class="card-agency">{{ include.agency }}</span>
+    <span class="card-agency" style="display: block; text-align: left;">
+    <strong>Agency:</strong> {{ include.agency }}
+  </span>
     {% endif %}
 
     {% if include.award %}
-      <span class="card-award">{{ include.award }}</span>
-    {% endif %}
-
-    {% if include.award %}
-      <span class="card-award">{{ include.award }}</span>
+    <span class="card-award" style="display: block; text-align: left;">
+    <strong>Award:</strong> {{ include.award }}
+  </span>
     {% endif %}
 
     {% if include.investigator %}
-      <span class="card-investigator">{{ include.investigator }}</span>
+    <span class="card-investigator" style="display: block; text-align: left;">
+    <strong>Investigator:</strong> {{ include.investigator }}
+  </span>
     {% endif %}
 
     {% if include.description %}
-      <p>
-        {{ include.description | markdownify | remove: "<p>" | remove: "</p>" }}
-      </p>
+    <!-- Button to trigger a popup modal with the description -->
+    <button class="show-description"
+            data-description="{{ include.description | markdownify | remove: '<p>' | remove: '</p>' }}"
+            style="display: block; text-align: left;">
+      Show Description
+    </button>
     {% endif %}
 
-    {% if include.tags or include.repo %}
-      {% include tags.html tags=include.tags repo=include.repo %}
-    {% endif %}
+
   </div>
 </div>
