@@ -9,20 +9,11 @@ nav:
 
 {% include section.html %}
 
+## Lab Investigator
 {% include list.html data="members" component="portrait" filter="role == 'pi'" %}
-{% include list.html data="members" component="portrait" filter="role != 'pi'" %}
 
-{% include section.html background="images/background.jpg" dark=true %}
+## Current Students
+{% include list.html data="members" component="portrait" filter="group == 'current'" %}
 
-
-{% include section.html %}
-
-{% capture content %}
-
-{% include figure.html image="images/photo.jpg" %}
-{% include figure.html image="images/photo.jpg" %}
-{% include figure.html image="images/photo.jpg" %}
-
-{% endcapture %}
-
-{% include grid.html style="square" content=content %}
+## Previous Students
+{% include list.html data="members" component="portrait" filter="group == 'alum'" %}

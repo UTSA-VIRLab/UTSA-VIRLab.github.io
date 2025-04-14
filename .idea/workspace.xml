@@ -6,8 +6,16 @@
   <component name="ChangeListManager">
     <list default="true" id="9ecb7ce6-4ef3-438c-afaa-49c3fc60ef4f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_data/projects.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/_data/projects.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_data/citations.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/_data/citations.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_includes/card.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/card.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/citation.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/citation.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_members/ayda-eghbalian.md" beforeDir="false" afterPath="$PROJECT_DIR$/_members/ayda-eghbalian.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_members/kevin-desai.md" beforeDir="false" afterPath="$PROJECT_DIR$/_members/kevin-desai.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_members/mushfiqur-rahman.md" beforeDir="false" afterPath="$PROJECT_DIR$/_members/mushfiqur-rahman.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_members/nazanin-amini.md" beforeDir="false" afterPath="$PROJECT_DIR$/_members/nazanin-amini.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_members/riaz-aranya.md" beforeDir="false" afterPath="$PROJECT_DIR$/_members/riaz-aranya.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_members/sadia-mubashshira.md" beforeDir="false" afterPath="$PROJECT_DIR$/_members/sadia-mubashshira.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/2019/01/07/example-post-1.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/2019/01/07/example-post-1.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/2021/09/30/example-post-2.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/2021/09/30/example-post-2.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/2023/02/23/example-post-3.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/2023/02/23/example-post-3.html" afterDir="false" />
@@ -31,6 +39,8 @@
       <change beforePath="$PROJECT_DIR$/_site/testbed.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/testbed.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_styles/card.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_styles/card.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/projects/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/projects/index.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/research/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/research/index.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/team/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/team/index.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -157,11 +167,22 @@
       <updated>1740586959338</updated>
       <workItem from="1740586961040" duration="5447000" />
       <workItem from="1740595126135" duration="41965000" />
-      <workItem from="1743101720144" duration="48964000" />
+      <workItem from="1743101720144" duration="100093000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

@@ -1,0 +1,721 @@
+
+
+#- id: doi:10.1371/journal.pcbi.1007128
+#  title: Open collaborative writing with Manubot
+#  authors:
+#  - Daniel S. Himmelstein
+#  - Vincent Rubinetti
+#  - David R. Slochower
+#  - Dongbo Hu
+#  - Venkat S. Malladi
+#  - Casey S. Greene
+#  - Anthony Gitter
+#  publisher: PLOS Computational Biology
+#  date: '2020-12-04'
+#  link: https://doi.org/c7np
+#  orcid: 0000-0002-4655-3773
+#  plugin: sources.py
+#  file: sources.yaml
+#  type: paper
+#  description: Lorem ipsum _dolor_ **sit amet**, consectetur adipiscing elit, sed
+#    do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+#  image: https://journals.plos.org/ploscompbiol/article/figure/image?size=inline&id=info:doi/10.1371/journal.pcbi.1007128.g001&rev=2
+#  buttons:
+#  - type: manubot
+#    link: https://greenelab.github.io/meta-review/
+#  - type: source
+#    text: Manuscript Source
+#    link: https://github.com/greenelab/meta-review
+#  - type: website
+#    link: http://manubot.org/
+#  tags:
+#  - open science
+#  - collaboration
+#  repo: greenelab/meta-review
+
+
+- id: "DOI: 10.1109/ISM.2015.111"
+  title: Network adaptive textured mesh generation for collaborative 3d tele-immersion
+  authors:
+    - Kevin Desai
+    - Kanchan Bahirat
+    - Suraj Raghuraman
+    - Balakrishnan Prabhakaran
+  publisher: 2015 IEEE International Symposium on Multimedia (ISM)
+  date: '2015-12-14'
+  link: 'https://ieeexplore.ieee.org/abstract/document/7442307'
+  orcid: 0000-0002-4655-3773
+  plugin: orcid.py
+  file: orcid.yaml
+  bibtex: "@inproceedings{desai2015network,  organization={ IEEE },\n  year={ 2015\
+    \ },\n  pages={ 107--112 },\n  booktitle={ 2015 IEEE International Symposium on\
+    \ Multimedia (ISM) },\n  author={ Desai, Kevin and Bahirat, Kanchan and Raghuraman,\
+    \ Suraj and Prabhakaran, Balakrishnan },\n  title={ Network adaptive textured\
+    \ mesh generation for collaborative 3d tele-immersion }\n}"
+
+- id: "DOI: 10.1145/2910017.2910612"
+  title: Augmented reality-based exergames for rehabilitation
+  authors:
+    - Kevin Desai
+    - Kanchan Bahirat
+    - Sudhir Ramalingam
+    - Balakrishnan Prabhakaran
+    - Thiru Annaswamy
+    - Una E Makris
+  publisher: Proceedings of the 7th International Conference on Multimedia Systems
+  date: '2016-05-10'
+  link: 'https://dl.acm.org/doi/abs/10.1145/2910017.2910612'
+  orcid: 0000-0002-4655-3773
+  plugin: orcid.py
+  file: orcid.yaml
+  bibtex: "@inproceedings{desai2016augmented,  year={ 2016 },\n  pages={ 1--10 },\n\
+    \  booktitle={ Proceedings of the 7th International Conference on Multimedia Systems\
+    \ },\n  author={ Desai, Kevin and Bahirat, Kanchan and Ramalingam, Sudhir and\
+    \ Prabhakaran, Balakrishnan and Annaswamy, Thiru and Makris, Una E },\n  title={\
+    \ Augmented reality-based exergames for rehabilitation }\n}"
+
+
+- id: "DOI: 10.1109/BigMM.2017.62"
+  title: Experiences with multi-modal collaborative virtual laboratory (mmcvl)
+  authors:
+    - Kevin Desai
+    - Uriel Haile Hernndez Belmonte
+    - Rong Jin
+    - Balakrishnan Prabhakaran
+    - Paul Diehl
+    - Victor Ayala Ramirez
+    - Vinu Johnson
+    - Murry Gans
+  publisher: 2017 IEEE third international conference on multimedia big data (BigMM)
+  date: '2017-04-19'
+  link: 'https://ieeexplore.ieee.org/abstract/document/7966775'
+  orcid: 0000-0002-4655-3773
+  plugin: orcid.py
+  file: orcid.yaml
+  bibtex: "@inproceedings{desai2017experiences,  organization={ IEEE },\n  year={\
+    \ 2017 },\n  pages={ 376--383 },\n  booktitle={ 2017 IEEE third international\
+    \ conference on multimedia big data (BigMM) },\n  author={ Desai, Kevin and Belmonte,\
+    \ Uriel Haile Hernndez and Jin, Rong and Prabhakaran, Balakrishnan and Diehl,\
+    \ Paul and Ramirez, Victor Ayala and Johnson, Vinu and Gans, Murry },\n  title={\
+    \ Experiences with multi-modal collaborative virtual laboratory (mmcvl) }\n}"
+
+
+- id: "DOI: 10.1109/ICME.2017.8019470"
+  title: Learning-based objective evaluation of 3D human open meshes
+  authors:
+    - Kevin Desai
+    - Kanchan Bahirat
+    - Balakrishnan Prabhakaran
+  publisher: 2017 IEEE International Conference on Multimedia and Expo (ICME)
+  date: '2017-12-31'
+  link: 'https://ieeexplore.ieee.org/abstract/document/8019470'
+  orcid: 0000-0002-4655-3773
+  plugin: orcid.py
+  file: orcid.yaml
+  bibtex: "@inproceedings{desai2017learning,  organization={ IEEE },\n  year={ 2017\
+    \ },\n  pages={ 733--738 },\n  booktitle={ 2017 IEEE International Conference\
+    \ on Multimedia and Expo (ICME) },\n  author={ Desai, Kevin and Bahirat, Kanchan\
+    \ and Prabhakaran, Balakrishnan },\n  title={ Learning-based objective evaluation\
+    \ of 3D human open meshes }\n}"
+
+
+- id: "DOI: 10.1109/ISM.2017.27"
+  title: QoE studies on interactive 3D tele-immersion
+  authors:
+    - Kevin Desai
+    - Suraj Raghuraman
+    - Rong Jin
+    - Balakrishnan Prabhakaran
+  publisher: 2017 IEEE international symposium on multimedia (ISM)
+  date: '2017-12-11'
+  link: 'https://ieeexplore.ieee.org/abstract/document/8241591'
+  orcid: 0000-0002-4655-3773
+  plugin: orcid.py
+  file: orcid.yaml
+  bibtex: "@inproceedings{desai2017qoe,  organization={ IEEE },\n  year={ 2017 },\n\
+    \  pages={ 130--137 },\n  booktitle={ 2017 IEEE international symposium on multimedia\
+    \ (ISM) },\n  author={ Desai, Kevin and Raghuraman, Suraj and Jin, Rong and Prabhakaran,\
+    \ Balakrishnan },\n  title={ QoE studies on interactive 3D tele-immersion }\n}"
+
+
+- id: "DOI: 10.1145/3204949.3204969"
+  title: Skeleton-based continuous extrinsic calibration of multiple RGB-D kinect
+    cameras
+  authors:
+    - Kevin Desai
+    - Balakrishnan Prabhakaran
+    - Suraj Raghuraman
+  publisher: Proceedings of the 9th ACM multimedia systems conference
+  date: '2018-06-12'
+  link: 'https://dl.acm.org/doi/abs/10.1145/3204949.3204969'
+  orcid: 0000-0002-4655-3773
+  plugin: orcid.py
+  file: orcid.yaml
+  bibtex: "@inproceedings{desai2018skeleton,  year={ 2018 },\n  pages={ 250--257 },\n\
+    \  booktitle={ Proceedings of the 9th ACM multimedia systems conference },\n \
+    \ author={ Desai, Kevin and Prabhakaran, Balakrishnan and Raghuraman, Suraj },\n\
+    \  title={ Skeleton-based continuous extrinsic calibration of multiple RGB-D kinect\
+    \ cameras }\n}"
+
+- id: "DOI: 10.1145/3204949.3204958"
+  title: Combining skeletal poses for 3D human model generation using multiple Kinects
+  authors:
+    - Kevin Desai
+    - Balakrishnan Prabhakaran
+    - Suraj Raghuraman
+  publisher: Proceedings of the 9th ACM multimedia systems conference
+  date: '2018-06-12'
+  link: 'https://dl.acm.org/doi/abs/10.1145/3204949.3204958'
+  orcid: 0000-0002-4655-3773
+  plugin: orcid.py
+  file: orcid.yaml
+  bibtex: "@inproceedings{desai2018combining,  year={ 2018 },\n  pages={ 40--51 },\n\
+    \  booktitle={ Proceedings of the 9th ACM multimedia systems conference },\n \
+    \ author={ Desai, Kevin and Prabhakaran, Balakrishnan and Raghuraman, Suraj },\n\
+    \  title={ Combining skeletal poses for 3D human model generation using multiple\
+    \ Kinects }\n}"
+
+- id: "DOI: 10.1145/3343031.3351165"
+  title: Using Mr. MAPP for lower limb phantom pain management
+  authors:
+    - Kanchan Bahirat
+    - Yu-Yen Chung
+    - Thiru Annaswamy
+    - Gargi Raval
+    - Kevin Desai
+    - Balakrishnan Prabhakaran
+    - Michael Riegler
+  publisher: Proceedings of the 27th ACM International Conference on Multimedia
+  date: '2019-10-15'
+  link: 'https://dl.acm.org/doi/abs/10.1145/3343031.3351165'
+  orcid: 0000-0002-4655-3773
+  plugin: orcid.py
+  file: orcid.yaml
+  bibtex: "@inproceedings{bahirat2019using,  year={ 2019 },\n  pages={ 1071--1075\
+    \ },\n  booktitle={ Proceedings of the 27th ACM International Conference on Multimedia\
+    \ },\n  author={ Bahirat, Kanchan and Chung, Yu-Yen and Annaswamy, Thiru and Raval,\
+    \ Gargi and Desai, Kevin and Prabhakaran, Balakrishnan and Riegler, Michael },\n\
+    \  title={ Using Mr. MAPP for lower limb phantom pain management }\n}"
+
+- id: "DOI: 10.1080/17483107.2021.1913518"
+  title: 'Personalized 3D exergames for in-home rehabilitation after stroke: a pilot study'
+  authors:
+    - Kevin Desai
+    - Balakrishnan Prabhakaran
+    - Nneka Ifejika
+    - Thiru M Annaswamy
+  publisher: 'Disability and Rehabilitation: Assistive Technology'
+  date: '2021-04-28'
+  link: 'https://www.tandfonline.com/doi/full/10.1080/17483107.2021.1913518'
+  orcid: 0000-0002-4655-3773
+  plugin: orcid.py
+  file: orcid.yaml
+  bibtex: "@article{desai2021personalized,  publisher={ Taylor \\& Francis },\n  year={\
+    \ 2021 },\n  pages={ 1--10 },\n  journal={ Disability and Rehabilitation: Assistive\
+    \ Technology },\n  author={ Desai, Kevin and Prabhakaran, Balakrishnan and Ifejika,\
+    \ Nneka and Annaswamy, Thiru M },\n  title={ Personalized 3D exergames for in-home\
+    \ rehabilitation after stroke: a pilot study }\n}"
+
+- id: "DOI: 10.1109/SMC52423.2021.9659223"
+  title: Show why the answer is correct! towards explainable ai using compositional temporal attention
+  authors:
+    - Nihar Bendre
+    - Kevin Desai
+    - Peyman Najafirad
+  publisher: 2021 IEEE International Conference on Systems, Man, and Cybernetics (SMC)
+  date: '2021-10-17'
+  link: 'https://ieeexplore.ieee.org/abstract/document/9659223'
+  orcid: 0000-0002-4655-3773
+  plugin: orcid.py
+  file: orcid.yaml
+  bibtex: "@inproceedings{bendre2021show,  organization={ IEEE },\n  year={ 2021 },\n\
+    \  pages={ 3006--3012 },\n  booktitle={ 2021 IEEE International Conference on\
+    \ Systems, Man, and Cybernetics (SMC) },\n  author={ Bendre, Nihar and Desai,\
+    \ Kevin and Najafirad, Peyman },\n  title={ Show why the answer is correct! towards\
+    \ explainable ai using compositional temporal attention }\n}"
+
+- id: "DOI: 10.1109/ICIP42928.2021.9506108"
+  title: Generalized zero-shot learning using multimodal variational auto-encoder with semantic concepts
+  authors:
+    - Nihar Bendre
+    - Kevin Desai
+    - Peyman Najafirad
+  publisher: 2021 IEEE International Conference on Image Processing (ICIP)
+  date: '2021-09-19'
+  link: 'https://ieeexplore.ieee.org/abstract/document/9506108'
+  orcid: 0000-0002-4655-3773
+  plugin: orcid.py
+  file: orcid.yaml
+  bibtex: "@inproceedings{bendre2021generalized,  organization={ IEEE },\n  year={\
+    \ 2021 },\n  pages={ 1284--1288 },\n  booktitle={ 2021 IEEE International Conference\
+    \ on Image Processing (ICIP) },\n  author={ Bendre, Nihar and Desai, Kevin and\
+    \ Najafirad, Peyman },\n  title={ Generalized zero-shot learning using multimodal\
+    \ variational auto-encoder with semantic concepts }\n}"
+
+- id: "DOI: 10.48550/arXiv.2108.06437"
+  title: VR Sickness Prediction from Integrated HMD's Sensors using Multimodal Deep Fusion Network
+  authors:
+    - Rifatul Islam
+    - Kevin Desai
+    - John Quarles
+  publisher: arXiv preprint arXiv:2108.06437
+  date: '2021-08-14'
+  link: 'https://arxiv.org/abs/2108.06437'
+  orcid: 0000-0002-4655-3773
+  plugin: orcid.py
+  file: orcid.yaml
+  bibtex: "@article{islam2021vr,  year={ 2021 },\n  journal={ arXiv preprint arXiv:2108.06437\
+    \ },\n  author={ Islam, Rifatul and Desai, Kevin and Quarles, John },\n  title={\
+    \ VR Sickness Prediction from Integrated HMD's Sensors using Multimodal Deep Fusion\
+    \ Network }\n}"
+
+- id: "DOI: 10.1109/ISMAR52148.2021.00017"
+  title: 'Cybersickness prediction from integrated hmd’s sensors: A multimodal deep fusion approach using eye-tracking and head-tracking data'
+  authors:
+    - Rifatul Islam
+    - Kevin Desai
+    - John Quarles
+  publisher: 2021 IEEE international symposium on mixed and augmented reality (ISMAR)
+  date: '2021-10-04'
+  link: 'https://ieeexplore.ieee.org/abstract/document/9583838'
+  orcid: 0000-0002-4655-3773
+  plugin: orcid.py
+  file: orcid.yaml
+  bibtex: "@inproceedings{islam2021cybersickness,  organization={ IEEE },\n  year={\
+    \ 2021 },\n  pages={ 31--40 },\n  booktitle={ 2021 IEEE international symposium\
+    \ on mixed and augmented reality (ISMAR) },\n  author={ Islam, Rifatul and Desai,\
+    \ Kevin and Quarles, John },\n  title={ Cybersickness prediction from integrated\
+    \ hmd’s sensors: A multimodal deep fusion approach using eye-tracking and head-tracking\
+    \ data }\n}"
+
+- id: "DOI: 10.23919/WAC50355.2021.9559516"
+  title: Multimodal data streaming using visual IoTs and wearables for telerehabilitation and teletreatment
+  authors:
+    - Herbert Guzman
+    - Reenam Joshi
+    - Victor Guzman
+    - Max Kilger
+    - Kevin Desai
+  publisher: 2021 World Automation Congress (WAC)
+  date: '2021-08-01'
+  link: 'https://ieeexplore.ieee.org/abstract/document/9559516'
+  orcid: 0000-0002-4655-3773
+  plugin: orcid.py
+  file: orcid.yaml
+  bibtex: "@inproceedings{guzman2021multimodal,  organization={ IEEE },\n  year={\
+    \ 2021 },\n  pages={ 233--238 },\n  booktitle={ 2021 World Automation Congress\
+    \ (WAC) },\n  author={ Guzman, Herbert and Joshi, Reenam and Guzman, Victor and\
+    \ Kilger, Max and Desai, Kevin },\n  title={ Multimodal data streaming using visual\
+    \ IoTs and wearables for telerehabilitation and teletreatment }\n}"
+
+- id: "DOI: 10.1109/CVPRW56347.2022.00286"
+  title: 'Hr-stan: High-resolution spatio-temporal attention network for 3d human motion prediction'
+  authors:
+    - Omar Medjaouri
+    - Kevin Desai
+  publisher: Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern
+    Recognition
+  date: '2022-08-23'
+  link: 'https://openaccess.thecvf.com/content/CVPR2022W/Precognition/html/Medjaouri_HR-STAN_High-Resolution_Spatio-Temporal_Attention_Network_for_3D_Human_Motion_Prediction_CVPRW_2022_paper.html'
+  orcid: 0000-0002-4655-3773
+  plugin: orcid.py
+  file: orcid.yaml
+  bibtex: "@inproceedings{medjaouri2022hr,  year={ 2022 },\n  pages={ 2540--2549 },\n\
+    \  booktitle={ Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern\
+    \ Recognition },\n  author={ Medjaouri, Omar and Desai, Kevin },\n  title={ Hr-stan:\
+    \ High-resolution spatio-temporal attention network for 3d human motion prediction\
+    \ }\n}"
+
+- id: "DOI: 10.1109/CVPRW56347.2022.00036"
+  title: 'Tmvnet: Using transformers for multi-view voxel-based 3d reconstruction'
+  authors:
+    - Kebin Peng
+    - Rifatul Islam
+    - John Quarles
+    - Kevin Desai
+  publisher: Proceedings of the IEEE/CVF conference on computer vision and pattern
+    recognition
+  date: '2022-08-23'
+  link: 'https://openaccess.thecvf.com/content/CVPR2022W/PBVS/html/Peng_TMVNet_Using_Transformers_for_Multi-View_Voxel-Based_3D_Reconstruction_CVPRW_2022_paper.html'
+  orcid: 0000-0002-4655-3773
+  plugin: orcid.py
+  file: orcid.yaml
+  bibtex: "@inproceedings{peng2022tmvnet,  year={ 2022 },\n  pages={ 222--230 },\n\
+    \  booktitle={ Proceedings of the IEEE/CVF conference on computer vision and pattern\
+    \ recognition },\n  author={ Peng, Kebin and Islam, Rifatul and Quarles, John\
+    \ and Desai, Kevin },\n  title={ Tmvnet: Using transformers for multi-view voxel-based\
+    \ 3d reconstruction }\n}"
+
+- id: "DOI: 10.5220/0010879800003124"
+  title: BRDF-based Irradiance Image Estimation to Remove Radiometric Differences for Stereo Matching
+  authors:
+    - Kebin Peng
+    - John Quarles
+    - Kevin Desai
+  publisher: 'VISIGRAPP (5: VISAPP)'
+  date: '2022-06-01'
+  link: 'https://www.scitepress.org/PublicationsDetail.aspx?ID=Df1h/LGTeUQ=&t=1'
+  orcid: 0000-0002-4655-3773
+  plugin: orcid.py
+  file: orcid.yaml
+  bibtex: "@inproceedings{peng2022brdf,  year={ 2022 },\n  pages={ 734--744 },\n \
+    \ booktitle={ VISIGRAPP (5: VISAPP) },\n  author={ Peng, Kebin and Quarles, John\
+    \ and Desai, Kevin },\n  title={ BRDF-based Irradiance Image Estimation to Remove\
+    \ Radiometric Differences for Stereo Matching. }\n}"
+
+
+- id: "DOI: 10.1145/3532106.3533486"
+  title: 'Virtepex: virtual remote tele-physical examination system'
+  authors:
+    - Ninad Khargonkar
+    - Kevin Desai
+    - Balakrishnan Prabhakaran
+    - Thiru Annaswamy
+  publisher: Proceedings of the 2022 ACM Designing Interactive Systems Conference
+  date: '2022-06-13'
+  link: 'https://dl.acm.org/doi/abs/10.1145/3532106.3533486'
+  orcid: 0000-0002-4655-3773
+  plugin: orcid.py
+  file: orcid.yaml
+  bibtex: "@inproceedings{khargonkar2022virtepex,  year={ 2022 },\n  pages={ 1729--1742\
+    \ },\n  booktitle={ Proceedings of the 2022 ACM Designing Interactive Systems\
+    \ Conference },\n  author={ Khargonkar, Ninad and Desai, Kevin and Prabhakaran,\
+    \ Balakrishnan and Annaswamy, Thiru },\n  title={ Virtepex: virtual remote tele-physical\
+    \ examination system }\n}"
+
+
+- id: "DOI: 10.1109/ISMAR55827.2022.00026"
+  title: Towards forecasting the onset of cybersickness by fusing physiological, head-tracking and eye-tracking with multimodal deep fusion network
+  authors:
+    - Rifatul Islam
+    - Kevin Desai
+    - John Quarles
+  publisher: 2022 IEEE international symposium on mixed and augmented reality (ISMAR)
+  date: '2022-10-17'
+  link: 'https://ieeexplore.ieee.org/abstract/document/9995267'
+  orcid: 0000-0002-4655-3773
+  plugin: orcid.py
+  file: orcid.yaml
+  bibtex: "@inproceedings{islam2022towards,  organization={ IEEE },\n  year={ 2022\
+    \ },\n  pages={ 121--130 },\n  booktitle={ 2022 IEEE international symposium on\
+    \ mixed and augmented reality (ISMAR) },\n  author={ Islam, Rifatul and Desai,\
+    \ Kevin and Quarles, John },\n  title={ Towards forecasting the onset of cybersickness\
+    \ by fusing physiological, head-tracking and eye-tracking with multimodal deep\
+    \ fusion network }\n}"
+
+
+- id: "DOI: 10.1109/ICPR56361.2022.9956096"
+  title: 'PMPNet: Pixel Movement Prediction Network for Monocular Depth Estimation in Dynamic Scenes'
+  authors:
+    - Kebin Peng
+    - John Quarles
+    - Kevin Desai
+  publisher: 2022 26th International Conference on Pattern Recognition (ICPR)
+  date: '2022-08-21'
+  link: 'https://ieeexplore.ieee.org/abstract/document/9956096'
+  orcid: 0000-0002-4655-3773
+  plugin: orcid.py
+  file: orcid.yaml
+  bibtex: "@inproceedings{peng2022pmpnet,  organization={ IEEE },\n  year={ 2022 },\n\
+    \  pages={ 3915--3921 },\n  booktitle={ 2022 26th International Conference on\
+    \ Pattern Recognition (ICPR) },\n  author={ Peng, Kebin and Quarles, John and\
+    \ Desai, Kevin },\n  title={ PMPNet: Pixel Movement Prediction Network for Monocular\
+    \ Depth Estimation in Dynamic Scenes }\n}"
+
+- id: "DOI: 10.1007/s41252-022-00309-y"
+  title: The case for integrated advanced technology in applied behavior analysis
+  authors:
+    - Leslie Neely
+    - Amarie Carnett
+    - John Quarles
+    - Hannah MacNaul
+    - Se-Woong Park
+    - Sakiko Oyama
+    - Guenevere Chen
+    - Kevin Desai
+    - Peyman Najafirad
+  publisher: Advances in Neurodevelopmental Disorders
+  date: '2023-09-01'
+  link: 'https://link.springer.com/article/10.1007/s41252-022-00309-y'
+  orcid: 0000-0002-4655-3773
+  plugin: orcid.py
+  file: orcid.yaml
+  bibtex: "@article{neely2023case,  publisher={ Springer International Publishing\
+    \ Cham },\n  year={ 2023 },\n  pages={ 415--425 },\n  number={ 3 },\n  volume={\
+    \ 7 },\n  journal={ Advances in Neurodevelopmental Disorders },\n  author={ Neely,\
+    \ Leslie and Carnett, Amarie and Quarles, John and MacNaul, Hannah and Park, Se-Woong\
+    \ and Oyama, Sakiko and Chen, Guenevere and Desai, Kevin and Najafirad, Peyman\
+    \ },\n  title={ The case for integrated advanced technology in applied behavior\
+    \ analysis }\n}"
+
+- id: "DOI: 10.3390/s23020929"
+  title: Can Hierarchical Transformers Learn Facial Geometry?
+  authors:
+    - Paul Young
+    - Nima Ebadi
+    - Arun Das
+    - Mazal Bethany
+    - Kevin Desai
+    - Peyman Najafirad
+  publisher: Sensors
+  date: '2023-01-13'
+  link: 'https://www.mdpi.com/1424-8220/23/2/929'
+  orcid: 0000-0002-4655-3773
+  plugin: orcid.py
+  file: orcid.yaml
+  bibtex: "@article{young2023can,  publisher={ MDPI },\n  year={ 2023 },\n  pages={\
+    \ 929 },\n  number={ 2 },\n  volume={ 23 },\n  journal={ Sensors },\n  author={\
+    \ Young, Paul and Ebadi, Nima and Das, Arun and Bethany, Mazal and Desai, Kevin\
+    \ and Najafirad, Peyman },\n  title={ Can Hierarchical Transformers Learn Facial\
+    \ Geometry? }\n}"
+
+- id: "DOI: 10.48550/arXiv.2302.05795"
+  title: Assessment HTN (A-HTN) for Automated Task Performance Assessment in 3D Serious Games
+  authors:
+    - Kevin Desai
+    - Omeed Ashtiani
+    - Balakrishnan Prabhakaran
+  publisher: arXiv preprint arXiv:2302.05795
+  date: '2023-02-11'
+  link: 'https://arxiv.org/abs/2302.05795'
+  orcid: 0000-0002-4655-3773
+  plugin: orcid.py
+  file: orcid.yaml
+  bibtex: "@article{desai2023assessment,  year={ 2023 },\n  journal={ arXiv preprint\
+    \ arXiv:2302.05795 },\n  author={ Desai, Kevin and Ashtiani, Omeed and Prabhakaran,\
+    \ Balakrishnan },\n  title={ Assessment HTN (A-HTN) for Automated Task Performance\
+    \ Assessment in 3D Serious Games }\n}"
+
+
+- id: "DOI: 10.1109/ICIT58056.2023.10225860"
+  title: A Study of Human Fitness Pose Classification Using Artificial Neural Networks
+  authors:
+    - Sijie Shang
+    - Rong Jin
+    - Kevin Desai
+  publisher: 2023 International Conference on Information Technology (ICIT)
+  date: '2023-08-09'
+  link: 'https://ieeexplore.ieee.org/abstract/document/10225860'
+  orcid: 0000-0002-4655-3773
+  plugin: orcid.py
+  file: orcid.yaml
+  bibtex: "@inproceedings{shang2023study,  organization={ IEEE },\n  year={ 2023 },\n\
+    \  pages={ 250--255 },\n  booktitle={ 2023 International Conference on Information\
+    \ Technology (ICIT) },\n  author={ Shang, Sijie and Jin, Rong and Desai, Kevin\
+    \ },\n  title={ A Study of Human Fitness Pose Classification Using Artificial\
+    \ Neural Networks }\n}"
+
+- id: "DOI: 10.1109/TVCG.2024.3372122"
+  title: Investigating personalization techniques for improved cybersickness prediction in virtual reality environments
+  authors:
+    - Umama Tasnim
+    - Rifatul Islam
+    - Kevin Desai
+    - John Quarles
+  publisher: IEEE Transactions on Visualization and Computer Graphics
+  date: '2024-03-04'
+  link: 'https://ieeexplore.ieee.org/abstract/document/10458344'
+  orcid: 0000-0002-4655-3773
+  plugin: orcid.py
+  file: orcid.yaml
+  bibtex: "@article{tasnim2024investigating,  publisher={ IEEE },\n  year={ 2024 },\n\
+    \  journal={ IEEE Transactions on Visualization and Computer Graphics },\n  author={\
+    \ Tasnim, Umama and Islam, Rifatul and Desai, Kevin and Quarles, John },\n  title={\
+    \ Investigating personalization techniques for improved cybersickness prediction\
+    \ in virtual reality environments }\n}"
+
+- id: "DOI: 10.1109/IPDPSW63119.2024.00117"
+  title: A converting autoencoder toward low-latency and energy-efficient DNN inference at the edge
+  authors:
+    - Hasanul Mahmud
+    - Peng Kang
+    - Kevin Desai
+    - Palden Lama
+    - Sushil K Prasad
+  publisher: 2024 IEEE International Parallel and Distributed Processing Symposium
+    Workshops (IPDPSW)
+  date: '2024-05-27'
+  link: 'https://ieeexplore.ieee.org/abstract/document/10596358'
+  orcid: 0000-0002-4655-3773
+  plugin: orcid.py
+  file: orcid.yaml
+  bibtex: "@inproceedings{mahmud2024converting,  organization={ IEEE },\n  year={\
+    \ 2024 },\n  pages={ 592--599 },\n  booktitle={ 2024 IEEE International Parallel\
+    \ and Distributed Processing Symposium Workshops (IPDPSW) },\n  author={ Mahmud,\
+    \ Hasanul and Kang, Peng and Desai, Kevin and Lama, Palden and Prasad, Sushil\
+    \ K },\n  title={ A converting autoencoder toward low-latency and energy-efficient\
+    \ DNN inference at the edge }\n}"
+
+- id: "DOI: 10.48550/arXiv.2403.17893"
+  title: A survey on 3d egocentric human pose estimation
+  authors:
+    - Md Mushfiqur Azam
+    - Kevin Desai
+  publisher: Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern
+    Recognition
+  date: '2024-01-01'
+  link: 'https://openaccess.thecvf.com/content/CVPR2024W/Rhobin/html/Azam_A_Survey_on_3D_Egocentric_Human_Pose_Estimation_CVPRW_2024_paper.html'
+  orcid: 0000-0002-4655-3773
+  plugin: orcid.py
+  file: orcid.yaml
+  bibtex: "@inproceedings{azam2024survey,  year={ 2024 },\n  pages={ 1643--1654 },\n\
+    \  booktitle={ Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern\
+    \ Recognition },\n  author={ Azam, Md Mushfiqur and Desai, Kevin },\n  title={\
+    \ A survey on 3d egocentric human pose estimation }\n}"
+
+- id: "DOI: 10.48550/arXiv.2404.13770"
+  title: 'EncodeNet: A Framework for Boosting DNN Accuracy with Entropy-Driven Generalized Converting Autoencoder'
+  authors:
+    - Hasanul Mahmud
+    - Palden Lama
+    - Kevin Desai
+    - Sushil K Prasad
+  publisher: International Conference on Pattern Recognition
+  date: '2024-12-01'
+  link: 'https://link.springer.com/chapter/10.1007/978-3-031-78166-7_30'
+  orcid: 0000-0002-4655-3773
+  plugin: orcid.py
+  file: orcid.yaml
+  bibtex: "@inproceedings{mahmud2024encodenet,  organization={ Springer Nature Switzerland\
+    \ Cham },\n  year={ 2024 },\n  pages={ 463--477 },\n  booktitle={ International\
+    \ Conference on Pattern Recognition },\n  author={ Mahmud, Hasanul and Lama, Palden\
+    \ and Desai, Kevin and Prasad, Sushil K },\n  title={ EncodeNet: A Framework for\
+    \ Boosting DNN Accuracy with Entropy-Driven Generalized Converting Autoencoder\
+    \ }\n}"
+
+- id: "DOI: 10.1109/Cloud-Summit61220.2024.00028"
+  title: 'CAE-Net: Enhanced Converting Autoencoder Based Framework for Low-Latency Energy-Efficient DNN with SLO-Constraints'
+  authors:
+    - Hasanul Mahmud
+    - Peng Kang
+    - Palden Lama
+    - Kevin Desai
+    - Sushil K Prasad
+  publisher: 2024 IEEE Cloud Summit
+  date: '2024-06-27'
+  link: 'https://ieeexplore.ieee.org/abstract/document/10631035'
+  orcid: 0000-0002-4655-3773
+  plugin: orcid.py
+  file: orcid.yaml
+  bibtex: "@inproceedings{mahmud2024cae,  organization={ IEEE },\n  year={ 2024 },\n\
+    \  pages={ 128--134 },\n  booktitle={ 2024 IEEE Cloud Summit },\n  author={ Mahmud,\
+    \ Hasanul and Kang, Peng and Lama, Palden and Desai, Kevin and Prasad, Sushil\
+    \ K },\n  title={ CAE-Net: Enhanced Converting Autoencoder Based Framework for\
+    \ Low-Latency Energy-Efficient DNN with SLO-Constraints }\n}"
+
+- id: "DOI: 10.1109/ISMAR62088.2024.00121"
+  title: 'Mazed and Confused: A Dataset of Cybersickness, Working Memory, Mental Load, Physical Load, and Attention During a Real Walking Task in VR'
+  authors:
+    - Jyotirmay Nag Setu
+    - Joshua M Le
+    - Ripan Kumar Kundu
+    - Barry Giesbrecht
+    - Tobias Höllerer
+    - Khaza Anuarul Hoque
+    - Kevin Desai
+    - John Quarles
+  publisher: 2024 IEEE International Symposium on Mixed and Augmented Reality (ISMAR)
+  date: '2024-10-21'
+  link: 'https://ieeexplore.ieee.org/abstract/document/10765425'
+  orcid: 0000-0002-4655-3773
+  plugin: orcid.py
+  file: orcid.yaml
+  bibtex: "@inproceedings{setu2024mazed,  organization={ IEEE },\n  year={ 2024 },\n\
+    \  pages={ 1048--1057 },\n  booktitle={ 2024 IEEE International Symposium on Mixed\
+    \ and Augmented Reality (ISMAR) },\n  author={ Setu, Jyotirmay Nag and Le, Joshua\
+    \ M and Kundu, Ripan Kumar and Giesbrecht, Barry and H{\\\"o}llerer, Tobias and\
+    \ Hoque, Khaza Anuarul and Desai, Kevin and Quarles, John },\n  title={ Mazed\
+    \ and Confused: A Dataset of Cybersickness, Working Memory, Mental Load, Physical\
+    \ Load, and Attention During a Real Walking Task in VR }\n}"
+
+
+- id: "DOI: 10.2196/57443"
+  title: 'Comparing In-Person, Standard Telehealth, and Remote Musculoskeletal Examination
+    With a Novel Augmented Reality Exercise Game System: Pilot Cross-Sectional Comparison
+    Study'
+  authors:
+    - Richard Wu
+    - Keerthana Chakka
+    - Sara Belko
+    - Ninad Khargonkar
+    - Kevin Desai
+    - Balakrishnan Prabhakaran
+    - Thiru Annaswamy
+    - others
+  publisher: JMIR Serious Games
+  date: '2025-02-05'
+  link: 'https://games.jmir.org/2025/1/e57443/'
+  orcid: 0000-0002-4655-3773
+  plugin: orcid.py
+  file: orcid.yaml
+  bibtex: "@article{wu2025comparing,  publisher={ JMIR Publications Inc., Toronto,\
+    \ Canada },\n  year={ 2025 },\n  pages={ e57443 },\n  number={ 1 },\n  volume={\
+    \ 13 },\n  journal={ JMIR Serious Games },\n  author={ Wu, Richard and Chakka,\
+    \ Keerthana and Belko, Sara and Khargonkar, Ninad and Desai, Kevin and Prabhakaran,\
+    \ Balakrishnan and Annaswamy, Thiru and others },\n  title={ Comparing In-Person,\
+    \ Standard Telehealth, and Remote Musculoskeletal Examination With a Novel Augmented\
+    \ Reality Exercise Game System: Pilot Cross-Sectional Comparison Study }\n}"
+
+
+- id: mubashshira2025te
+  title: 'TE-NeRF: Triplane-Enhanced Neural Radiance Field for Artifact-Free Human Rendering'
+  authors:
+    - Sadia Mubashshira
+    - Kevin Desai
+  publisher: Proceedings of the Winter Conference on Applications of Computer Vision
+  date: '2025-01-01'
+  link: 'https://openaccess.thecvf.com/content/WACV2025W/ImageQuality/html/Mubashshira_TE-NeRF_Triplane-Enhanced_Neural_Radiance_Field_for_Artifact-Free_Human_Rendering_WACVW_2025_paper.html'
+  orcid: 0000-0002-4655-3773
+  plugin: orcid.py
+  file: orcid.yaml
+  bibtex: "@inproceedings{mubashshira2025te,  year={ 2025 },\n  pages={ 238--247 },\n\
+    \  booktitle={ Proceedings of the Winter Conference on Applications of Computer\
+    \ Vision },\n  author={ Mubashshira, Sadia and Desai, Kevin },\n  title={ TE-NeRF:\
+    \ Triplane-Enhanced Neural Radiance Field for Artifact-Free Human Rendering }\n\
+    }"
+
+- id: eghbalian2025applying
+  title: Applying Computer Vision to Analyze Self-Injurious Behaviors in Children with Autism Spectrum Disorder
+  authors:
+    - Ayda Eghbalian
+    - Md Mushfiqur Azam
+    - Katie Holloway
+    - Leslie Neely
+    - Kevin Desai
+  publisher: Proceedings of the Winter Conference on Applications of Computer Vision
+  date: '2025-01-01'
+  link: 'https://openaccess.thecvf.com/content/WACV2025W/CV4Small/html/Eghbalian_Applying_Computer_Vision_to_Analyze_Self-Injurious_Behaviors_in_Children_with_WACVW_2025_paper.html'
+  orcid: 0000-0002-4655-3773
+  plugin: orcid.py
+  file: orcid.yaml
+  bibtex: "@inproceedings{eghbalian2025applying,  year={ 2025 },\n  pages={ 11--20\
+    \ },\n  booktitle={ Proceedings of the Winter Conference on Applications of Computer\
+    \ Vision },\n  author={ Eghbalian, Ayda and Azam, Md Mushfiqur and Holloway, Katie\
+    \ and Neely, Leslie and Desai, Kevin },\n  title={ Applying Computer Vision to\
+    \ Analyze Self-Injurious Behaviors in Children with Autism Spectrum Disorder }\n\
+    }"
+
+- id: "DOI: 10.1109/TVCG.2025.3549850"
+  title: Predicting and Explaining Cognitive Load, Attention, and Working Memory in Virtual Multitasking
+  authors:
+    - Jyotirmay Nag Setu
+    - Joshua M Le
+    - Ripan Kumar Kundu
+    - Barry Giesbrecht
+    - Tobias Höllerer
+    - Khaza Anuarul Hoque
+    - Kevin Desai
+    - John Quarles
+  publisher: IEEE Transactions on Visualization and Computer Graphics
+  date: '2025-03-10'
+  link: 'https://ieeexplore.ieee.org/abstract/document/10919242'
+  orcid: 0000-0002-4655-3773
+  plugin: orcid.py
+  file: orcid.yaml
+  bibtex: "@article{setu2025predicting,  publisher={ IEEE },\n  year={ 2025 },\n \
+    \ journal={ IEEE Transactions on Visualization and Computer Graphics },\n  author={\
+    \ Setu, Jyotirmay Nag and Le, Joshua M and Kundu, Ripan Kumar and Giesbrecht,\
+    \ Barry and H{\\\"o}llerer, Tobias and Hoque, Khaza Anuarul and Desai, Kevin and\
+    \ Quarles, John },\n  title={ Predicting and Explaining Cognitive Load, Attention,\
+    \ and Working Memory in Virtual Multitasking }\n}"
+

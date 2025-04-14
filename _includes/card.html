@@ -37,10 +37,7 @@
     {% endif %}
 
     {% if include.description %}
-    <!-- Button to trigger a popup modal with the description -->
-    <button class="show-description"
-            data-description="{{ include.description | markdownify | remove: '<p>' | remove: '</p>' }}"
-            style="display: block; text-align: left;">
+    <button class="show-description" data-description="{{ include.description | markdownify | remove: '<p>' | remove: '</p>' }}">
       Show Description
     </button>
     {% endif %}

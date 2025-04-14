@@ -2,6 +2,7 @@
 name: Kevin Desai, PhD
 image: images/team/kevin-desai.jpg
 role: pi
+group: pi
 affiliation: University of Texas at San Antonio
 aliases:
   - K. Desai
