@@ -1,22 +1,16 @@
 ---
-title: Research & Publication
+title: Publications
 nav:
   order: 2
   tooltip: Published works
 ---
-
-# {% include icon.html icon="fa-solid fa-microscope" %}Publications
-
-
-{% include section.html %}
-
 <!--## Highlighted
 
 {% include citation.html lookup="Open collaborative writing with Manubot" style="rich" %}
 
 {% include section.html %} 
 
-## All
+## All publications
 
 {% include search-box.html %}
 

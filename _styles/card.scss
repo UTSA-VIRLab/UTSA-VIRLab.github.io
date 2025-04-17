@@ -1,27 +1,12 @@
 ---
 ---
 
-.card {
-  display: inline-flex;
-  justify-content: stretch;
-  align-items: flex-start;
-  flex-direction: column;
-  width: 350px;
-  max-width: calc(100% - 20px - 20px);
-  margin: 20px;
-  background: var(--background);
-  border-radius: var(--rounded);
-  overflow: hidden;
-  box-shadow: var(--shadow);
-  vertical-align: top;
-}
-
 .card[data-style="small"] {
   width: 250px;
 }
 
 .card-image img {
-  aspect-ratio: 3 / 2;
+  aspect-ratio: 21 / 9;
   object-fit: cover;
   width: 100%;
   // box-shadow: var(--shadow);
@@ -32,7 +17,7 @@
   justify-content: flex-start;
   align-items: flex-start;
   flex-direction: column;
-  gap: 20px;
+  gap: 5px;
   max-width: 100%;
   padding: 20px;
 }
@@ -150,5 +135,72 @@
 .copy-bibtex:hover {
   background: var(--light-gray, #9BD2E8);
 }
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.project-grid > .card-wrapper {
+  flex: 1 1 calc(50% - 20px);
+  max-width: calc(50% - 20px);
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .project-grid > .card-wrapper {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background: var(--background);
+  border-radius: var(--rounded);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+.list:not(.project-grid) > .card-wrapper {
+  flex: 1 1 100%;
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+.people-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.people-grid > .people-wrapper {
+  flex: 1 1 calc(25% - 20px); // 4 per row
+  max-width: calc(25% - 20px);
+}
+
+@media (max-width: 1024px) {
+  .people-grid > .people-wrapper {
+    flex: 1 1 calc(33.33% - 20px); // 3 per row
+    max-width: calc(33.33% - 20px);
+  }
+}
+
+@media (max-width: 768px) {
+  .people-grid > .people-wrapper {
+    flex: 1 1 50%;
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 480px) {
+  .people-grid > .people-wrapper {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
+
 
 /* --- End BibTeX Button & Modal Styles --- */

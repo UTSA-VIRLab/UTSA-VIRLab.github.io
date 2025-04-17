@@ -31,9 +31,9 @@
     >
 
     {% if member.name %}
-      <span class="portrait-name">
-        {{ member.name }}
-      </span>
+    <span class="portrait-name" style="font-size: 1.25rem;">
+      {{ member.name }}
+    </span>
     {% endif %}
 
     {% if member.description or type %}
@@ -42,10 +42,16 @@
       </span>
     {% endif %}
 
+    {% if member.graduate %}
+    <span class="portrait-graduate">
+          <strong>Graduate: </strong>{{ member.graduate }}
+        </span>
+    {% endif %}
+
     {% if member.affiliation %}
-      <span class="portrait-affiliation">
-        {{ member.affiliation }}
-      </span>
+    <span class="portrait-affiliation">
+      <strong>Current position: </strong> {{ member.affiliation }}
+    </span>
     {% endif %}
   </a>
 </div>

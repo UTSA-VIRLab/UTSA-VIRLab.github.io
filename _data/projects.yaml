@@ -2,6 +2,8 @@
   agency: "NSF - (CISE) Core Programs"
   award: "$600,000"
   investigator: "John Quarles, Kevin Desai"
+  role: "Co-PI (50%)"
+  timeline: "01/2024-12/2026"
   group: current
   image: images/photo.jpg
   link: https://github.com/
@@ -14,6 +16,8 @@
   agency: "NSF - (CISE) Core Programs"
   award: "$457,105"
   investigator: "John Quarles, Kevin Desai"
+  role: "Co-PI (50%)"
+  timeline: "09/2022-08/2025"
   group: current
   image: images/photo.jpg
   link: https://github.com/
@@ -27,6 +31,8 @@
   agency: "NSF - (CISE) Research Initiation Initiative (CRII) 2021"
   award: "$174,368"
   investigator: "Kevin Desai"
+  role: "PI (100%)"
+  timeline: "06/2022-12/2025"
   group: current
   image: images/photo.jpg
   link: https://github.com/
@@ -40,6 +46,8 @@
   agency: "San Antonio Partnership for Precision Therapeutics (SAPPT)"
   award: "$50,000"
   investigator: "Dhireesha Kudithipudi, Kevin Desai, Anandi Dutta"
+  role: "Co-PI (25%)"
+  timeline: "08/2022-02/2024"
   group: current
   image: images/photo.jpg
   link: https://github.com/
@@ -48,13 +56,13 @@
   tags:
     - resource
 
-
-
 - title: " A step towards smart and connected health in behavior analysis"
   subtitle: a subtitle
   agency: "UTSA VPR Office - GREAT 2021"
   award: "$20,000"
   investigator: "Leslie Neely, Peyman Najafirad, Qian Chen, Kevin Desai"
+  role: "Co-PI (25%)"
+  timeline: "10/2021-07/2022"
   group: past
   image: images/photo.jpg
   link: https://github.com/

@@ -10,7 +10,7 @@ At the heart of VIRLab's operations is an exceptional team of research students,
 
 The lab is well-equipped with state-of-the-art hardware and software, including high-resolution headsets, motion tracking systems, and RGB-D cameras, empowering researchers to develop and evaluate increasingly lifelike immersive environments. Among the various research projects within VIRLab's scope are endeavors like 3D human pose estimation, multi-camera calibration, 3D reconstruction, mesh generation and simplification, and 3D serious game design.
 
-Several of our ongoing research initiatives are generously funded/supported by the US National Science Foundation (NSF). A detailed list of the research projects can be found [here](https://utsa-virlab.github.io/projects/), while a detailed list of related publications can be found [here](https://utsa-virlab.github.io/projects/).
+Several of our ongoing research initiatives are generously funded/supported by the US National Science Foundation (NSF). A detailed list of the research projects can be found [here](https://utsa-virlab.github.io/projects/), while a detailed list of related publications can be found [here](https://utsa-virlab.github.io/research/).
 
 {%
   include button.html
@@ -34,29 +34,6 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 {%
   include button.html
-  link="research"
-  text="See our publications"
-  icon="fa-solid fa-arrow-right"
-  flip=true
-  style="bare"
-%}
-
-{% endcapture %}
-
-{%
-  include feature.html
-  image="images/photo.jpg"
-  link="research"
-  title="Our Research"
-  text=text
-%}
-
-{% capture text %}
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-
-{%
-  include button.html
   link="projects"
   text="Browse our projects"
   icon="fa-solid fa-arrow-right"
@@ -69,12 +46,37 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 {%
   include feature.html
   image="images/photo.jpg"
-  link="projects"
+  link="research"
   title="Our Projects"
+  text=text
+%}
+
+
+{% capture text %}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+{%
+  include button.html
+  link="research"
+  text="See our publications"
+  icon="fa-solid fa-arrow-right"
+  flip=true
+  style="bare"
+%}
+
+{% endcapture %}
+
+{%
+  include feature.html
+  image="images/photo.jpg"
+  link="projects"
+  title="Our Research"
   flip=true
   style="bare"
   text=text
 %}
+
 
 {% capture text %}
 
