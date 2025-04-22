@@ -202,5 +202,11 @@
   }
 }
 
+.member-right p,
+.member-right li {
+  margin-bottom: 8px;   /* reduce vertical gap */
+  line-height: 1.4;     /* tighter line spacing */
+}
+
 
 /* --- End BibTeX Button & Modal Styles --- */

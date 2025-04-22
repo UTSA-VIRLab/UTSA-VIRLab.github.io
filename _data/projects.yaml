@@ -1,9 +1,48 @@
+- title: "Identifying Bias in STEM Workplaces Towards Persons with Disabilities"
+  agency: "UTSA VPR Office - SRA RIG"
+  award: "$20,000"
+  investigator: "John Quarles, Kathy Ewoldt, Kevin Desai"
+  role: "Co-PI (33%)"
+  timeline: "12/2024 - 07/2025"
+  group: current
+  image: images/photo.jpg
+  link: https://github.com/
+  description:
+  tags:
+    - resource
+
+- title: "HCC: Medium: Adaptive Auditory Feedback to Improve Balance in Virtual Reality at Home"
+  agency: "NSF - (CISE) Core Programs - Medium"
+  award: "$1,200,000"
+  investigator: "John Quarles, Kevin Desai, Alberto Cordova"
+  role: "Co-PI (33%)"
+  timeline: "10/2024 - 09/2027"
+  group: current
+  image: images/photo.jpg
+  link: https://github.com/
+  description:
+  tags:
+    - resource
+
+- title: "Exploring Online Learning in VR-Supported STEM Laboratories"
+  agency: "UTSA VPR Office - UTSA-ITESM Seed Funding Program"
+  award: "$40,000"
+  investigator: "Kevin Desai, John Quarles"
+  role: "Co-PI (50%)"
+  timeline: "06/2024 - 05/2025"
+  group: current
+  image: images/photo.jpg
+  link: https://github.com/
+  description:
+  tags:
+    - resource
+
 - title: "HCC: Small: Making Virtual Reality Safe"
   agency: "NSF - (CISE) Core Programs"
   award: "$600,000"
   investigator: "John Quarles, Kevin Desai"
   role: "Co-PI (50%)"
-  timeline: "01/2024-12/2026"
+  timeline: "01/2024 - 12/2026"
   group: current
   image: images/photo.jpg
   link: https://github.com/
@@ -11,13 +50,12 @@
   tags:
     - resource
 
-- title: "Collaborative Research: HCC: Medium: HCI in Motion -- Using EEG, Eye Tracking, and Body Sensing for Attention-Aware Mobile Mixed Reality"
-  subtitle: a subtitle
+- title: "HCI in Motion -- Using EEG, Eye Tracking, and Body Sensing for Attention-Aware Mobile Mixed Reality"
   agency: "NSF - (CISE) Core Programs"
   award: "$457,105"
   investigator: "John Quarles, Kevin Desai"
   role: "Co-PI (50%)"
-  timeline: "09/2022-08/2025"
+  timeline: "09/2022 - 08/2025"
   group: current
   image: images/photo.jpg
   link: https://github.com/
@@ -28,11 +66,11 @@
 
 - title: "CRII: HCC: 3D Hand & Full-Body Pose Estimation in Telehealth for Children with Autism"
   subtitle: a subtitle
-  agency: "NSF - (CISE) Research Initiation Initiative (CRII) 2021"
+  agency: "NSF - (CISE) Research Initiation Initiative (CRII)"
   award: "$174,368"
   investigator: "Kevin Desai"
   role: "PI (100%)"
-  timeline: "06/2022-12/2025"
+  timeline: "06/2022 - 12/2025"
   group: current
   image: images/photo.jpg
   link: https://github.com/
@@ -41,14 +79,40 @@
   tags:
     - resource
 
+- title: "LIGHT-SEAL: Hardware Trojan Aware Photonic Transformer for Secured Generative AI"
+  agency: "UTSA SDS Collaborative Seed Funding Grant"
+  award: "$35,000"
+  investigator: "Dharnidhar Dang, Kevin Desai"
+  role: "Co-PI (50%)"
+  timeline: "07/2024 - 12/2024"
+  group: past
+  image: images/photo.jpg
+  link: https://github.com/
+  description:
+  tags:
+    - resource
+
+- title: "Towards Personalized Virtual Reality Interventions for Rehabilitation of Persons with Disabilities"
+  agency: "UTSA VPR Office - MAC-UTSA Seed Funding Program"
+  award: "$25,000"
+  investigator: "John Quarles, Kevin Desai, Alberto Cordova"
+  role: "Co-PI (33%)"
+  timeline: "10/2023 - 06/2024"
+  group: past
+  image: images/photo.jpg
+  link: https://github.com/
+  description:
+  tags:
+    - resource
+
 - title: " Electronic Health Record Big Data and Radiomic Analytics for Precision Medicine Approach to Long-COVID"
   subtitle: a subtitle
-  agency: "San Antonio Partnership for Precision Therapeutics (SAPPT)"
+  agency: "San Antonio Partnership for Precision Therapeutics"
   award: "$50,000"
   investigator: "Dhireesha Kudithipudi, Kevin Desai, Anandi Dutta"
   role: "Co-PI (25%)"
-  timeline: "08/2022-02/2024"
-  group: current
+  timeline: "08/2022 - 02/2024"
+  group: past
   image: images/photo.jpg
   link: https://github.com/
 #  description: "This award is funded in whole or in part under the American Rescue Plan Act of 2021 (Public Law 117-2). The overall objective of this project is to provide efficient full-body interaction in virtual reality systems that do not use head-mounted displays. This project aims to create accurate and real-time 3D hand and body pose estimation, in the highly significant application area of children with autism. A novel synthetic hand data generation framework will generate 3D hand poses with increased diversity in terms of hand distance from camera, hand size, camera viewpoint, occlusion, background, and skin color. The outcome will be a novel 3D synthetic hand dataset consisting of realistic and kinematically accurate hand models with articulated poses that will advance current and future research endeavors in 3D hand pose estimation research. The project will advance the state-of-the-art in 3D body pose estimation for humans present further away from the camera at room-scale distances. The synthetic dataset, algorithms, and programming libraries will be made publicly available for wide-spread adoption, thereby advancing pose estimation research. This research will have broad societal impact because it will improve the usability and interaction in human centered telehealth applications, initially helping with the applied behavior analysis for children with autism. Existing systems that employ head-mounted displays or wearable sensors for tracking the user's hand and body movements are not suitable for children with autism, and have disadvantages in many other application areas. Therefore, by enabling 3D hand and full-body pose estimation, this project will advance a plethora of 3D immersive applications such as education, virtual STEM laboratories, tele-rehabilitation, tele-operation, military training, entertainment, and communication. The need for real-time, remote and interactive human motion sensing exists now more than ever, considering the increase in virtual activities because of the recent pandemic."
@@ -57,12 +121,11 @@
     - resource
 
 - title: " A step towards smart and connected health in behavior analysis"
-  subtitle: a subtitle
   agency: "UTSA VPR Office - GREAT 2021"
   award: "$20,000"
-  investigator: "Leslie Neely, Peyman Najafirad, Qian Chen, Kevin Desai"
+  investigator: "Leslie Neely, Paul Rad, Qian Chen, Kevin Desai"
   role: "Co-PI (25%)"
-  timeline: "10/2021-07/2022"
+  timeline: "10/2021 - 07/2022"
   group: past
   image: images/photo.jpg
   link: https://github.com/
@@ -81,5 +144,6 @@
   repo: greenelab/lab-website-template
   tags:
     - past
+
 
 
