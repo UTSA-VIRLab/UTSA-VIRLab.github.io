@@ -2,108 +2,120 @@
 layout: default
 ---
 
-<div class="member-profile" style="display: flex; flex-wrap: wrap; gap: 40px; align-items: flex-start; margin-top: 30px;">
+<div class="member-profile">
 
   <!-- LEFT SIDE -->
-  <div class="member-left" style="flex: 0 0 250px; max-width: 250px;">
+  <div class="member-left">
     {% include portrait.html lookup=page.slug %}
 
     {% if page.email %}
-    <p style="margin: 5px 0;"><strong>Email:</strong><br>
-      <a href="mailto:{{ page.email }}">{{ page.email }}</a></p>
+    <p><strong>Email:</strong><br>
+      <a href="mailto:{{ page.email }}">{{ page.email }}</a>
+    </p>
     {% endif %}
 
     {% if page.office %}
-    <p style="margin: 5px 0;"><strong>Office:</strong><br>{{ page.office }}</p>
+    <p><strong>Office:</strong><br>{{ page.office }}</p>
     {% endif %}
 
     {% if page.cv %}
-    <p style="margin: 5px 0;"><strong>CV:</strong><br>
-      <a href="{{ page.cv | relative_url }}" target="_blank">Preview CV</a> |
+    <p><strong>CV:</strong><br>
+      <a href="{{ page.cv | relative_url }}" target="_blank">Preview</a>
+      |
       <a href="{{ page.cv | relative_url }}" download>Download</a>
     </p>
     {% endif %}
 
     {% if page.links %}
-    <p style="margin: 5px 0;"><strong>Links:</strong><br>
-    <div style="margin-top: 5px; display: flex; flex-direction: column; align-items: flex-start;">
+    <p><strong>Links:</strong><br>
+    <div class="member-links">
       {% for link in page.links %}
       {% assign key = link[0] %}
       {% assign value = link[1] %}
       {% include button.html type=key link=value style="bare" %}
       {% endfor %}
     </div>
-    </p>
     {% endif %}
   </div>
 
   <!-- RIGHT SIDE -->
-  <div class="member-right" style="flex: 1 1 500px; min-width: 300px; line-height: 1.5;">
+  <div class="member-right">
 
     {% if page.about %}
-    <h2 style="margin-bottom: 5px;">About Me</h2>
-    {{ page.about | markdownify }}
+    <section class="member-section">
+      <h2>About Me</h2>
+      {{ page.about | markdownify }}
+    </section>
     {% endif %}
 
     {% if page.research %}
-    <h2 style="margin-top: 20px; margin-bottom: 5px;">Research Interests</h2>
-    <ul style="margin-top: 5px; line-height: 1.5;">
-      {% for topic in page.research %}
-      <li>{{ topic }}</li>
-      {% endfor %}
-    </ul>
+    <section class="member-section">
+      <h2>Research Interests</h2>
+      <ul>
+        {% for t in page.research %}
+        <li>{{ t }}</li>
+        {% endfor %}
+      </ul>
+    </section>
     {% endif %}
 
     {% if page.experience %}
-    <h2 style="margin-top: 20px; margin-bottom: 5px;">Work Experience</h2>
-    <ul style="margin-top: 5px; line-height: 1.5;">
-      {% for job in page.experience %}
-      <li>{{ job | markdownify | strip }}</li>
-      {% endfor %}
-    </ul>
+    <section class="member-section">
+      <h2>Work Experience</h2>
+      <ul>
+        {% for j in page.experience %}
+        <li>{{ j | markdownify | strip_html }}</li>
+        {% endfor %}
+      </ul>
+    </section>
     {% endif %}
 
     {% if page.education %}
-    <h2 style="margin-top: 20px; margin-bottom: 5px;">Education</h2>
-    <ul style="margin-top: 5px; line-height: 1.5;">
-      {% for degree in page.education %}
-      <li>{{ degree | markdownify | strip }}</li>
-      {% endfor %}
-    </ul>
+    <section class="member-section">
+      <h2>Education</h2>
+      <ul>
+        {% for d in page.education %}
+        <li>{{ d | markdownify | strip_html }}</li>
+        {% endfor %}
+      </ul>
+    </section>
     {% endif %}
 
     {% if page.award %}
-    <h2 style="margin-top: 20px; margin-bottom: 5px;">Awards</h2>
-    <ul style="margin-top: 5px; line-height: 1.5;">
-      {% for prize in page.award %}
-      <li>{{ prize }}</li>
-      {% endfor %}
-    </ul>
+    <section class="member-section">
+      <h2>Awards</h2>
+      <ul>
+        {% for a in page.award %}
+        <li>{{ a }}</li>
+        {% endfor %}
+      </ul>
+    </section>
     {% endif %}
 
-    {% assign all_pubs = site.data.citations
+    {%- assign all_pubs = site.data.citations
     | where_exp: "pub", "pub.authors contains page.name"
-    | sort: "date" | reverse %}
+    | sort: "date" | reverse -%}
 
     {% if all_pubs.size > 0 %}
-    <h2 style="margin-top: 20px;">Recent Publications</h2>
-    <ul>
-      {% for pub in all_pubs limit: 3 %}
-      <li style="margin-bottom: 10px;">
-        <a href="{{ pub.link }}">{{ pub.title }}</a><br>
-        <small>{{ pub.publisher }} ({{ pub.date | date: "%Y" }})</small>
-      </li>
-      {% endfor %}
-    </ul>
+    <section class="member-section">
+      <h2>Recent Publications</h2>
+      <ul class="pub-list">
+        {% for pub in all_pubs limit:3 %}
+        <li>
+          <a href="{{ pub.link }}">{{ pub.title }}</a><br>
+          <small>{{ pub.publisher }} ({{ pub.date | date: "%Y" }})</small>
+        </li>
+        {% endfor %}
+      </ul>
+      {% if all_pubs.size > 3 %}
+      <p class="see-all center">
+        <a href="{{ 'research/?search=' | append: page.name | relative_url }}">
+          See all publications
+        </a>
+      </p>
+      {% endif %}
+    </section>
     {% endif %}
 
-    {% if all_pubs.size > 3 %}
-    <p class="center" style="margin-top: 10px;">
-      <a href="{{ 'research/?search=' | append: page.name | relative_url }}">
-        See all publications
-<!--        Search for {{ page.name | default: page.title }}'s all papers on the Research page-->
-      </a>
-    </p>
-    {% endif %}
   </div>
 </div>
