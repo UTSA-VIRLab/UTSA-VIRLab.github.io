@@ -1,0 +1,29 @@
+.member-profile {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 5rem;
+}
+
+.member-profile .member-left {
+  flex: 0 0 250px;
+  max-width: 250px;
+}
+
+.member-profile .member-right {
+  flex: 1 1 0;
+  min-width: 300px;
+}
+
+.member-section {
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 600px) {
+  .member-profile {
+    flex-direction: column;
+  }
+}
+
+/*# sourceMappingURL=member.css.map */
