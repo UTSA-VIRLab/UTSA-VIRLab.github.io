@@ -1,27 +1,54 @@
-document.addEventListener("DOMContentLoaded", function() {
-    var modal = document.getElementById("descriptionModal");
-    var modalContent = document.getElementById("modalDescriptionContent");
-    var closeBtn = document.querySelector(".modal .close");
-
-    // Close modal when clicking on the close button
-    closeBtn.onclick = function() {
-        modal.style.display = "none";
-    };
-
-    // Close modal when clicking outside the modal content
-    window.onclick = function(event) {
-        if (event.target == modal) {
-            modal.style.display = "none";
-        }
-    };
-
-    // Attach click event listeners to all "Show More" buttons
-    var buttons = document.querySelectorAll(".show-description");
-    buttons.forEach(function(button) {
-        button.addEventListener("click", function() {
-            var description = this.getAttribute("data-description");
-            modalContent.innerHTML = description;
-            modal.style.display = "block";
-        });
-    });
-});
+// document.addEventListener("DOMContentLoaded", function() {
+//     // 1) Load the projects array from the YAML data
+//     const projects = window.__SITE_PROJECTS__ || [];
+//
+//     // 2) Get the `title` query-param
+//     const params  = new URLSearchParams(window.location.search);
+//     const title   = params.get("title");
+//
+//     // 3) Find the matching project
+//     const project = projects.find(p => p.title === title);
+//     const container = document.querySelector(".project-detail");
+//
+//     if (!project) {
+//         container.innerHTML = "<p><em>Project not found.</em></p>";
+//         return;
+//     }
+//
+//     // Build the metadata definition list
+//     let metaHtml = "<dl class='project-meta'>";
+//     metaHtml += `<dt>Agency:</dt><dd>${project.agency || '—'}</dd>`;
+//     metaHtml += `<dt>Award:</dt><dd>${project.award || '—'}</dd>`;
+//     metaHtml += `<dt>Investigator:</dt><dd>${project.investigator || '—'}</dd>`;
+//     metaHtml += `<dt>Role:</dt><dd>${project.role || '—'}</dd>`;
+//     metaHtml += `<dt>Timeline:</dt><dd>${project.timeline || '—'}</dd>`;
+//     metaHtml += "</dl>";
+//
+//     // Start injecting HTML
+//     let html = `
+//     <h1>${project.title}</h1>
+//     ${metaHtml}
+//   `;
+//
+//     // Abstract
+//     if (project.description) {
+//         html += `
+//       <section class="project-abstract">
+//         <h2>Abstract</h2>
+//         ${project.description}
+//       </section>
+//     `;
+//     }
+//
+//     // Optional image
+//     if (project.image) {
+//         html += `
+//       <section class="project-image">
+//         <h2>Image</h2>
+//         <img src="${project.image}" alt="${project.title}">
+//       </section>
+//     `;
+//     }
+//
+//     container.innerHTML = html;
+// });

@@ -1,0 +1,125 @@
+---
+layout: default
+---
+
+<div class="project-detail"></div>
+
+<script id="projects-data" type="application/json">
+    {{ site.data.projects | jsonify }}
+</script>
+<script id="citations-data" type="application/json">
+    {{ site.data.citations | jsonify }}
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        // parse
+        let projects = JSON.parse(document.getElementById("projects-data").textContent);
+        let citations = JSON.parse(document.getElementById("citations-data").textContent);
+
+        // lookup
+        const params = new URLSearchParams(window.location.search);
+        const id     = params.get("id");
+        const proj   = projects.find(p => p.id === id);
+        const container = document.querySelector(".project-detail");
+        if (!proj) return container.innerHTML = "<p><em>Project not found.</em></p>";
+
+        // build <dl>
+        let dl = "<dl class='project-meta'>";
+        ["agency","award","investigator","role","timeline"].forEach(key => {
+            let label = key.charAt(0).toUpperCase()+key.slice(1);
+            dl += `<dt>${label}:</dt><dd>${proj[key]||"&mdash;"}</dd>`;
+        });
+        // **NEW**: Link entry
+        if (proj.link) {
+            dl += `<dt>Link:</dt>
+           <dd><a href="${proj.link}" target="_blank" rel="noopener">
+             ${proj.link}
+           </a></dd>`;
+        }
+        dl += "</dl>";
+
+        // assemble
+        let html = `<h1>${proj.title}</h1>${dl}`;
+
+        if (proj.description) {
+            html += `
+      <section class="project-abstract">
+        <h2>Abstract</h2>
+        ${proj.description}
+      </section>`;
+        }
+
+        // related pubs
+        const related = citations.filter(c => Array.isArray(c.project) && c.project.includes(id));
+        if (related.length) {
+            html += `
+      <section class="project-section">
+        <h2>Related Publications</h2>
+        <ul class="pub-list">`;
+            related.forEach(pub => {
+                const year = new Date(pub.date).getFullYear();
+                html += `
+          <li>
+            <a href="${pub.link}" target="_blank" rel="noopener">
+              ${pub.title}
+            </a>
+            <br><small>${pub.publisher} (${year})</small>
+          </li>`;
+            });
+            html += `
+        </ul>
+      </section>`;
+        }
+
+        container.innerHTML = html;
+    });
+</script>
+
+<style>
+    .project-detail {
+        max-width: 1000px;
+        margin: 2rem auto;
+        text-align: justify;
+        padding: 0 1rem;
+    }
+    .project-detail h1 {
+        margin-bottom: 1rem;
+    }
+    .project-meta {
+        display: grid;
+        grid-template-columns: max-content auto;
+        column-gap: 1rem;
+        row-gap: .5rem;
+        justify-content: center;
+        margin-bottom: 2rem;
+    }
+    .project-meta dt,
+    .project-meta dd {
+        margin: 0;
+        padding: 0;
+    }
+    .project-abstract,
+    .project-section {
+        margin-top: 2rem;
+        line-height: 1.6;
+    }
+    .project-abstract h2,
+    .project-section h2 {
+        margin-bottom: .5rem;
+    }
+    .pub-list {
+        list-style: disc inside;
+        margin: 0;
+        padding: 0;
+    }
+    .pub-list li {
+        margin-bottom: .75rem;
+    }
+    .pub-list a {
+        font-weight: bold;
+    }
+    .pub-list small {
+        color: #555;
+    }
+</style>

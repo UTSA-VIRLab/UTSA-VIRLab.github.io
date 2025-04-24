@@ -11,5 +11,8 @@ nav:
 ## Current Students
 {% include list.html data="members" component="portrait" filter="group == 'current'" class="people-grid"%}
 
-## Previous Students
+## Previous Graduate Students
 {% include list.html data="members" component="portrait" filter="group == 'alum'" class="people-grid"%}
+
+## Undergraduate Students
+{% include list.html data="members" component="portrait" filter="group == 'undergrad'" class="people-grid"%}

@@ -1,7 +1,11 @@
 ---
+layout: default
+title: Home
+nav:
+  title: Home
+  order: 0
+  tooltip: Back to the lab’s homepage
 ---
-
-# UTSA VIRLab
 
 
 The Vision and Immersive Realities Lab (VIRLab) at UTSA is an innovative research facility that explores the cutting-edge intersections of technology, human perception, and immersive experiences. VIRLab's interdisciplinary approach encompasses Computer Vision and Immersive Realities, including Virtual Reality (VR), Augmented Reality (AR), and Mixed Reality (MR). The lab leverages its discoveries to impact diverse fields, including healthcare, rehabilitation, virtual training, and serious gaming, with a core mission of enhancing human quality of life through immersive technologies.
@@ -12,91 +16,63 @@ The lab is well-equipped with state-of-the-art hardware and software, including 
 
 Several of our ongoing research initiatives are generously funded/supported by the US National Science Foundation (NSF). A detailed list of the research projects can be found [here](https://utsa-virlab.github.io/projects/), while a detailed list of related publications can be found [here](https://utsa-virlab.github.io/research/).
 
-{%
-  include button.html
-  type="docs"
-  link="https://greene-lab.gitbook.io/lab-website-template-docs"
-%}
-{%
-  include button.html
-  type="github"
-  text="On GitHub"
-  link="greenelab/lab-website-template"
-%}
+<link rel="stylesheet" href="{{ '/home.css' | relative_url }}">
+
+<div class="slideshow-container">
+  {% for s in site.data.slider %}
+    <div class="mySlides fade">
+      <div class="numbertext">{{ forloop.index }} / {{ site.data.slider | size }}</div>
+      <img src="{{ s.image | relative_url }}" alt="{{ s.caption }}">
+      <div class="text">{{ s.caption }}</div>
+    </div>
+  {% endfor %}
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+</div>
+
+<div class="dots-container">
+  {% for s in site.data.slider %}
+    <span class="dot" onclick="currentSlide({{ forloop.index }})"></span>
+  {% endfor %}
+</div>
+
+<script src="{{ '/_scripts/home.js' | relative_url }}" defer></script>
+
+# {% include icon.html icon="fa-regular fa-envelope" %} Contact
+
+
+<div class="contact-columns">
+
+  <!-- LEFT COLUMN -->
+  <div class="contact-info">
+    <ul>
+      <li>
+        <strong>Email:</strong><br>
+        <a href="mailto:kevin.desai@utsa.edu">kevin.desai@utsa.edu</a>
+      </li>
+      <li>
+        <strong>Office:</strong><br>
+        Room 340J, UTSA San Pedro I
+      </li>
+      <li>
+        <strong>Address:</strong><br>
+        <a href="https://www.google.com/maps/place/506+Dolorosa+St,+San+Antonio,+TX+78204" target="_blank">
+          506 Dolorosa St, San Antonio, TX 78204
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- RIGHT COLUMN (MAP) -->
+  <div class="contact-map">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3451.0412861547794!2d-98.49647888488427!3d29.424353181901956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x865c58ea08d4d325%3A0xb3d637aef7fa7cb5!2sUTSA%20-%20San%20Pedro%20I!5e0!3m2!1sen!2sus!4v1610077190824!5m2!1sen!2sus"
+      loading="lazy">
+    </iframe>
+  </div>
+
+</div>
 
 {% include section.html %}
 
-## Highlights
-
-{% capture text %}
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-
-{%
-  include button.html
-  link="projects"
-  text="Browse our projects"
-  icon="fa-solid fa-arrow-right"
-  flip=true
-  style="bare"
-%}
-
-{% endcapture %}
-
-{%
-  include feature.html
-  image="images/photo.jpg"
-  link="research"
-  title="Our Projects"
-  text=text
-%}
-
-
-{% capture text %}
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-
-{%
-  include button.html
-  link="research"
-  text="See our publications"
-  icon="fa-solid fa-arrow-right"
-  flip=true
-  style="bare"
-%}
-
-{% endcapture %}
-
-{%
-  include feature.html
-  image="images/photo.jpg"
-  link="projects"
-  title="Our Research"
-  flip=true
-  style="bare"
-  text=text
-%}
-
-
-{% capture text %}
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-
-{%
-  include button.html
-  link="team"
-  text="Meet our team"
-  icon="fa-solid fa-arrow-right"
-  flip=true
-  style="bare"
-%}
-
-{% endcapture %}
-
-{%
-  include feature.html
-  image="images/photo.jpg"
-  link="team"
-  title="Our Team"
-  text=text
-%}

@@ -1,5 +1,8 @@
 - id: 'DOI: 10.1109/ISM.2015.111'
   title: Network adaptive textured mesh generation for collaborative 3d tele-immersion
+  project:
+    - nsf-small-safety
+    - nsf-medium-motion
   authors:
     - Kevin Desai
     - Kanchan Bahirat
@@ -16,8 +19,12 @@
     IEEE International Symposium on Multimedia(ISM)},author={Desai,Kevin and Bahirat,Kanchan
     and Raghuraman,Suraj and Prabhakaran,Balakrishnan},title={Network adaptive textured
     mesh generation for collaborative 3d tele-immersion}}'
+
 - id: 'DOI: 10.1145/2910017.2910612'
   title: Augmented reality-based exergames for rehabilitation
+  project:
+    - nsf-small-safety
+    - nsf-medium-motion
   authors:
     - Kevin Desai
     - Kanchan Bahirat

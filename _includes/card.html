@@ -1,16 +1,8 @@
 <div class="card" data-style="{{ include.style }}">
-<!--  {% if include.image %}-->
-<!--  <div class="card-image">-->
-<!--    <img src="{{ include.image | relative_url | uri_escape }}" alt="Project image" loading="lazy">-->
-<!--  </div>-->
-<!--  {% endif %}-->
-
   <div class="card-text left">
     {% if include.title %}
     <a
-            {% if include.link %}
-            href="{{ include.link | relative_url | uri_escape }}"
-            {% endif %}
+            href="/projects/project.html?id={{ include.id | url_encode }}"
             class="card-title"
     >
       {{ include.title }}
@@ -20,19 +12,15 @@
     {% if include.agency %}
     <span class="card-agency"><strong>Agency:</strong> {{ include.agency }}</span>
     {% endif %}
-
     {% if include.award %}
     <span class="card-award"><strong>Award:</strong> {{ include.award }}</span>
     {% endif %}
-
     {% if include.investigator %}
     <span class="card-investigator"><strong>Investigator:</strong> {{ include.investigator }}</span>
     {% endif %}
-
     {% if include.role %}
     <span class="card-role"><strong>Role:</strong> {{ include.role }}</span>
     {% endif %}
-
     {% if include.timeline %}
     <span class="card-timeline"><strong>Timeline:</strong> {{ include.timeline }}</span>
     {% endif %}

@@ -1,0 +1,11 @@
+- name: "The University of Texas at San Antonio"
+  image: "images/sponsors/utsa.png"
+  url:  "https://www.utsa.edu"
+
+- name: "The National Science Foundation"
+  image: "images/sponsors/nsf.png"
+  url:  "https://www.nsf.gov"
+
+- name: "Xilinx Inc."
+  image: "images/sponsors/xilinx.png"
+  url:  "https://www.xilinx.com"
