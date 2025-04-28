@@ -99,14 +99,11 @@ layout: default
     {% if all_pubs.size > 0 %}
     <section class="member-section">
       <h2>Recent Publications</h2>
-      <ul class="pub-list">
-        {% for pub in all_pubs limit:3 %}
-        <li>
-          <a href="{{ pub.link }}">{{ pub.title }}</a><br>
-          <small>{{ pub.publisher }} ({{ pub.date | date: "%Y" }})</small>
-        </li>
-        {% endfor %}
-      </ul>
+
+      {%- for pub in all_pubs limit:3 -%}
+      {%- include citation.html lookup=pub.id style="rich" -%}
+      {%- endfor -%}
+
       {% if all_pubs.size > 3 %}
       <p class="see-all center">
         <a href="{{ 'research/?search=' | append: page.name | relative_url }}">
@@ -119,3 +116,37 @@ layout: default
 
   </div>
 </div>
+
+<!-- ==== Global BibTeX Modal ==== -->
+<div id="globalBibtexModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <pre id="globalBibtexContent"></pre>
+    <button class="copy-bibtex" data-target="globalBibtexContent">Copy</button>
+  </div>
+</div>
+
+<!-- ==== BibTeX Modal JS ==== -->
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const modal   = document.getElementById("globalBibtexModal");
+    const content = document.getElementById("globalBibtexContent");
+
+    document.body.addEventListener("click", e => {
+      // Open modal
+      if (e.target.matches(".show-bibtex")) {
+        content.textContent = e.target.getAttribute("data-bibtex");
+        modal.style.display  = "block";
+      }
+      // Close modal
+      if (e.target.matches(".close") || e.target === modal) {
+        modal.style.display = "none";
+      }
+      // Copy to clipboard
+      if (e.target.matches(".copy-bibtex")) {
+        const tgt = document.getElementById(e.target.dataset.target);
+        navigator.clipboard.writeText(tgt.textContent);
+      }
+    });
+  });
+</script>

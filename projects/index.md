@@ -2,7 +2,7 @@
 title: Projects
 nav:
   order: 1
-  tooltip: Software, datasets, and more
+  tooltip: Projects and funding
 ---
 
 ## Current Projects

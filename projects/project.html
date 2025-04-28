@@ -2,124 +2,148 @@
 layout: default
 ---
 
-<div class="project-detail"></div>
+<div class="project-detail">
+    <!-- 1) Project header -->
+    <div id="project-header"></div>
 
-<script id="projects-data" type="application/json">
-    {{ site.data.projects | jsonify }}
+    <!-- 2) Related publications -->
+    <section id="related-pubs" style="display:none;">
+        <h2>Related Publications</h2>
+        <div id="pubs-list"></div>
+    </section>
+
+    <!-- 3) Global BibTeX Modal (exactly the same as on your publications page) -->
+    <div id="globalBibtexModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <pre id="globalBibtexContent"></pre>
+            <button class="copy-bibtex" data-target="globalBibtexContent">Copy</button>
+        </div>
+    </div>
+</div>
+
+<!-- Embed your JSON data -->
+<script id="projects-data"  type="application/json">
+    {{ site.data.projects  | jsonify }}
 </script>
 <script id="citations-data" type="application/json">
     {{ site.data.citations | jsonify }}
 </script>
 
 <script>
+    // -- Build page & inject "Show BibTeX" buttons --
     document.addEventListener("DOMContentLoaded", () => {
-        // parse
-        let projects = JSON.parse(document.getElementById("projects-data").textContent);
-        let citations = JSON.parse(document.getElementById("citations-data").textContent);
+        const projects  = JSON.parse(document.getElementById("projects-data").textContent);
+        const citations = JSON.parse(document.getElementById("citations-data").textContent);
 
-        // lookup
-        const params = new URLSearchParams(window.location.search);
-        const id     = params.get("id");
-        const proj   = projects.find(p => p.id === id);
-        const container = document.querySelector(".project-detail");
-        if (!proj) return container.innerHTML = "<p><em>Project not found.</em></p>";
+        // lookup project
+        const projId    = new URLSearchParams(window.location.search).get("id");
+        const proj      = projects.find(p => p.id === projId);
+        const headerEl  = document.getElementById("project-header");
+        const relatedEl = document.getElementById("related-pubs");
+        const listEl    = document.getElementById("pubs-list");
 
-        // build <dl>
-        let dl = "<dl class='project-meta'>";
-        ["agency","award","investigator","role","timeline"].forEach(key => {
-            let label = key.charAt(0).toUpperCase()+key.slice(1);
-            dl += `<dt>${label}:</dt><dd>${proj[key]||"&mdash;"}</dd>`;
-        });
-        // **NEW**: Link entry
-        if (proj.link) {
-            dl += `<dt>Link:</dt>
-           <dd><a href="${proj.link}" target="_blank" rel="noopener">
-             ${proj.link}
-           </a></dd>`;
+        if (!proj) {
+            headerEl.innerHTML = "<p><em>Project not found.</em></p>";
+            return;
         }
-        dl += "</dl>";
 
-        // assemble
-        let html = `<h1>${proj.title}</h1>${dl}`;
+        // — Render project header
+        let meta = "<dl class='project-meta'>";
+        ["agency","award","investigator","role","timeline"].forEach(key => {
+            const label = key.charAt(0).toUpperCase() + key.slice(1);
+            meta += `<dt>${label}:</dt><dd>${proj[key]||"&mdash;"}</dd>`;
+        });
+        if (proj.link) {
+            meta += `<dt>Link:</dt>
+             <dd><a href="${proj.link}" target="_blank" rel="noopener">${proj.link}</a></dd>`;
+        }
+        meta += "</dl>";
 
+        let html = `<h1>${proj.title}</h1>${meta}`;
         if (proj.description) {
             html += `
       <section class="project-abstract">
-        <h2>Abstract</h2>
+        <h2>Description</h2>
         ${proj.description}
       </section>`;
         }
+        headerEl.innerHTML = html;
 
-        // related pubs
-        const related = citations.filter(c => Array.isArray(c.project) && c.project.includes(id));
-        if (related.length) {
-            html += `
-      <section class="project-section">
-        <h2>Related Publications</h2>
-        <ul class="pub-list">`;
-            related.forEach(pub => {
-                const year = new Date(pub.date).getFullYear();
-                html += `
-          <li>
-            <a href="${pub.link}" target="_blank" rel="noopener">
-              ${pub.title}
-            </a>
-            <br><small>${pub.publisher} (${year})</small>
-          </li>`;
-            });
-            html += `
-        </ul>
-      </section>`;
+        // — Find related publications
+        const related = citations.filter(c => Array.isArray(c.project) && c.project.includes(projId));
+        if (!related.length) return;
+        relatedEl.style.display = "block";
+
+        const base = "{{ '/' | relative_url }}";
+        related.forEach(cit => {
+            const div = document.createElement("div");
+            div.className = "citation-container";
+            // note: we escape < and > in bibtex so no stray <p> appears
+            const safeBib = cit.bibtex
+                ? cit.bibtex.replace(/</g,"&lt;").replace(/>/g,"&gt;")
+                : "";
+            div.innerHTML = `
+              <div class="citation">
+                <a href="${cit.link}" class="citation-image" aria-label="${cit.title}">
+                  <img src="${base}${cit.image}" alt="${cit.title}" loading="lazy">
+                </a>
+                <div class="citation-text">
+                  <a href="${cit.link}" class="citation-title">${cit.title}</a>
+                  <div class="citation-authors">${cit.authors.join(", ")}</div>
+                  <div class="citation-details">
+                    <span class="citation-publisher">${cit.publisher}</span>
+                    &nbsp;·&nbsp;
+                    <span class="citation-date">
+                      ${new Date(cit.date).toLocaleDateString(undefined,{
+                        day:"2-digit",month:"short",year:"numeric"
+                    })}
+                    </span>
+                    &nbsp;·&nbsp;
+                    <span class="citation-id">${cit.id}</span>
+                  </div>
+                  ${cit.description
+                        ? `<div class="citation-description">${cit.description}</div>`
+                        : ""
+                    }
+                  ${safeBib
+                        ? `<button class="show-bibtex" data-bibtex="${safeBib}">
+                         BibTeX
+                       </button>`
+                        : ""
+                    }
+                </div>
+              </div>`;
+            listEl.appendChild(div);
+        });
+    });
+
+    // -- BibTeX modal wiring (exactly like on your other page) --
+    document.addEventListener("click", e => {
+        const modal = document.getElementById("globalBibtexModal");
+        const content = document.getElementById("globalBibtexContent");
+
+        // open
+        if (e.target.matches(".show-bibtex")) {
+            content.textContent = e.target.getAttribute("data-bibtex");
+            modal.style.display = "block";
         }
+        // close
+        if (e.target.matches(".close")) {
+            modal.style.display = "none";
+        }
+        // copy
+        if (e.target.matches(".copy-bibtex")) {
+            const txt = document.getElementById(e.target.dataset.target).textContent;
+            navigator.clipboard.writeText(txt);
+        }
+    });
 
-        container.innerHTML = html;
+    // close on outside click
+    window.addEventListener("click", e => {
+        const modal = document.getElementById("globalBibtexModal");
+        if (e.target === modal) modal.style.display = "none";
     });
 </script>
 
-<style>
-    .project-detail {
-        max-width: 1000px;
-        margin: 2rem auto;
-        text-align: justify;
-        padding: 0 1rem;
-    }
-    .project-detail h1 {
-        margin-bottom: 1rem;
-    }
-    .project-meta {
-        display: grid;
-        grid-template-columns: max-content auto;
-        column-gap: 1rem;
-        row-gap: .5rem;
-        justify-content: center;
-        margin-bottom: 2rem;
-    }
-    .project-meta dt,
-    .project-meta dd {
-        margin: 0;
-        padding: 0;
-    }
-    .project-abstract,
-    .project-section {
-        margin-top: 2rem;
-        line-height: 1.6;
-    }
-    .project-abstract h2,
-    .project-section h2 {
-        margin-bottom: .5rem;
-    }
-    .pub-list {
-        list-style: disc inside;
-        margin: 0;
-        padding: 0;
-    }
-    .pub-list li {
-        margin-bottom: .75rem;
-    }
-    .pub-list a {
-        font-weight: bold;
-    }
-    .pub-list small {
-        color: #555;
-    }
-</style>
+<link rel="stylesheet" href="{{ '/assets/css/project.css' | relative_url }}">

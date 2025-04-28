@@ -3,7 +3,7 @@ name: Kevin Desai
 image: images/team/kevin-desai.jpg
 role: pi
 group: pi
-affiliation: Assistant Professor at University of Texas at San Antonio
+affiliation: Assistant Professor of Computer Science
 about: |
   I am currently an Assistant Professor of Computer Science at the University of Texas at San Antonio (UTSA) since Fall 2022. After finishing my PhD in Computer Science from the University of Texas at Dallas (UTD) in May 2019, I joined UTSA as a non-tenure track assistant professor of instruction with the CS department. 
   

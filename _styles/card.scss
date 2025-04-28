@@ -36,27 +36,6 @@
   font-style: italic;
 }
 
-.show-description {
-  display: inline-flex;              // similar to tag styling
-  justify-content: center;
-  align-items: center;
-  padding: 5px 10px;                 // same padding as the tag
-  border-radius: 999px;              // fully rounded edges, like a pill
-  background: var(--secondary);      // using your secondary color
-  color: var(--text);                // text color
-  text-decoration: none;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  transition: background var(--transition), color var(--transition);
-  border: none;                     // remove any default border
-  cursor: pointer;
-}
-
-.show-description:hover {
-  background: var(--light-gray);
-}
-
 /* Modal styling for the BibTeX popup */
 .show-bibtex {
   display: inline-flex;
@@ -102,6 +81,7 @@
   white-space: pre-wrap !important; /* Allow wrapping */
   word-break: break-word !important; /* Break long words if needed */
   max-width: 100% !important;
+  text-align: justify;
 }
 
 .close {
@@ -167,7 +147,6 @@
 .list:not(.project-grid) > .card-wrapper {
   flex: 1 1 100%;
   max-width: 100%;
-  margin-bottom: 20px;
 }
 
 .people-grid {
@@ -202,6 +181,3 @@
   }
 }
 
-
-
-/* --- End BibTeX Button & Modal Styles --- */

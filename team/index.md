@@ -5,7 +5,7 @@ nav:
   tooltip: About our team
 ---
 
-## Lab Investigator
+## Faculty
 {% include list.html data="members" component="portrait" filter="role == 'pi'" class="people-grid"%}
 
 ## Current Students
