@@ -251,6 +251,10 @@
   
 
   
+    <link href="/_styles/project.css" rel="stylesheet">
+  
+
+  
     <link href="/_styles/quote.css" rel="stylesheet">
   
 
@@ -372,7 +376,7 @@
       
     
       
-        <a href="/projects/" data-tooltip="Software, datasets, and more">
+        <a href="/projects/" data-tooltip="Projects and funding">
           Projects
         </a>
       
@@ -502,6 +506,40 @@
 
   </div>
 </div>
+
+<!-- ==== Global BibTeX Modal ==== -->
+<div id="globalBibtexModal" class="modal">
+  <div class="modal-content">
+    <span class="close">×</span>
+    <pre id="globalBibtexContent"></pre>
+    <button class="copy-bibtex" data-target="globalBibtexContent">Copy</button>
+  </div>
+</div>
+
+<!-- ==== BibTeX Modal JS ==== -->
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const modal   = document.getElementById("globalBibtexModal");
+    const content = document.getElementById("globalBibtexContent");
+
+    document.body.addEventListener("click", e => {
+      // Open modal
+      if (e.target.matches(".show-bibtex")) {
+        content.textContent = e.target.getAttribute("data-bibtex");
+        modal.style.display  = "block";
+      }
+      // Close modal
+      if (e.target.matches(".close") || e.target === modal) {
+        modal.style.display = "none";
+      }
+      // Copy to clipboard
+      if (e.target.matches(".copy-bibtex")) {
+        const tgt = document.getElementById(e.target.dataset.target);
+        navigator.clipboard.writeText(tgt.textContent);
+      }
+    });
+  });
+</script>
   </section>
 
 

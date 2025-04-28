@@ -1,95 +1,113 @@
-.citation-container {
-  container-type: inline-size;
+.project-detail .citation-container {
+  margin-bottom: 1.5rem;
 }
 
 .citation {
   display: flex;
-  margin: 20px 0;
-  border-radius: var(--rounded);
+  flex-direction: row;
   background: var(--background);
-  overflow: hidden;
+  border-radius: var(--rounded);
   box-shadow: var(--shadow);
+  overflow: hidden;
 }
 
 .citation-image {
-  position: relative;
-  width: 180px;
   flex-shrink: 0;
+  width: 180px;
 }
 
 .citation-image img {
-  position: absolute;
-  inset: 0;
   width: 100%;
   height: 100%;
   object-fit: contain;
 }
 
 .citation-text {
-  position: relative;
-  display: inline-flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  max-width: 100%;
-  height: min-content;
   padding: 20px;
-  padding-left: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
   text-align: left;
-  overflow-wrap: break-word;
-  z-index: 0;
-}
-
-.citation-title,
-.citation-authors,
-.citation-details,
-.citation-description {
-  width: 100%;
 }
 
 .citation-title {
   font-weight: var(--semi-bold);
 }
 
-.citation-text > .icon {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  color: var(--light-gray);
-  opacity: 0.5;
-  font-size: 30px;
-  z-index: -1;
+.citation-authors {
+  font-size: 0.95rem;
+  color: #333;
 }
 
-.citation-publisher {
-  text-transform: capitalize;
+.citation-details {
+  font-size: 0.9rem;
+  color: #555;
 }
 
 .citation-description {
-  color: var(--gray);
+  margin-top: 0.5rem;
+  color: #666;
+  line-height: 1.4;
 }
 
-.citation-buttons {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
+.show-bibtex {
+  align-self: flex-start;
+  margin-top: 0.5rem;
 }
 
-.citation-buttons .button {
-  margin: 0;
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
-.citation-text > .tags {
-  display: inline-flex;
-  justify-content: flex-start;
-  margin: 0;
+.modal-content {
+  background: #fff;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 600px;
 }
 
-@container (max-width: 800px) {
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: black;
+}
+
+.copy-bibtex {
+  margin-top: 10px;
+  padding: 5px 10px;
+  border-radius: 999px;
+  background: var(--secondary, #ADE4F6);
+  color: var(--text, #000);
+  border: none;
+  cursor: pointer;
+}
+
+.copy-bibtex:hover {
+  background: var(--light-gray, #9BD2E8);
+}
+
+@media (max-width: 600px) {
   .citation {
     flex-direction: column;
   }
   .citation-image {
-    width: unset;
+    width: 100%;
     height: 180px;
   }
 }

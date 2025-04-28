@@ -251,6 +251,10 @@
   
 
   
+    <link href="/_styles/project.css" rel="stylesheet">
+  
+
+  
     <link href="/_styles/quote.css" rel="stylesheet">
   
 
@@ -372,7 +376,7 @@
       
     
       
-        <a href="/projects/" data-tooltip="Software, datasets, and more">
+        <a href="/projects/" data-tooltip="Projects and funding">
           Projects
         </a>
       
@@ -567,20 +571,89 @@
     
     <section class="member-section">
       <h2>Recent Publications</h2>
-      <ul class="pub-list">
+<div class="citation citation-container">
+    
+    <a href="https://ieeexplore.ieee.org/abstract/document/7442307" class="citation-image" aria-label="Network adaptive textured mesh generation for collaborative 3d tele-immersion">
+    <img src="/images/publications/1-network-adaptive-mesh.png" alt="Network adaptive textured mesh generation for collaborative 3d tele-immersion" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+    </a>
+    
+
+    <div class="citation-text">
         
-        <li>
-          <a href="https://openaccess.thecvf.com/content/WACV2025W/ImageQuality/html/Mubashshira_TE-NeRF_Triplane-Enhanced_Neural_Radiance_Field_for_Artifact-Free_Human_Rendering_WACVW_2025_paper.html">TE-NeRF: Triplane-Enhanced Neural Radiance Field for Artifact-Free Human Rendering</a><br>
-          <small>Proceedings of the Winter Conference on Applications of Computer Vision (2025)</small>
-        </li>
         
-      </ul>
-      
+
+        <a href="https://ieeexplore.ieee.org/abstract/document/7442307" class="citation-title">
+            Network adaptive textured mesh generation for collaborative 3d tele-immersion
+        </a>
+
+        <div class="citation-authors" tabindex="0">
+            Kevin Desai, Kanchan Bahirat, Suraj Raghuraman, Balakrishnan Prabhakaran
+
+        </div>
+
+        <div class="citation-details">
+    <span class="citation-publisher">2015 IEEE International Symposium on Multimedia (ISM)</span>
+             · 
+            <span class="citation-date">14 Dec 2015</span>
+             · 
+            <span class="citation-id">DOI: 10.1109/ISM.2015.111</span>
+        </div>
+
+        
+        
+
+        
+
+        
+        <button class="show-bibtex" data-bibtex="@inproceedings{desai2015network, organization={IEEE}, year={2015}, pages={107--112}, booktitle={2015 IEEE International Symposium on Multimedia(ISM)}, author={Desai,Kevin and Bahirat,Kanchan and Raghuraman,Suraj and Prabhakaran,Balakrishnan}, title={Network adaptive textured mesh generation for collaborative 3d tele-immersion}}">
+            BibTeX
+        </button>
+        
+
+        
+        
+    </div>
+</div>
+
     </section>
     
 
   </div>
 </div>
+
+<!-- ==== Global BibTeX Modal ==== -->
+<div id="globalBibtexModal" class="modal">
+  <div class="modal-content">
+    <span class="close">×</span>
+    <pre id="globalBibtexContent"></pre>
+    <button class="copy-bibtex" data-target="globalBibtexContent">Copy</button>
+  </div>
+</div>
+
+<!-- ==== BibTeX Modal JS ==== -->
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const modal   = document.getElementById("globalBibtexModal");
+    const content = document.getElementById("globalBibtexContent");
+
+    document.body.addEventListener("click", e => {
+      // Open modal
+      if (e.target.matches(".show-bibtex")) {
+        content.textContent = e.target.getAttribute("data-bibtex");
+        modal.style.display  = "block";
+      }
+      // Close modal
+      if (e.target.matches(".close") || e.target === modal) {
+        modal.style.display = "none";
+      }
+      // Copy to clipboard
+      if (e.target.matches(".copy-bibtex")) {
+        const tgt = document.getElementById(e.target.dataset.target);
+        navigator.clipboard.writeText(tgt.textContent);
+      }
+    });
+  });
+</script>
   </section>
 
 
