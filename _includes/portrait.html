@@ -1,57 +1,79 @@
-{% if include.lookup %}
-  {% assign member = site.members 
-    | where_exp: "member", "member.slug == include.lookup"
-    | first
-  %}
-{% else %}
-  {% assign member = include %}
-{% endif %}
+{%- comment -%}
+portrait.html
+Displays a member portrait:
+- PI, postdocs, grad students, staff link to their internal profile.
+- Undergrads with a top-level `link:` go out to that URL.
+- Otherwise, no link (wrapped in a <div>).
+    {%- endcomment -%}
 
-{% assign type = site.data.types[member.role] %}
-
-<div class="portrait-wrapper">
-  <a
-    {% if page.slug != member.slug %}
-      href="{{ member.url | relative_url | uri_escape }}"
-    {% endif %}
-    class="portrait"
-    data-style="{{ include.style }}"
-    aria-label="{{ member.name | default: "member link" | regex_strip }}"
-  >
-    {% if type %}
-      {% include icon.html icon=type.icon %}
+    {% if include.lookup %}
+    {% assign member = site.members | where: "slug", include.lookup | first %}
+    {% else %}
+    {% assign member = include %}
     {% endif %}
 
-    <img
-      src="{{ member.image | relative_url | uri_escape }}"
-      class="portrait-image"
-      alt="member portrait"
-      loading="lazy"
-      {% include fallback.html %}
-    >
+    {% assign type = site.data.types[member.role] %}
 
-    {% if member.name %}
-    <span class="portrait-name" style="font-size: 1.25rem;">
-      {{ member.name }}
-    </span>
-    {% endif %}
+    <div class="portrait-wrapper">
+        {%- comment -%} choose wrapper tag and href {%- endcomment -%}
+        {% if member.role != "undergrad" %}
+        {% assign tag = "a" %}
+        {% assign href = member.url | relative_url %}
+        {% assign extra_attrs = "" %}
+        {% elsif member.link %}
+        {% assign tag = "a" %}
+        {% assign href = member.link %}
+        {% assign extra_attrs = ' target="_blank" rel="noopener" ' %}
+        {% else %}
+        {% assign tag = "div" %}
+        {% assign href = nil %}
+        {% assign extra_attrs = "" %}
+        {% endif %}
 
-    {% if member.description or type %}
-      <span class="portrait-description">
+        <{{ tag }}
+        class="portrait"
+        {% if href %} href="{{ href }}"{{ extra_attrs }}{% endif %}
+        data-style="{{ include.style }}"
+        aria-label="{{ member.name | escape }}"
+        >
+        {% if type %}
+        {% include icon.html icon=type.icon %}
+        {% endif %}
+
+        <img
+                src="{{ member.image | relative_url }}"
+                class="portrait-image"
+                alt="{{ member.name }} portrait"
+                loading="lazy"
+                {% include fallback.html %}
+        >
+
+        {% if member.name %}
+        <span class="portrait-name">{{ member.name }}</span>
+        {% endif %}
+
+        {% if member.description or type.description %}
+        <span class="portrait-description">
         {{ member.description | default: type.description }}
       </span>
-    {% endif %}
+        {% endif %}
 
-    {% if member.graduate %}
-    <span class="portrait-graduate">
-          <strong>Graduate: </strong>{{ member.graduate }}
+        {% if member.graduate %}
+        <span class="portrait-graduate">
+        <strong>Graduate:</strong> {{ member.graduate }}
+      </span>
+        {% endif %}
+
+        {% if member.affiliation %}
+        {% if member.role == "pi" %}
+        <span class="portrait-affiliation">
+          <strong>Current position:</strong> {{ member.affiliation }}
         </span>
-    {% endif %}
-
-    {% if member.affiliation %}
-    <span class="portrait-affiliation">
-      <strong>Current position: </strong> {{ member.affiliation }}
-    </span>
-    {% endif %}
-  </a>
+        {% else %}
+        <span class="portrait-affiliation">
+          <strong>Last known position:</strong> {{ member.affiliation }}
+        </span>
+        {% endif %}
+        {% endif %}
+    </{{ tag }}>
 </div>

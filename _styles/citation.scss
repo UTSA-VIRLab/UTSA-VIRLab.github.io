@@ -4,26 +4,39 @@
 $thumb-size: 180px;
 $wrap: 800px;
 
+// Add a little bottom margin when shown inside project pages
 .project-detail .citation-container {
   margin-bottom: 1.5rem;
 }
+
 .citation {
   display: flex;
-  flex-direction: row;
   background: var(--background);
   border-radius: var(--rounded);
   box-shadow: var(--shadow);
   overflow: hidden;
 }
+
+// FIXED SQUARE BOX: both width & height = $thumb-size
+$thumb-size: 180px;
+
+
 .citation-image {
   flex-shrink: 0;
-  width: 180px;
+  width:  $thumb-size;
+  height: $thumb-size;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
 }
+
 .citation-image img {
-  width: 100%;
-  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
   object-fit: contain;
 }
+
 .citation-text {
   padding: 20px;
   display: flex;
@@ -31,28 +44,33 @@ $wrap: 800px;
   gap: 10px;
   text-align: left;
 }
+
 .citation-title {
   font-weight: var(--semi-bold);
 }
+
 .citation-authors {
   font-size: .95rem;
   color: #333;
 }
+
 .citation-details {
   font-size: .9rem;
   color: #555;
 }
+
 .citation-description {
   margin-top: .5rem;
   color: #666;
   line-height: 1.4;
 }
+
 .show-bibtex {
   align-self: flex-start;
   margin-top: .5rem;
 }
 
-// — Global BibTeX modal styles —
+// — Global BibTeX modal styles (unchanged) —
 .modal {
   display: none;
   position: fixed;
@@ -93,13 +111,13 @@ $wrap: 800px;
   background: var(--light-gray, #9BD2E8);
 }
 
-// — Responsive —
+// — Responsive: stack on narrow screens —
 @media (max-width: 600px) {
   .citation {
     flex-direction: column;
   }
   .citation-image {
     width: 100%;
-    height: 180px;
+    height: $thumb-size;
   }
 }

@@ -1,9 +1,16 @@
+- image: images/slider/lab-location.jpg
+  caption: "VIRLab at San Pedro I"
 - image: images/slider/background.jpg
-  caption: "Lab"
+  caption: "VIRLab"
 - image: images/slider/group.jpeg
-  caption: "CVPR 2024"
-- image: images/slider/background.jpg
-  caption: "Lab"
-- image: images/slider/group.jpeg
-  caption: "CVPR 2024"
-
+  caption: "Representing VIRLab (Riaz, Mushfiq, Sadia, me, Ayda) at CVPR 2024 in Seattle presenting Mushfiq's poster"
+- image: images/slider/cs-picnic-25.jpg
+  caption: "CS Grad picnic 2025 at Raymond Russell Park"
+- image: images/slider/om-cvpr-22.jpg
+  caption: "Omar Medjaouri presenting his paper at the CVPR 2022 workshop"
+- image: images/slider/hrstan-paper.jpg
+  caption: "Our paper HR-STAN that received the Best Paper Award at the CVPR 2022 Precognition Workshop"
+- image: images/slider/kp-cvpr-22.jpg
+  caption: "Kebin Peng presenting his paper TMVNet at the CVPR 2022 PBVS workshop"
+- image: images/slider/cvpr-2024.jpg
+  caption: "Meeting old PhD colleagues from UTD-Prabha-Guo lab at CVPR 2024"

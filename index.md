@@ -16,7 +16,6 @@ The lab is well-equipped with state-of-the-art hardware and software, including 
 
 Several of our ongoing research initiatives are generously funded/supported by the US National Science Foundation (NSF). A detailed list of the research projects can be found [here](https://utsa-virlab.github.io/projects/), while a detailed list of related publications can be found [here](https://utsa-virlab.github.io/research/).
 
-<link rel="stylesheet" href="{{ '/home.css' | relative_url }}">
 
 <div class="slideshow-container">
   {% for s in site.data.slider %}

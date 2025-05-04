@@ -1,4 +1,5 @@
-- id: 'DOI: 10.1109/ISM.2015.111'
+- id: 'desai2015network'
+  doi: '10.1109/ISM.2015.111'
   title: Network adaptive textured mesh generation for collaborative 3d tele-immersion
   project:
   authors:
@@ -21,7 +22,8 @@
   author={Desai,Kevin and Bahirat,Kanchan and Raghuraman,Suraj and Prabhakaran,Balakrishnan},
   title={Network adaptive textured mesh generation for collaborative 3d tele-immersion}}'
 
-- id: 'DOI: 10.1145/2910017.2910612'
+- id: 'desai2016augmented'
+  doi: '10.1145/2910017.2910612'
   title: Augmented reality-based exergames for rehabilitation
   project:
   authors:
@@ -46,7 +48,8 @@
   title={Augmented reality-based exergames for rehabilitation}}'
 
 
-- id: 'DOI: 10.1109/BigMM.2017.62'
+- id: 'desai2017experiences'
+  doi: '10.1109/BigMM.2017.62'
   title: Experiences with multi-modal collaborative virtual laboratory (mmcvl)
   project:
   authors:
@@ -73,7 +76,8 @@
   author={Desai,Kevin and Belmonte,Uriel Haile Hernndez and Jin,Rong and Prabhakaran,Balakrishnan and Diehl,Paul and Ramirez,Victor Ayala and Johnson,Vinu and Gans,Murry},
   title={Experiences with multi-modal collaborative virtual laboratory(mmcvl)}}'
   
-- id: 'DOI: 10.1109/ICME.2017.8019470'
+- id: 'desai2017learning'
+  doi: '10.1109/ICME.2017.8019470'
   title: Learning-based objective evaluation of 3D human open meshes
   project:
   authors:
@@ -95,7 +99,8 @@
   author={Desai,Kevin and Bahirat,Kanchan and Prabhakaran,Balakrishnan},
   title={Learning-based objective evaluation of 3D human open meshes}}'
   
-- id: 'DOI: 10.1109/ISM.2017.27'
+- id: 'desai2017qoe'
+  doi: '10.1109/ISM.2017.27'
   title: QoE studies on interactive 3D tele-immersion
   project:
   authors:
@@ -117,7 +122,8 @@
   booktitle={2017 IEEE international symposium on multimedia(ISM)},
   author={Desai,Kevin and Raghuraman,Suraj and Jin,Rong and Prabhakaran,Balakrishnan},title={QoE studies on interactive 3D tele-immersion}}'
   
-- id: 'DOI: 10.1145/3204949.3204969'
+- id: 'desai2018skeleton'
+  doi: '10.1145/3204949.3204969'
   title: Skeleton-based continuous extrinsic calibration of multiple RGB-D kinect cameras
   project:
   authors:
@@ -138,7 +144,8 @@
   author={Desai,Kevin and Prabhakaran,Balakrishnan and Raghuraman,Suraj},
   title={Skeleton-based continuous extrinsic calibration of multiple RGB-D kinect cameras}}'
   
-- id: 'DOI: 10.1145/3204949.3204958'
+- id: 'desai2018combining'
+  doi: '10.1145/3204949.3204958'
   title: Combining skeletal poses for 3D human model generation using multiple Kinects
   project:
   authors:
@@ -159,7 +166,8 @@
   author={Desai,Kevin and Prabhakaran,Balakrishnan and Raghuraman,Suraj},
   title={Combining skeletal poses for 3D human model generation using multiple Kinects}}'
   
-- id: 'DOI: 10.1145/3343031.3351165'
+- id: 'bahirat2019using'
+  doi: '10.1145/3343031.3351165'
   title: Using Mr. MAPP for lower limb phantom pain management
   project:
   authors:
@@ -184,7 +192,8 @@
   author={Bahirat,Kanchan and Chung,Yu-Yen and Annaswamy,Thiru and Raval,Gargi and Desai,Kevin and Prabhakaran,Balakrishnan and Riegler,Michael},
   title={Using Mr. MAPP for lower limb phantom pain management}}'
   
-- id: 'DOI: 10.1080/17483107.2021.1913518'
+- id: 'desai2021personalized'
+  doi: '10.1080/17483107.2021.1913518'
   title: 'Personalized 3D exergames for in-home rehabilitation after stroke: a pilot study'
   project:
   authors:
@@ -207,7 +216,8 @@
   author={Desai,Kevin and Prabhakaran,Balakrishnan and Ifejika,Nneka and Annaswamy,Thiru M},
   title={Personalized 3D exergames for in-home rehabilitation after stroke: a pilot study}}'
   
-- id: 'DOI: 10.1109/SMC52423.2021.9659223'
+- id: 'bendre2021show'
+  doi: '10.1109/SMC52423.2021.9659223'
   title: Show why the answer is correct! towards explainable ai using compositional temporal attention
   project:
   authors:
@@ -229,7 +239,8 @@
   author={Bendre,Nihar and Desai,Kevin and Najafirad,Peyman},
   title={Show why the answer is correct! towards explainable ai using compositional temporal attention}}'
   
-- id: 'DOI: 10.1109/ICIP42928.2021.9506108'
+- id: 'bendre2021generalized'
+  doi: '10.1109/ICIP42928.2021.9506108'
   title: Generalized zero-shot learning using multimodal variational auto-encoder with semantic concepts
   project:
   authors:
@@ -251,7 +262,8 @@
   author={Bendre,Nihar and Desai,Kevin and Najafirad,Peyman},
   title={Generalized zero-shot learning using multimodal variational auto-encoder with semantic concepts}}'
   
-- id: 'DOI: 10.1109/ISMAR52148.2021.00017'
+- id: 'islam2021cybersickness'
+  doi: '10.1109/ISMAR52148.2021.00017'
   title: "Cybersickness prediction from integrated hmd\u2019s sensors: A multimodal deep fusion approach using eye-tracking and head-tracking data"
   project:
   authors:
@@ -264,7 +276,7 @@
   orcid: 0000-0002-4655-3773
   plugin: orcid.py
   file: orcid.yaml
-  image: images/publications/11-cs-pred-rifatul.png
+  image: images/publications/12-cs-pred-rifatul.png
   bibtex: "@inproceedings{islam2021cybersickness,
   organization={IEEE},
   year={2021},
@@ -273,7 +285,8 @@
   author={Islam,Rifatul and Desai,Kevin and Quarles,John},
   title={Cybersickness prediction from integrated hmd''s sensors: A multimodal deep fusion approach using eye-tracking and head-tracking data}}"
   
-- id: 'DOI: 10.23919/WAC50355.2021.9559516'
+- id: 'guzman2021multimodal'
+  doi: '10.23919/WAC50355.2021.9559516'
   title: Multimodal data streaming using visual IoTs and wearables for telerehabilitation and teletreatment
   project:
   authors:
@@ -297,7 +310,8 @@
   author={Guzman,Herbert and Joshi,Reenam and Guzman,Victor and Kilger,Max and Desai,Kevin},
   title={Multimodal data streaming using visual IoTs and wearables for telerehabilitation and teletreatment}}'
   
-- id: 'DOI: 10.1109/CVPRW56347.2022.00286'
+- id: 'medjaouri2022hr'
+  doi: '10.1109/CVPRW56347.2022.00286'
   title: 'Hr-stan: High-resolution spatio-temporal attention network for 3d human motion prediction'
   project:
   authors:
@@ -317,7 +331,8 @@
   author={Medjaouri,Omar and Desai,Kevin},
   title={Hr-stan: High-resolution spatio-temporal attention network for 3d human motion prediction}}'
   
-- id: 'DOI: 10.1109/CVPRW56347.2022.00036'
+- id: 'peng2022tmvnet'
+  doi: '10.1109/CVPRW56347.2022.00036'
   title: 'Tmvnet: Using transformers for multi-view voxel-based 3d reconstruction'
   project:
   authors:
@@ -339,7 +354,8 @@
   author={Peng,Kebin and Islam,Rifatul and Quarles,John and Desai,Kevin},
   title={Tmvnet: Using transformers for multi-view voxel-based 3d reconstruction}}'
   
-- id: 'DOI: 10.5220/0010879800003124'
+- id: 'peng2022brdf'
+  doi: '10.5220/0010879800003124'
   title: BRDF-based Irradiance Image Estimation to Remove Radiometric Differences for Stereo Matching
   project:
   authors:
@@ -360,7 +376,8 @@
   author={Peng,Kebin and Quarles,John and Desai,Kevin},
   title={BRDF-based Irradiance Image Estimation to Remove Radiometric Differences for Stereo Matching.}}'
   
-- id: 'DOI: 10.1145/3532106.3533486'
+- id: 'khargonkar2022virtepex'
+  doi: '10.1145/3532106.3533486'
   title: 'Virtepex: virtual remote tele-physical examination system'
   project:
   authors:
@@ -382,7 +399,8 @@
   author={Khargonkar,Ninad and Desai,Kevin and Prabhakaran,Balakrishnan and Annaswamy,Thiru},
   title={Virtepex: virtual remote tele-physical examination system}}'
   
-- id: 'DOI: 10.1109/ISMAR55827.2022.00026'
+- id: 'islam2022towards'
+  doi: '10.1109/ISMAR55827.2022.00026'
   title: Towards forecasting the onset of cybersickness by fusing physiological, head-tracking and eye-tracking with multimodal deep fusion network
   project:
   authors:
@@ -404,7 +422,8 @@
   author={Islam,Rifatul and Desai,Kevin and Quarles,John},
   title={Towards forecasting the onset of cybersickness by fusing physiological,head-tracking and eye-tracking with multimodal deep fusion network}}'
   
-- id: 'DOI: 10.1109/ICPR56361.2022.9956096'
+- id: 'peng2022pmpnet'
+  doi: '10.1109/ICPR56361.2022.9956096'
   title: 'PMPNet: Pixel Movement Prediction Network for Monocular Depth Estimation in Dynamic Scenes'
   project:
   authors:
@@ -426,7 +445,8 @@
   author={Peng,Kebin and Quarles,John and Desai,Kevin},
   title={PMPNet: Pixel Movement Prediction Network for Monocular Depth Estimation in Dynamic Scenes}}'
   
-- id: 'DOI: 10.1007/s41252-022-00309-y'
+- id: 'neely2023case'
+  doi: '10.1007/s41252-022-00309-y'
   title: The case for integrated advanced technology in applied behavior analysis
   project:
     - seed-great-sleep
@@ -457,7 +477,8 @@
   author={Neely,Leslie and Carnett,Amarie and Quarles,John and MacNaul,Hannah and Park,Se-Woong and Oyama,Sakiko and Chen,Guenevere and Desai,Kevin and Najafirad,Peyman},
   title={The case for integrated advanced technology in applied behavior analysis}}'
   
-- id: 'DOI: 10.3390/s23020929'
+- id: 'young2023can'
+  doi: '10.3390/s23020929'
   title: Can Hierarchical Transformers Learn Facial Geometry?
   project:
   authors:
@@ -484,7 +505,8 @@
   author={Young,Paul and Ebadi,Nima and Das,Arun and Bethany,Mazal and Desai,Kevin and Najafirad,Peyman},
   title={Can Hierarchical Transformers Learn Facial Geometry?}}'
   
-- id: 'DOI: 10.48550/arXiv.2302.05795'
+- id: 'desai2023assessment'
+  doi: '10.48550/arXiv.2302.05795'
   title: Assessment HTN (A-HTN) for Automated Task Performance Assessment in 3D Serious Games
   project:
     - nsf-crii
@@ -505,7 +527,8 @@
   author={Desai,Kevin and Ashtiani,Omeed and Prabhakaran,Balakrishnan},
   title={Assessment HTN(A-HTN)for Automated Task Performance Assessment in 3D Serious Games}}'
   
-- id: 'DOI: 10.1109/ICIT58056.2023.10225860'
+- id: 'shang2023study'
+  doi: '10.1109/ICIT58056.2023.10225860'
   title: A Study of Human Fitness Pose Classification Using Artificial Neural Networks
   project:
     - nsf-crii
@@ -528,7 +551,8 @@
   author={Shang,Sijie and Jin,Rong and Desai,Kevin},
   title={A Study of Human Fitness Pose Classification Using Artificial Neural Networks}}'
   
-- id: 'DOI: 10.1109/TVCG.2024.3372122'
+- id: 'tasnim2024investigating'
+  doi: '10.1109/TVCG.2024.3372122'
   title: Investigating personalization techniques for improved cybersickness prediction in virtual reality environments
   project:
     - nsf-medium-motion
@@ -551,7 +575,8 @@
   author={Tasnim,Umama and Islam,Rifatul and Desai,Kevin and Quarles,John},
   title={Investigating personalization techniques for improved cybersickness prediction in virtual reality environments}}'
   
-- id: 'DOI: 10.1109/IPDPSW63119.2024.00117'
+- id: 'mahmud2024converting'
+  doi: '10.1109/IPDPSW63119.2024.00117'
   title: A converting autoencoder toward low-latency and energy-efficient DNN inference at the edge
   project:
   authors:
@@ -575,7 +600,8 @@
   author={Mahmud,Hasanul and Kang,Peng and Desai,Kevin and Lama,Palden and Prasad,Sushil K},
   title={A converting autoencoder toward low-latency and energy-efficient DNN inference at the edge}}'
   
-- id: 'DOI: 10.48550/arXiv.2403.17893'
+- id: 'azam2024survey'
+  doi: '10.48550/arXiv.2403.17893'
   title: A survey on 3d egocentric human pose estimation
   project:
     - nsf-small-safety
@@ -597,7 +623,8 @@
   author={Azam,Md Mushfiqur and Desai,Kevin},
   title={A survey on 3d egocentric human pose estimation}}'
   
-- id: 'DOI: 10.48550/arXiv.2404.13770'
+- id: 'mahmud2024encodenet'
+  doi: '10.48550/arXiv.2404.13770'
   title: 'EncodeNet: A Framework for Boosting DNN Accuracy with Entropy-Driven Generalized Converting Autoencoder'
   project:
   authors:
@@ -620,7 +647,8 @@
   author={Mahmud,Hasanul and Lama,Palden and Desai,Kevin and Prasad,Sushil K},
   title={EncodeNet: A Framework for Boosting DNN Accuracy with Entropy-Driven Generalized Converting Autoencoder}}'
   
-- id: 'DOI: 10.1109/Cloud-Summit61220.2024.00028'
+- id: 'mahmud2024cae'
+  doi: '10.1109/Cloud-Summit61220.2024.00028'
   title: 'CAE-Net: Enhanced Converting Autoencoder Based Framework for Low-Latency Energy-Efficient DNN with SLO-Constraints'
   project:
   authors:
@@ -644,7 +672,8 @@
   author={Mahmud,Hasanul and Kang,Peng and Lama,Palden and Desai,Kevin and Prasad,Sushil K},
   title={CAE-Net: Enhanced Converting Autoencoder Based Framework for Low-Latency Energy-Efficient DNN with SLO-Constraints}}'
   
-- id: 'DOI: 10.1109/ISMAR62088.2024.00121'
+- id: 'setu2024mazed'
+  doi: '10.1109/ISMAR62088.2024.00121'
   title: 'Mazed and Confused: A Dataset of Cybersickness, Working Memory, Mental Load, Physical Load, and Attention During a Real Walking Task in VR'
   project:
     - nsf-medium-motion
@@ -673,7 +702,8 @@
   author={Setu,Jyotirmay Nag and Le,Joshua M and Kundu,Ripan Kumar and Giesbrecht,Barry and H{"o}llerer,Tobias and Hoque,Khaza Anuarul and Desai,Kevin and Quarles,John},
   title={Mazed and Confused: A Dataset of Cybersickness,Working Memory,Mental Load,Physical Load,and Attention During a Real Walking Task in VR}}'
   
-- id: 'DOI: 10.2196/57443'
+- id: 'wu2025comparing'
+  doi: '10.2196/57443'
   title: 'Comparing In-Person, Standard Telehealth, and Remote Musculoskeletal Examination With a Novel Augmented Reality Exercise Game System: Pilot Cross-Sectional Comparison Study'
   project:
   authors:
@@ -702,7 +732,8 @@
   author={Wu,Richard and Chakka,Keerthana and Belko,Sara and Khargonkar,Ninad and Desai,Kevin and Prabhakaran,Balakrishnan and Annaswamy,Thiru and others},
   title={Comparing In-Person,Standard Telehealth,and Remote Musculoskeletal Examination With a Novel Augmented Reality Exercise Game System: Pilot Cross-Sectional Comparison Study}}'
   
-- id: ""
+- id: 'mubashshira2025te'
+  doi: ''
   title: 'TE-NeRF: Triplane-Enhanced Neural Radiance Field for Artifact-Free Human Rendering'
   project:
   authors:
@@ -722,7 +753,8 @@
   author={Mubashshira,Sadia and Desai,Kevin},
   title={TE-NeRF: Triplane-Enhanced Neural Radiance Field for Artifact-Free Human Rendering}}'
   
-- id: ""
+- id: 'eghbalian2025applying'
+  doi: ''
   title: Applying Computer Vision to Analyze Self-Injurious Behaviors in Children with Autism Spectrum Disorder
   project:
     - nsf-crii
@@ -746,7 +778,8 @@
   author={Eghbalian,Ayda and Azam,Md Mushfiqur and Holloway,Katie and Neely,Leslie and Desai,Kevin},
   title={Applying Computer Vision to Analyze Self-Injurious Behaviors in Children with Autism Spectrum Disorder}}'
   
-- id: 'DOI: 10.1109/TVCG.2025.3549850'
+- id: 'setu2025predicting'
+  doi: '10.1109/TVCG.2025.3549850'
   title: Predicting and Explaining Cognitive Load, Attention, and Working Memory in Virtual Multitasking
   project:
     - nsf-medium-motion

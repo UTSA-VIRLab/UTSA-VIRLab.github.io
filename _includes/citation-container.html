@@ -58,8 +58,8 @@
       {{- include.citation.date | default: "[no date info]" | date: "%d %b %Y" -}}
     </span>
             &nbsp;·&nbsp;
-            <span class="citation-id">
-      {{- include.citation.id | default: "[No DOI info]" -}}
+            <span class="citation-doi">
+      {{- include.citation.doi | default: "[No DOI info]" | prepend: "DOI: " -}}
     </span>
         </div>
 

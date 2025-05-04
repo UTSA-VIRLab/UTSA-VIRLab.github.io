@@ -1,12 +1,25 @@
 <div class="card" data-style="{{ include.style }}">
   <div class="card-text left">
     {% if include.title %}
+    {% if include.description %}
     <a
             href="/projects/project.html?id={{ include.id | url_encode }}"
             class="card-title"
     >
       {{ include.title }}
     </a>
+    {% elsif include.link %}
+    <a
+            href="{{ include.link }}"
+            class="card-title"
+            target="_blank"
+            rel="noopener"
+    >
+      {{ include.title }}
+    </a>
+    {% else %}
+    <span class="card-title">{{ include.title }}</span>
+    {% endif %}
     {% endif %}
 
     {% if include.agency %}

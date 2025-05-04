@@ -4,8 +4,6 @@ image: images/team/male.jpg
 role: undergrad
 graduate: "Fall 2024"
 group: undergrad
-
-links:
-    linkedin: crislopezlimon
+link: https://www.linkedin.com/in/crislopezlimon/
 ---
 

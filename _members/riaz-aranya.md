@@ -4,7 +4,7 @@ image: images/team/riaz.jpeg
 role: phd
 group: current
 about: |
-  I’m currently a doctoral student in Computer Science at the University of Texas at San Antonio (UTSA). Before starting my Ph.D., I worked as a software engineer at several software companies based in Dhaka, Bangladesh, where I gained hands-on experience in full-stack development and real-world software deployment.
+  I’m currently a doctoral student in Computer Science at the University of Texas at San Antonio (UTSA). Before starting my Ph.D., I worked as a software engineer at several software companies based in Dhaka, Bangladesh, where I gained hands-on experience in full-stack development and real-world software engineering.
 
   My research interests lie in image segmentation and generative AI, with a particular focus on applications in the medical domain. I’m passionate about leveraging cutting-edge deep learning techniques to solve challenging problems in healthcare and biomedical imaging. My current work involves developing robust and explainable segmentation models that can assist in medical diagnosis and treatment planning.
 research:
