@@ -6,51 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="9ecb7ce6-4ef3-438c-afaa-49c3fc60ef4f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_data/backup_citations.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/_data/backup_citations.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_data/citations.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/_data/citations.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_data/slider.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/_data/slider.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_includes/card.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/card.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_includes/citation-container.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/citation-container.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_includes/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/footer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_includes/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_includes/portrait.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/portrait.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_members/riaz-aranya.md" beforeDir="false" afterPath="$PROJECT_DIR$/_members/riaz-aranya.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_members/undergrade/cassandra-gomez.md" beforeDir="false" afterPath="$PROJECT_DIR$/_members/undergrade/cassandra-gomez.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_members/undergrade/cristian-lopez.md" beforeDir="false" afterPath="$PROJECT_DIR$/_members/undergrade/cristian-lopez.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/2019/01/07/example-post-1.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/2019/01/07/example-post-1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/2021/09/30/example-post-2.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/2021/09/30/example-post-2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/2023/02/23/example-post-3.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/2023/02/23/example-post-3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/404.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/_styles/card.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/_site/_styles/card.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/_styles/citation.css" beforeDir="false" afterPath="$PROJECT_DIR$/_site/_styles/citation.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/_styles/citation.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/_site/_styles/citation.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/feed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/_site/feed.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/images/logo copy.png" beforeDir="false" afterPath="$PROJECT_DIR$/_site/images/logo copy.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/images/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/_site/images/logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/members/ayda-eghbalian.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/members/ayda-eghbalian.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/members/kebin-peng.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/members/kebin-peng.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/members/kevin-desai.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/members/kevin-desai.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/members/mushfiqur-rahman.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/members/mushfiqur-rahman.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/members/nazanin-amini.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/members/nazanin-amini.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/members/omar-medjaouri.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/members/omar-medjaouri.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/members/riaz-aranya.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/members/riaz-aranya.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/members/sadia-mubashshira.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/members/sadia-mubashshira.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/members/undergrade/cassandra-gomez.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/members/undergrade/cassandra-gomez.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/members/undergrade/cristian-lopez.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/members/undergrade/cristian-lopez.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/projects/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/projects/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/projects/project.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/projects/project.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/research/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/research/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/sitemap.xml" beforeDir="false" afterPath="$PROJECT_DIR$/_site/sitemap.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/sponsors/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/sponsors/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/team/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/team/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/testbed.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/testbed.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_styles/card.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_styles/card.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_styles/citation.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_styles/citation.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/logo copy.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/logo copy.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/index.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/project.html" beforeDir="false" afterPath="$PROJECT_DIR$/projects/project.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +38,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/aranya/Desktop/UTSA-VIRLab.github.io/images",
+    "last_opened_file_path": "/Users/aranya/Desktop/UTSA-VIRLab.github.io/images/team/undergrad",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -87,6 +49,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/images/team/undergrad" />
       <recent name="$PROJECT_DIR$/images" />
       <recent name="$PROJECT_DIR$/_members/undergrade" />
       <recent name="$PROJECT_DIR$/images/slider" />
@@ -187,7 +150,8 @@
       <workItem from="1740586961040" duration="5447000" />
       <workItem from="1740595126135" duration="41965000" />
       <workItem from="1743101720144" duration="128653000" />
-      <workItem from="1745337596849" duration="128263000" />
+      <workItem from="1745337596849" duration="129145000" />
+      <workItem from="1749666471259" duration="723000" />
     </task>
     <servers />
   </component>
