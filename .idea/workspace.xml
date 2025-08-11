@@ -6,12 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="9ecb7ce6-4ef3-438c-afaa-49c3fc60ef4f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_data/citations.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/_data/citations.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_members/undergrade/cristian-lopez.md" beforeDir="false" afterPath="$PROJECT_DIR$/_members/undergrade/cristian-lopez.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/2019/01/07/example-post-1.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/2019/01/07/example-post-1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/2021/09/30/example-post-2.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/2021/09/30/example-post-2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/2023/02/23/example-post-3.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/2023/02/23/example-post-3.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/feed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/_site/feed.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/members/undergrade/cristian-lopez.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/members/undergrade/cristian-lopez.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/sitemap.xml" beforeDir="false" afterPath="$PROJECT_DIR$/_site/sitemap.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/team/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/team/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/testbed.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/testbed.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -33,20 +32,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/aranya/Desktop/UTSA-VIRLab.github.io/images/team/undergrad",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/aranya/Desktop/UTSA-VIRLab.github.io/images/team/undergrad&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/images/team/undergrad" />
@@ -151,7 +150,9 @@
       <workItem from="1740595126135" duration="41965000" />
       <workItem from="1743101720144" duration="128653000" />
       <workItem from="1745337596849" duration="129145000" />
-      <workItem from="1749666471259" duration="723000" />
+      <workItem from="1749666471259" duration="12330000" />
+      <workItem from="1754710875153" duration="459000" />
+      <workItem from="1754931263730" duration="3758000" />
     </task>
     <servers />
   </component>
