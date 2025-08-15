@@ -1,17 +1,17 @@
 # site properties and page defaults
 title: Vision and Immersive Realities Lab
 subtitle: CS@UTSA
-description: An easy-to-use, flexible website template for labs, with automatic citations, GitHub tag imports, pre-built components, and more.
+description: Vision and Immersive Realities Lab (VIRLab) in the Computer Science Department at the University of Texas at San Antonio
 header: images/background.jpg
 footer: images/background.jpg
 proofer: false
 
 # site social media and other links
 links:
-  email: contact@your-lab.com
-  orcid: 0000-0001-8713-9213
-  google-scholar: ZzaTdlYAAAAJ&hl
-  github: your-lab
+  email: kevin.desai@utsa.edu
+  orcid: 0000-0002-2964-8981
+  google-scholar: ZzaTdlYAAAAJ
+  github: UTSA-VIRLab
   twitter: YourLabHandle
   youtube: YourLabChannel
 
