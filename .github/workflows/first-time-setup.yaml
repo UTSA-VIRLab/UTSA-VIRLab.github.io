@@ -1,5 +1,5 @@
 name: first-time-setup
-run-name: first time setup of repo
+run-name: first-time setup
 
 on:
   # run if user manually requests it
@@ -7,112 +7,90 @@ on:
 
 permissions:
   contents: write
+  pull-requests: write
 
 jobs:
   first-time-setup:
+    # only run on user instance of template, not template itself
+    if: github.repository != 'greenelab/lab-website-template'
     runs-on: ubuntu-latest
-
+    
     steps:
       - name: Debug dump
         uses: crazy-max/ghaction-dump-context@v2
 
-      - name: Create Pages branch
-        uses: peterjgrainger/action-create-branch@v3.0.0
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          branch: "gh-pages"
-
-      - name: Checkout Pages branch
+      # set up gh-pages branch
+      - name: Checkout gh-pages branch
         uses: actions/checkout@v4
         with:
           ref: gh-pages
-
-      - name: SSH debug
-        if: runner.debug == '1'
-        uses: mxschmitt/action-tmate@v3
-
-      # clean slate, as if starting from orphan branch
-      - name: Clear Pages branch
-        run: rm -rf * .github .docker .gitignore
-
-      # prevent GitHub from running Jekyll a second time after build
-      - name: Make .nojekyll file
-        run: touch .nojekyll
-
-      - name: Make placeholder homepage
-        run: printf "Placeholder homepage" > index.html
-
-      - name: Commit changes to Pages branch
+          
+      - name: Clear gh-pages branch
+        run: |
+          git rm -r .
+          git clean -fxd
+          echo "<meta http-equiv=\"refresh\" content=\"0; URL=../\" />" >> index.html
+          echo "" >> .nojekyll
+          
+      - name: Commit empty gh-pages branch
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          branch: gh-pages
-          commit_message: "Clear branch"
+          commit_message: "Clean gh-pages branch"
 
+      # set up main branch
       - name: Checkout main branch
         uses: actions/checkout@v4
-
-      - name: Remove files user doesn't need
+        
+      - name: Clean up template files
         run: |
-          rm -rf \
-            CHANGELOG.md \
-            testbed.md \
-            .github/ISSUE_TEMPLATE \
-            .github/DISCUSSION_TEMPLATE \
-            .github/workflows/versioning.yaml \
-            .github/pull_request_template.md \
+          rm .github/workflows/first-time-setup.yaml
+          rm .github/workflows/versioning.yaml
+          rm .github/FUNDING.yml
+          rm .github/ISSUE_TEMPLATE/*
+          rm .github/PULL_REQUEST_TEMPLATE.md
+          rm .readthedocs.yaml
+          rm CITATION.cff
+          rm CODE_OF_CONDUCT.md
+          rm CONTRIBUTING.md
+          rm SECURITY.md
+          rm .gitignore
+          rm LICENSE
+          rm .editorconfig
+          rm .gitattributes
+          rm .github/workflows/on-schedule.yaml
 
-      - name: Rename files
-        run: |
-          mv -f .github/user_pull_request_template.md .github/pull_request_template.md
+      - name: Get repository name
+        id: repository-name
+        run: echo "name=$(echo '${{ github.repository }}' | cut -d'/' -f2)" >> "$GITHUB_OUTPUT"
 
-      - name: Set vars for personalization
-        run: |
-          user="${{ github.repository_owner }}"
-          description="An engaging 1-3 sentence description of your lab."
-          printf "\nUSER=${user}" >> $GITHUB_ENV
-          printf "\nDESCRIPTION=${description}" >> $GITHUB_ENV
-
-      - name: Personalize readme for user
-        run: |
-          printf "
-          # ${{ env.USER }}'s Website
-
-          Visit **[website url](#)** 🚀
-
-          _Built with [Lab Website Template](https://greene-lab.gitbook.io/lab-website-template-docs)_
-          " > README.md
-
-      - name: Personalize Jekyll config for user
+      - name: Update README.md
         uses: actions/github-script@v7
         with:
           script: |
-            const { readFileSync, writeFileSync } = require("fs");
-            const file = "_config.yaml";
-            const contents = readFileSync(file)
-              .toString()
-              .replace(/(^title: ).*$/m, "$1${{ env.USER }}")
-              .replace(/(^subtitle: ).*$/m, "$1")
-              .replace(/(^description: ).*$/m, "$1${{ env.DESCRIPTION }}")
-              .replace(/(^  email: ).*$/m, "$1contact@${{ env.USER }}.com")
-              .replace(/(^  github: ).*$/m, "$1${{ env.USER }}")
-              .replace(/(^  twitter: ).*$/m, "$1${{ env.USER }}")
-              .replace(/(^  youtube: ).*$/m, "$1${{ env.USER }}");
-            writeFileSync(file, contents);
+            const fs = require("fs");
+            let readme = fs.readFileSync("README.md").toString();
+            readme = readme.replace(/greenelab-template/, "${{ steps.repository-name.outputs.name }}");
+            fs.writeFileSync("README.md", readme);
 
-      - name: Personalize homepage for user
+      - name: Update Jekyll config
         uses: actions/github-script@v7
         with:
           script: |
-            const { readFileSync, writeFileSync } = require("fs");
-            const file = "index.md";
-            let contents = readFileSync(file).toString();
-            const find = /\# Lab Website Template[\s\S]+({% include section\.html)/;
-            const replace = `# ${{ env.USER }}'s Website\n\n${{ env.DESCRIPTION }}\n\n$1`;
-            contents = contents.replace(find, replace);
-            writeFileSync(file, contents);
+            const fs = require("fs");
+            let config = fs.readFileSync("_config.yaml").toString();
+            config = config.replace(/TITLE_FOR_YOUR_WEBSITE/, "${{ steps.repository-name.outputs.name }}");
+            fs.writeFileSync("_config.yaml", config);
 
-      - name: Commit changed files
+      - name: Update index.md
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require("fs");
+            let config = fs.readFileSync("index.md").toString();
+            config = config.replace(/SHORT_DESCRIPTION_OF_YOUR_WEBSITE/, "${{ steps.repository-name.outputs.name }}");
+            fs.writeFileSync("index.md", config);
+
+      - name: Commit template cleanup
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "Setup repo"
+          commit_message: "Initial commit after template cleanup"

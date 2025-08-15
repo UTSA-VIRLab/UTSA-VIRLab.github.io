@@ -4,6 +4,11 @@ run-name: build live site
 on:
   # run when called from another workflow
   workflow_call:
+    inputs:
+      should_update_citations:
+        description: "Whether to run the citation update"
+        type: boolean
+        default: false
 
   # run if user manually requests it
   workflow_dispatch:
@@ -26,7 +31,17 @@ jobs:
       - name: Checkout branch contents
         uses: actions/checkout@v4
 
+      - name: Cache Ruby packages
+        id: cache-ruby
+        uses: actions/cache@v3
+        with:
+          path: vendor/bundle
+          key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-gems-
+
       - name: Install Ruby packages
+        if: steps.cache-ruby.outputs.cache-hit != 'true'
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: "3.1"
@@ -47,6 +62,15 @@ jobs:
       - name: Build live version of site
         run: |
           JEKYLL_ENV=production bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path || '' }}"
+        env:
+          JEKYLL_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        continue-on-error: true
+
+      - name: Report build error
+        if: failure()
+        run: |
+          echo "The Jekyll build failed. Please check the logs for details."
+          exit 1
 
       - name: Commit live site to Pages branch
         uses: JamesIves/github-pages-deploy-action@v4.5.0

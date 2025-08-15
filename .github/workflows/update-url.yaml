@@ -1,11 +1,12 @@
 name: update-url
-run-name: update site after url change
+run-name: update url in readme
 
 on:
   # run when called from another workflow
   workflow_call:
     outputs:
       changed:
+        description: "true if the url in the readme was changed"
         value: ${{ jobs.update-url.outputs.changed }}
 
   # run if user manually requests it
@@ -17,11 +18,13 @@ permissions:
 jobs:
   update-url:
     runs-on: ubuntu-latest
+    outputs:
+      changed: ${{ steps.changed.outputs.files_changed }}
 
     steps:
       - name: Debug dump
         uses: crazy-max/ghaction-dump-context@v2
-
+      
       - name: Get Pages url
         id: pages
         uses: actions/configure-pages@v4
@@ -64,6 +67,3 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "Update url"
-
-    outputs:
-      changed: ${{ steps.changed.outputs.files_changed }}

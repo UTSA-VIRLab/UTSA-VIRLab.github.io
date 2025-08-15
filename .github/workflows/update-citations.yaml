@@ -2,15 +2,6 @@ name: update-citations
 run-name: update citations
 
 on:
-  # run when called from another workflow
-  workflow_call:
-    inputs:
-      open-pr:
-        type: boolean
-    outputs:
-      changed:
-        value: ${{ jobs.update-citations.outputs.changed }}
-
   # run if user manually requests it
   workflow_dispatch:
 
@@ -78,23 +69,10 @@ jobs:
       - name: Commit updated citations to branch
         if: |
           github.event.action != 'closed' &&
-          steps.changed.outputs.files_changed == 'true' &&
-          inputs.open-pr != true
+          steps.changed.outputs.files_changed == 'true'
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "Update citations"
-
-      - name: Open pull request with updated citations
-        if: |
-          github.event.action != 'closed' &&
-          steps.changed.outputs.files_changed == 'true' &&
-          inputs.open-pr == true
-        uses: peter-evans/create-pull-request@v6
-        with:
-          branch: citation-update
-          title: Periodic citation update
-          body: |
-            To see a live preview of this PR, close (don't merge) and reopen it.
 
     outputs:
       changed: ${{ steps.changed.outputs.files_changed || false }}

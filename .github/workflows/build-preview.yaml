@@ -30,8 +30,17 @@ jobs:
           repository: ${{ github.event.pull_request.head.repo.full_name }}
           ref: ${{ github.head_ref }}
 
+      - name: Cache Ruby packages
+        id: cache-ruby
+        uses: actions/cache@v3
+        with:
+          path: vendor/bundle
+          key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-gems-
+
       - name: Install Ruby packages
-        if: github.event.action != 'closed'
+        if: github.event.action != 'closed' && steps.cache-ruby.outputs.cache-hit != 'true'
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: "3.1"
@@ -58,7 +67,15 @@ jobs:
           JEKYLL_ENV=production bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path || '' }}/${{ env.PREVIEWS_FOLDER }}/pr-${{ env.pr }}"
         env:
           pr: ${{ steps.pr.outputs.pr }}
+          JEKYLL_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        continue-on-error: true
 
+      - name: Report build error
+        if: failure()
+        run: |
+          echo "The Jekyll build failed. Please check the logs for details."
+          exit 1
+          
       - name: Commit preview to Pages branch
         uses: rossjrw/pr-preview-action@v1.4.7
         with:
