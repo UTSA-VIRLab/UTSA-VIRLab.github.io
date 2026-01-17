@@ -176,6 +176,11 @@
   image: images/photo.jpg
   link: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2153249
   description: "The overall objective of this project is to provide efficient full-body interaction in virtual reality systems that do not use head-mounted displays. This project aims to create accurate and real-time 3D hand and body pose estimation, in the highly significant application area of children with autism. A novel synthetic hand data generation framework will generate 3D hand poses with increased diversity in terms of hand distance from camera, hand size, camera viewpoint, occlusion, background, and skin color. The outcome will be a novel 3D synthetic hand dataset consisting of realistic and kinematically accurate hand models with articulated poses that will advance current and future research endeavors in 3D hand pose estimation research. The project will advance the state-of-the-art in 3D body pose estimation for humans present further away from the camera at room-scale distances. The synthetic dataset, algorithms, and programming libraries will be made publicly available for wide-spread adoption, thereby advancing pose estimation research. This research will have broad societal impact because it will improve the usability and interaction in human centered telehealth applications, initially helping with the applied behavior analysis for children with autism. Existing systems that employ head-mounted displays or wearable sensors for tracking the user's hand and body movements are not suitable for children with autism, and have disadvantages in many other application areas. Therefore, by enabling 3D hand and full-body pose estimation, this project will advance a plethora of 3D immersive applications such as education, virtual STEM laboratories, tele-rehabilitation, tele-operation, military training, entertainment, and communication. The need for real-time, remote and interactive human motion sensing exists now more than ever, considering the increase in virtual activities because of the recent pandemic."
+  news:
+    - date: 2025-07-23
+      title: "UTSA hosts free summer camp combining autism research with augmented reality"
+      link: https://spectrumlocalnews.com/tx/san-antonio/news/2025/07/22/camp-durango-minecraft-study
+      image: images/news/spectrum-autism.png
   tags:
     - research
 

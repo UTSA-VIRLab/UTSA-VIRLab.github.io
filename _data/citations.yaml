@@ -806,4 +806,23 @@
   journal={IEEE Transactions on Visualization and Computer Graphics},
   author={Setu,Jyotirmay Nag and Le,Joshua M and Kundu,Ripan Kumar and Giesbrecht,Barry and H{"o}llerer,Tobias and Hoque,Khaza Anuarul and Desai,Kevin and Quarles,John},
   title={Predicting and Explaining Cognitive Load,Attention,and Working Memory in Virtual Multitasking}}'
+
+- id: 'amir2025tbi'
+  doi: 'https://doi.org/10.1093/jnen/nlaf114'
+  title: Comprehensive benchmarking of deep learning approaches for automated astrocyte segmentation in traumatic brain injury
+  authors:
+    - Amirhossein Bagherian
+    - OFM Riaz Rahman Aranya
+    - Allison Kosub
+    - Marissa Redington
+    - Kevin Desai
+    - Marzieh Memar
+  publisher: Oxford University Press
+  date: '2025-10-27'
+  link: https://academic.oup.com/jnen/advance-article-abstract/doi/10.1093/jnen/nlaf114/8304377
+  orcid: 0000-0002-4655-3773
+  plugin: orcid.py
+  file: orcid.yaml
+  image: images/publications/34-amir-tbi.png
+  bibtex: 'Amirhossein Bagherian, O F M Riaz Rahman Aranya, Allison Kosub, Marissa Redington, Kevin Desai, Marzieh Memar, Comprehensive benchmarking of deep learning approaches for automated astrocyte segmentation in traumatic brain injury, Journal of Neuropathology & Experimental Neurology, 2025;, nlaf114, https://doi.org/10.1093/jnen/nlaf114'
   

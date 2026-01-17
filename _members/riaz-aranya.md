@@ -8,6 +8,7 @@ about: |
 
   My research interests lie in image segmentation and generative AI, with a particular focus on applications in the medical domain. I’m passionate about leveraging cutting-edge deep learning techniques to solve challenging problems in healthcare and biomedical imaging. My current work involves developing robust and explainable segmentation models that can assist in medical diagnosis and treatment planning.
 research:
+  - Vision language model
   - Image segmentation
   - Generative AI
   - Synthetic data
