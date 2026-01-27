@@ -9,6 +9,11 @@
   image: images/photo.jpg
   link: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2506911
   description: "The shift to online and hybrid learning has exposed critical limitations in existing virtual STEM laboratories, particularly their inability to replicate the hands-on, collaborative experiences essential for deep science learning. Traditional labs provide embodied and communicative interactions that are often absent in current online tools, especially in experiments involving delicate, dangerous, or spatially complex procedures. This project will address that gap by developing immersive virtual reality (VR) laboratory environments that feature realistic avatars and tactile feedback, enabling collaborative learning that mirrors the cognitive and social dynamics of physical labs. By advancing access to high-quality science education, the project supports national goals to enhance health, prosperity, and workforce development. Approximately 500 students and 50 teachers will be directly impacted through outreach and implementation efforts with the aim of equipping learners with the skills necessary for future scientific and technical careers and to increase the overall STEM workforce. <br><br>The project will investigate how immersive VR laboratories, enhanced with high-fidelity avatars and vibrotactile interfaces, support collaborative science learning. A key research objective will be to examine how variations in avatar visual realism and tactile interactivity influence conceptual understanding, procedural competence, emotional engagement, and collaboration. The central hypothesis is that increased embodiment and realism will improve both individual and team-based learning outcomes. Technological development will focus on reconstructing avatars with full-body fidelity and embedding sensory feedback systems that simulate real-world lab interactions. The research will include controlled user studies in chemistry, comparing learning and collaboration outcomes in VR labs versus traditional in-person labs. Data collection will include quantitative measures such as pre/post-tests and interaction performance metrics, alongside qualitative observations, interviews, and surveys. Analysis will involve both statistical and thematic techniques to capture the cognitive, affective, and collaborative impacts of immersive learning. The project will culminate in the release of an open-source VR lab platform and accompanying dataset, enabling broader access and seeding future innovations in collaborative online STEM education."
+  news:
+    - date: 2025-09-15
+      title: "Can online learning ever be hands-on? Two UT San Antonio researchers think so"
+      link: https://news.utsa.edu/2025/09/can-online-learning-ever-be-hands-on-two-ut-san-antonio-researchers-think-so/
+      image: images/news/ritel-1.jpg
   tags:
     - research
 
@@ -36,11 +41,16 @@
   image: images/photo.jpg
   link: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2403411
   description: "Consumer-level virtual reality goggles are not accessible for many persons with balance impairments, such as elderly persons, persons with multiple sclerosis, Parkinson's, or diabetes. Currently, people with balance impairments cannot benefit from many immersive virtual reality benefits, such as education, physical fitness, rehabilitation, and entertainment. The team's previous work studied how audio, visuals, and vibrations can improve balance while in virtual reality in controlled laboratory settings with simplified virtual reality environments, where they found that audio was the most effective. This project aims to expand the research beyond laboratory settings because typical use of virtual reality occurs at home with complex virtual reality environments with much more intense audio, visual, and vibration stimulation. To address the additional complexities of being outside the lab with much stronger stimulation, the team will develop specialized audio intended to improve balance in any virtual environment. If virtual reality imbalance issues can be resolved, persons with balance impairments can more readily benefit from virtual reality. This project investigates approaches to enable adaptive auditory feedback techniques to improve balance in virtual reality use at home, which includes commercial virtual reality experiences with strong stimuli. Based on the team's preliminary studies, the central hypothesis is that adaptive auditory feedback can improve balance during virtual reality use at home more effectively than the current state of the art, which uses a static, 'one size fits all' approach to feedback. The work will seek the following novel contributions: 1) adaptive auditory feedback techniques to improve balance in VR; 2) automatic, real-time balance prediction with low-cost sensors, some of which are already integrated into commercial virtual reality systems; 3) controlled laboratory and at-home studies, providing generalizable understanding and computational models of balance in virtual reality in the presence of strong stimuli; 4) insight into the potentially lasting effects of virtual reality-based auditory feedback on balance after virtual reality exposure. Ultimately, this project will result in datasets and open-source tools that will make virtual reality more accessible for persons with balance impairments, which could improve their quality of life."
+  news:
+    - date: 2025-04-10
+      title: "UTSA research shaping future of accessible virtual reality"
+      link: https://news.utsa.edu/2025/04/utsa-research-shaping-future-of-accessible-virtual-reality/
+      image: images/news/hcc-medium-1.jpg
   tags:
     - research
 
 - title: "MATCH: MATRIX AI/ML Concierge for Healthcare"
-  id: ""
+  id: "match-matrix"
   agency: "NIH (UNT Passthrough)"
   award: "$500,000"
   role: "Co-PI (10%)"
@@ -50,6 +60,11 @@
   image: images/photo.jpg
   link: https://healthyhuman.tech/
   description:
+  news:
+    - date: 2025-02-06
+      title: "UTSA researchers develop AI tools to improve health care"
+      link: https://news.utsa.edu/2025/02/utsa-researchers-develop-ai-tools-to-improve-health-care/
+      image: images/news/match-1.jpg
   tags:
     - service
 
@@ -77,7 +92,12 @@
   group: past
   image: images/photo.jpg
   link: https://news.utsa.edu/2024/09/utsa-tec-de-monterrey-tap-virtual-reality-tools-for-labs/
-  description:
+  description: "The demand for online STEM education, mainly through virtual labs, has surged due to the COVID-19 pandemic and remains significant. As universities worldwide transitioned to remote learning, the need for effective distance education became paramount, with 98% of institutions adopting online teaching. However, the necessity for remote STEM learning was already apparent pre-pandemic. Yet, the existing online methods have shortcomings that could impede the education of future scientists and engineers. For instance, consider a collaborative titration experiment where students manipulate delicate equipment and hazardous substances. Traditional computer-based virtual labs lack the immersion, agency, and engagement of physical labs, potentially hampering teamwork and communication skills. Immersive virtual reality (VR) labs have the potential to bridge this gap by offering a high-fidelity simulation of real labs using multi-sensory tools like VR headsets, 3D interfaces, and spatial audio. However, VR technology currently faces limitations that hinder the fidelity (i.e., realism) of these experiences. <br><br>This proposal's primary goal is to enhance VR technology to overcome limitations in immersive virtual labs, enabling realistic interactions and seamless collaboration. The central hypothesis posits that VR's highly realistic 3D interactions via 3D avatars can facilitate STEM skill acquisition—self-regulation, engagement, self-efficacy, psychomotor abilities, teamwork, and social skills—similar to traditional in-person labs. This research is pioneering, as there has been scant prior investigation into the design, learning outcomes, and impact of collaborative, immersive VR STEM labs. Our proposed work encompasses four key intellectual contributions: (1) Development of real-time 3D-reconstructed avatars for remote VR collaboration; (2) Conducting controlled user studies to identify effective practices for immersive virtual science labs, with a focus on chemistry labs; (3) Analyzing personal traits and psychosocial factors influencing learning in online immersive virtual labs versus traditional labs; (4) Examining the correlation between students' academic performance and the constructs mentioned above.<br><br>This research project aims to shed light on the influence of online immersive VR labs on learning experiences, offering new insights into avatar usage and its impact on collaborative learning. The ultimate goal is to bring VR labs closer to replicating the traditional lab experience. Furthermore, by leveraging VR technology, this project addresses a fundamental challenge in online STEM education—the lack of access to conventional laboratory equipment and materials, including consumables like chemicals."
+  news:
+    - date: 2024-09-06
+      title: "UTSA, Tec de Monterrey tap virtual reality tools for labs"
+      link: https://news.utsa.edu/2024/09/utsa-tec-de-monterrey-tap-virtual-reality-tools-for-labs/
+      image: images/news/itesm-1.jpg
   tags:
     - research
 
@@ -110,7 +130,7 @@
     - research
 
 - title: "M-POWER: MATRIX-Provided AI/ML Open-Source Resource Center for Behavioral Health EmpoWERment"
-  id: ""
+  id: "m-power"
   agency: "NIH (UNT Passthrough)"
   award: "$500,000"
   role: "Co-PI (10%)"
@@ -119,7 +139,12 @@
   group: past
   image: images/photo.jpg
   link: https://ai.utsa.edu/mpower/
-  description:
+  description: "The project aims to explore available AI tools and resources to meet the needs of stakeholders within the AIM-AHEAD Coordinating Center (ACC). It focuses on promoting innovation and collaboration among AIM-AHEAD members through open-source AI/ML toolkits. Additionally, the project seeks to nurture a community of researchers by providing support and training on M-POWER open-source tools, addressing unmet needs, and facilitating workforce development."
+  news:
+    - date: 2024-02-13
+      title: "UTSA MATRIX Consortium establishes center to combat health disparities"
+      link: https://news.utsa.edu/2024/02/utsa-matrix-consortium-establishes-center-to-combat-health-disparities/
+      image: images/news/mpower-1.png
   tags:
     - service
 
