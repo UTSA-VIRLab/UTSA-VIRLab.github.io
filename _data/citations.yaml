@@ -826,3 +826,33 @@
   image: images/publications/34-amir-tbi.png
   bibtex: 'Amirhossein Bagherian, O F M Riaz Rahman Aranya, Allison Kosub, Marissa Redington, Kevin Desai, Marzieh Memar, Comprehensive benchmarking of deep learning approaches for automated astrocyte segmentation in traumatic brain injury, Journal of Neuropathology & Experimental Neurology, 2025;, nlaf114, https://doi.org/10.1093/jnen/nlaf114'
   
+
+- id: 'aranya2026sraseg'
+  doi: 'https://doi.org/10.48550/arXiv.2602.02944'
+  title: 'SRA-Seg: Synthetic to Real Alignment for Semi-Supervised Medical Image Segmentation'
+  authors:
+    - OFM Riaz Rahman Aranya
+    - Kevin Desai
+  publisher: arXiv
+  date: '2026-02-05'
+  link: https://utsa-virlab.github.io/SRA-Seg/
+  orcid: 0000-0002-8195-2710
+  plugin: orcid.py
+  file: orcid.yaml
+  image: images/publications/35-SRA-Seg.png
+  bibtex: 'OFM Riaz Rahman Aranya, Kevin Desai, SRA-Seg: Synthetic to Real Alignment for Semi-Supervised Medical Image Segmentation, arXiv preprint arXiv:2602.02944, 2025, https://arxiv.org/abs/2602.02944'
+
+- id: 'aranya2026trace'
+  doi: 'https://doi.org/10.48550/arXiv.2602.02963'
+  title: 'TRACE: Temporal Radiology with Anatomical Change Explanation for Grounded X-ray Report Generation'
+  authors:
+    - OFM Riaz Rahman Aranya
+    - Kevin Desai
+  publisher: arXiv
+  date: '2026-02-05'
+  link: https://utsa-virlab.github.io/TRACE/
+  orcid: 0000-0002-8195-2710
+  plugin: orcid.py
+  file: orcid.yaml
+  image: images/publications/36-TRACE.png
+  bibtex: 'OFM Riaz Rahman Aranya, Kevin Desai, TRACE: Temporal Radiology with Anatomical Change Explanation for Grounded X-ray Report Generation, arXiv preprint arXiv:2602.02963, 2025, https://arxiv.org/abs/2602.02963'
