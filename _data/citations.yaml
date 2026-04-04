@@ -733,7 +733,7 @@
   title={Comparing In-Person,Standard Telehealth,and Remote Musculoskeletal Examination With a Novel Augmented Reality Exercise Game System: Pilot Cross-Sectional Comparison Study}}'
 
 - id: 'mubashshira2025te'
-  doi: ''
+  doi: 'https://doi.org/10.1109/WACVW60836.2025.00067'
   title: 'TE-NeRF: Triplane-Enhanced Neural Radiance Field for Artifact-Free Human Rendering'
   project:
   authors:
@@ -741,7 +741,7 @@
     - Kevin Desai
   publisher: Proceedings of the Winter Conference on Applications of Computer Vision
   date: '2025-01-01'
-  link: https://openaccess.thecvf.com/content/WACV2025W/ImageQuality/html/Mubashshira_TE-NeRF_Triplane-Enhanced_Neural_Radiance_Field_for_Artifact-Free_Human_Rendering_WACVW_2025_paper.html
+  link: https://utsa-virlab.github.io/TE-NeRF/
   orcid: 0000-0002-4655-3773
   plugin: orcid.py
   file: orcid.yaml
@@ -833,7 +833,7 @@
   authors:
     - OFM Riaz Rahman Aranya
     - Kevin Desai
-  publisher: arXiv
+  publisher: ICPR 2026
   date: '2026-02-05'
   link: https://utsa-virlab.github.io/SRA-Seg/
   orcid: 0000-0002-8195-2710
@@ -848,7 +848,7 @@
   authors:
     - OFM Riaz Rahman Aranya
     - Kevin Desai
-  publisher: arXiv
+  publisher: ICPR 2026
   date: '2026-02-05'
   link: https://utsa-virlab.github.io/TRACE/
   orcid: 0000-0002-8195-2710
@@ -856,3 +856,52 @@
   file: orcid.yaml
   image: images/publications/36-TRACE.png
   bibtex: 'OFM Riaz Rahman Aranya, Kevin Desai, TRACE: Temporal Radiology with Anatomical Change Explanation for Grounded X-ray Report Generation, arXiv preprint arXiv:2602.02963, 2025, https://arxiv.org/abs/2602.02963'
+
+- id: 'aranya2026agree'
+  doi: 'https://doi.org/10.48550/arXiv.2603.22623'
+  title: 'To Agree or To Be Right? The Grounding-Sycophancy Tradeoff in Medical Vision-Language Models'
+  authors:
+    - OFM Riaz Rahman Aranya
+    - Kevin Desai
+  publisher: CVPR 2026 Workshop (Med-Reasoner)
+  date: '2026-03-23'
+  link: https://utsa-virlab.github.io/AgreeOrRight/
+  orcid: 0000-0002-8195-2710
+  plugin: orcid.py
+  file: orcid.yaml
+  image: images/publications/37-AgreeOrRight.png
+  bibtex: 'OFM Riaz Rahman Aranya, Kevin Desai, To Agree or To Be Right? The Grounding-Sycophancy Tradeoff in Medical Vision-Language Models, CVPR 2026 Workshop (Med-Reasoner), 2026, https://arxiv.org/abs/2603.22623'
+
+- id: 'sakib2026dea'
+  doi: 'https://doi.org/10.48550/arXiv.2603.22624'
+  title: 'Toward Faithful Segmentation Attribution via Benchmarking and Dual-Evidence Fusion'
+  authors:
+    - Abu Noman Md Sakib
+    - OFM Riaz Rahman Aranya
+    - Kevin Desai
+    - Zijie Zhang
+  publisher: CVPR 2026 Workshop (HOW)
+  date: '2026-03-23'
+  link: https://arxiv.org/abs/2603.22624
+  orcid: 0000-0002-8195-2710
+  plugin: orcid.py
+  file: orcid.yaml
+  image: images/publications/38-DEA.png
+  bibtex: 'Abu Noman Md Sakib, OFM Riaz Rahman Aranya, Kevin Desai, Zijie Zhang, Toward Faithful Segmentation Attribution via Benchmarking and Dual-Evidence Fusion, CVPR 2026 Workshop (HOW), 2026, https://arxiv.org/abs/2603.22624'
+
+- id: 'azam2026agegopose'
+  doi: 'https://doi.org/10.48550/arXiv.2603.25175'
+  title: 'AG-EgoPose: Leveraging Action-Guided Motion and Kinematic Joint Encoding for Egocentric 3D Pose Estimation'
+  authors:
+    - Md Mushfiqur Azam
+    - John Quarles
+    - Kevin Desai
+  publisher: arXiv
+  date: '2026-03-26'
+  link: https://utsa-virlab.github.io/AG-EgoPose/
+  orcid: 0000-0002-8195-2710
+  plugin: orcid.py
+  file: orcid.yaml
+  image: images/publications/39-AG-EgoPose.png
+  bibtex: 'Md Mushfiqur Azam, John Quarles, Kevin Desai, AG-EgoPose: Leveraging Action-Guided Motion and Kinematic Joint Encoding for Egocentric 3D Pose Estimation, arXiv preprint arXiv:2603.25175, 2026, https://arxiv.org/abs/2603.25175'
+
