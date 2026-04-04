@@ -8,6 +8,9 @@ nav:
 ---
 
 
+<div class="home-layout">
+  <div class="home-description" markdown="1">
+
 The Vision and Immersive Realities Lab (VIRLab) at UTSA is an innovative research facility that explores the cutting-edge intersections of technology, human perception, and immersive experiences. VIRLab's interdisciplinary approach encompasses Computer Vision and Immersive Realities, including Virtual Reality (VR), Augmented Reality (AR), and Mixed Reality (MR). The lab leverages its discoveries to impact diverse fields, including healthcare, rehabilitation, virtual training, and serious gaming, with a core mission of enhancing human quality of life through immersive technologies.
 
 At the heart of VIRLab's operations is an exceptional team of research students, spanning both graduate and undergraduate levels. Together, they collaborate to craft immersive experiences that push the boundaries of human-computer interaction. Their collective ambition is to make AR, VR, and MR more accessible, intuitive, and adaptable across diverse sectors. Within the healthcare sector, VIRLab concentrates its efforts on exploring the application of immersive technologies in therapy, diagnostics, and training. For instance, augmented reality finds application in assisting post-stroke patients in enhancing their range of motion through rehabilitation exercises integrated into serious games. In the realm of education, immersive VR STEM laboratories are designed to provide students with an interactive and collaborative learning experience.
@@ -16,6 +19,10 @@ The lab is well-equipped with state-of-the-art hardware and software, including 
 
 Several of our ongoing research initiatives are generously funded/supported by the US National Science Foundation (NSF). A detailed list of the research projects can be found [here](https://utsa-virlab.github.io/projects/), while a detailed list of related publications can be found [here](https://utsa-virlab.github.io/research/).
 
+  </div>
+
+  {% include news-section.html %}
+</div>
 
 <div class="slideshow-container">
   {% for s in site.data.slider %}
@@ -37,6 +44,8 @@ Several of our ongoing research initiatives are generously funded/supported by t
 </div>
 
 <script src="{{ '/_scripts/home.js' | relative_url }}" defer></script>
+
+{% include section.html %}
 
 # {% include icon.html icon="fa-regular fa-envelope" %} Contact
 

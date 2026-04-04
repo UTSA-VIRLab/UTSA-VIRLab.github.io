@@ -1,0 +1,129 @@
+---
+---
+
+/* Homepage side-by-side: description left, news right */
+.home-layout {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.home-description {
+  flex: 1 1 65%;
+  min-width: 0;
+  text-align: justify;
+}
+
+.news-sidebar {
+  flex: 0 0 30%;
+  max-width: 30%;
+  position: sticky;
+  top: 5rem;
+  max-height: 80vh;
+  overflow-y: auto;
+  background: var(--background, #fff);
+  border-left: 3px solid var(--primary, #4b2e83);
+  padding: 0.75rem 1rem;
+  border-radius: 0 var(--rounded, 5px) var(--rounded, 5px) 0;
+}
+
+.news-sidebar h2 {
+  font-size: 1.15rem;
+  margin: 0 0 0.75rem 0;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--light-gray, #e0e0e0);
+}
+
+/* Individual news card */
+.news-card {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  border: 1px solid var(--light-gray, #e0e0e0);
+  border-radius: var(--rounded, 5px);
+  padding: 0.6rem;
+  margin-bottom: 0.6rem;
+  transition: box-shadow 0.2s, border-color 0.2s;
+  overflow: hidden;
+}
+
+a.news-card:hover {
+  border-color: var(--primary, #4b2e83);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.news-card:last-child {
+  margin-bottom: 0;
+}
+
+/* Top row: date badge + title side by side */
+.news-card-top {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+}
+
+/* Blue date badge */
+.news-date-badge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+  min-width: 44px;
+  padding: 0.3rem 0.4rem;
+  background: var(--primary, #4b2e83);
+  color: #fff;
+  border-radius: var(--rounded, 4px);
+  line-height: 1.15;
+}
+
+.news-month {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.65rem;
+}
+
+.news-day {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.news-year {
+  font-size: 0.6rem;
+  opacity: 0.8;
+}
+
+.news-title {
+  font-size: 0.85rem;
+  line-height: 1.35;
+  color: var(--text, #333);
+  flex: 1;
+  text-align: justify;
+}
+
+/* Thumbnail below title, contained within card */
+.news-thumb {
+  width: 100%;
+  height: 80px;
+  object-fit: cover;
+  border-radius: var(--rounded, 4px);
+  margin-top: 0.5rem;
+  display: block;
+}
+
+/* Stack on small screens */
+@media (max-width: 768px) {
+  .home-layout {
+    flex-direction: column;
+  }
+
+  .news-sidebar {
+    flex: 1 1 100%;
+    max-width: 100%;
+    position: static;
+    max-height: none;
+    border-left: none;
+    border-top: 3px solid var(--primary, #4b2e83);
+    border-radius: 0 0 var(--rounded, 5px) var(--rounded, 5px);
+  }
+}

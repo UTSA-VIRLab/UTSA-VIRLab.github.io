@@ -1,0 +1,28 @@
+{% assign news = site.data.news | sort: "date" | reverse %}
+
+<div class="news-sidebar">
+  <h2>{% include icon.html icon="fa-solid fa-newspaper" %} News</h2>
+  {% for item in news %}
+  {% if item.link %}
+  <a href="{{ item.link }}" class="news-card" target="_blank" rel="noopener">
+  {% else %}
+  <div class="news-card">
+  {% endif %}
+    <div class="news-card-top">
+      <div class="news-date-badge">
+        <span class="news-month">{{ item.date | date: "%b" }}</span>
+        <span class="news-day">{{ item.date | date: "%d" }}</span>
+        <span class="news-year">{{ item.date | date: "%Y" }}</span>
+      </div>
+      <span class="news-title">{{ item.title }}</span>
+    </div>
+    {% if item.image %}
+    <img class="news-thumb" src="{{ item.image | relative_url }}" alt="" loading="lazy">
+    {% endif %}
+  {% if item.link %}
+  </a>
+  {% else %}
+  </div>
+  {% endif %}
+  {% endfor %}
+</div>

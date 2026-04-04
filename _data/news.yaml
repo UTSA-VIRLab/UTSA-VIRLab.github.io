@@ -1,0 +1,23 @@
+# News & Updates
+# Each item has: date, title (supports HTML like <b>), and optionally:
+#   - link: external URL (LinkedIn post, article, etc.)
+#   - image: path to a thumbnail image
+
+- date: 2026-03-31
+  title: "Two research papers (SRA-Seg and TRACE) have been accepted at the <b>International Conference on Pattern Recognition (ICPR) 2026</b> in Lyon, France!"
+  link: https://www.linkedin.com/posts/riazaranya_icpr-icpr2026-icpr-share-7444883689530007552-LxVc?utm_source=share&utm_medium=member_desktop&rcm=ACoAACk48DgBOjDrvxSDi69SzFfwW9TWsO0P36A
+
+- date: 2024-06-20
+  title: "VIRLab at <b>CVPR 2024</b> in Seattle presenting Mushfiq's poster"
+  image: images/news/virlab-seattle.jpeg
+  link: https://www.linkedin.com/posts/kevinpdesai_utsacs-activity-7209226549567361025-2K0I?utm_source=share&utm_medium=member_desktop&rcm=ACoAACk48DgBOjDrvxSDi69SzFfwW9TWsO0P36A
+
+- date: 2026-03-21
+  title: 'Our paper "To Agree or To Be Right?" accepted at the <b>Med-Reasoner Workshop, CVPR 2026</b>'
+  link: https://www.linkedin.com/posts/riazaranya_cvpr-cvpr2026-medreasoner-activity-7441515395729178625-Wg4o?utm_source=share&utm_medium=member_desktop&rcm=ACoAACk48DgBOjDrvxSDi69SzFfwW9TWsO0P36A
+
+- date: 2022-06-22
+  title: "<b>HR-STAN</b> wins Best Paper Award at <b>CVPR 2022</b> Workshop"
+  image: images/slider/hrstan-paper.jpg
+  
+  
