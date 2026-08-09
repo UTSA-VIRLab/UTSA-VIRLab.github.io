@@ -905,3 +905,25 @@
   image: images/publications/39-AG-EgoPose.png
   bibtex: 'Md Mushfiqur Azam, John Quarles, Kevin Desai, AG-EgoPose: Leveraging Action-Guided Motion and Kinematic Joint Encoding for Egocentric 3D Pose Estimation, arXiv preprint arXiv:2603.25175, 2026, https://arxiv.org/abs/2603.25175'
 
+- id: 'mubashshira2026clothhugs'
+  doi: 'https://doi.org/10.48550/arXiv.2604.15875'
+  title: 'CLOTH-HUGS: Cloth Aware Human Gaussian Splatting'
+  authors:
+    - Sadia Mubashshira
+    - Nazanin Amini
+    - Kevin Desai
+  publisher: ICIP 2026
+  date: '2026-04-17'
+  link: https://utsa-virlab.github.io/CLOTH-HUGS/
+  orcid: 0000-0002-4655-3773
+  plugin: orcid.py
+  file: orcid.yaml
+  image: images/publications/40-CLOTH-HUG.png
+  bibtex: '@misc{mubashshira2026clothhugsclothawarehuman,
+  title={CLOTH-HUGS: Cloth Aware Human Gaussian Splatting},
+  author={Mubashshira,Sadia and Amini,Nazanin and Desai,Kevin},
+  year={2026},
+  eprint={2604.15875},
+  archivePrefix={arXiv},
+  primaryClass={cs.CV},
+  url={https://arxiv.org/abs/2604.15875}}'
