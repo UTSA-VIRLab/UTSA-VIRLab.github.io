@@ -115,7 +115,7 @@ $thumb-size: 180px;
 
 // — Award medal (citations with an `award:` key in _data/citations.yaml) —
 // Sits at the right edge of the card, opposite the thumbnail.
-$award-size: 132px;
+$award-size: 84px;
 
 .citation-award {
   flex-shrink: 0;
@@ -123,7 +123,7 @@ $award-size: 132px;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 14px 22px 14px 10px;
+  padding: 14px 20px 14px 6px;
 }
 
 .citation-award img {
@@ -153,6 +153,6 @@ $award-size: 132px;
     padding: 0 0 18px;
   }
   .citation-award img {
-    height: 96px;
+    height: 72px;
   }
 }
