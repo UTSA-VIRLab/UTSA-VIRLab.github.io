@@ -38,6 +38,8 @@ $thumb-size: 180px;
 }
 
 .citation-text {
+  flex: 1;
+  min-width: 0;
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -111,6 +113,32 @@ $thumb-size: 180px;
   background: var(--light-gray, #9BD2E8);
 }
 
+// — Award medal (citations with an `award:` key in _data/citations.yaml) —
+// Sits at the right edge of the card, opposite the thumbnail.
+$award-size: 132px;
+
+.citation-award {
+  flex-shrink: 0;
+  align-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 22px 14px 10px;
+}
+
+.citation-award img {
+  width: auto;
+  height: $award-size;
+  max-width: none;
+  filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.28));
+}
+
+// give the award a card that reads as "highlighted"
+.citation:has(.citation-award) {
+  border: 1px solid #e6b422;
+  box-shadow: 0 0 0 3px rgba(230, 180, 34, 0.18), var(--shadow);
+}
+
 // — Responsive: stack on narrow screens —
 @media (max-width: 600px) {
   .citation {
@@ -119,5 +147,12 @@ $thumb-size: 180px;
   .citation-image {
     width: 100%;
     height: $thumb-size;
+  }
+  .citation-award {
+    align-self: center;
+    padding: 0 0 18px;
+  }
+  .citation-award img {
+    height: 96px;
   }
 }

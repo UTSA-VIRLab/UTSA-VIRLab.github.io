@@ -313,6 +313,7 @@
 - id: 'medjaouri2022hr'
   doi: '10.1109/CVPRW56347.2022.00286'
   title: 'Hr-stan: High-resolution spatio-temporal attention network for 3d human motion prediction'
+  award: 'Best Paper Award'
   project:
   authors:
     - Omar Medjaouri
@@ -860,6 +861,7 @@
 - id: 'aranya2026agree'
   doi: 'https://doi.org/10.48550/arXiv.2603.22623'
   title: 'To Agree or To Be Right? The Grounding-Sycophancy Tradeoff in Medical Vision-Language Models'
+  award: 'Best Paper Award'
   authors:
     - OFM Riaz Rahman Aranya
     - Kevin Desai
@@ -927,3 +929,48 @@
   archivePrefix={arXiv},
   primaryClass={cs.CV},
   url={https://arxiv.org/abs/2604.15875}}'
+
+- id: 'amini2026mosaic'
+  doi: 'https://doi.org/10.48550/arXiv.2607.26304'
+  title: 'MoSAIC: Aligned Intervention Supervision for Part-Local Motion Style Transfer'
+  authors:
+    - Nazanin Amini
+    - Kevin Desai
+  publisher: The Visual Computer (Under Review)
+  date: '2026-07-28'
+  link: https://utsa-virlab.github.io/MoSAIC/
+  orcid: 0000-0002-4655-3773
+  plugin: orcid.py
+  file: orcid.yaml
+  image: images/publications/41-MoSAIC.png
+  bibtex: '@misc{amini2026mosaic,
+  title={MoSAIC: Aligned Intervention Supervision for Part-Local Motion Style Transfer},
+  author={Amini,Nazanin and Desai,Kevin},
+  year={2026},
+  eprint={2607.26304},
+  archivePrefix={arXiv},
+  primaryClass={cs.CV},
+  url={https://arxiv.org/abs/2607.26304}}'
+
+- id: 'aranya2026grcd'
+  doi: 'https://doi.org/10.48550/arXiv.2607.02719'
+  title: 'GRCD: Grounded Region Change Detection for Multi-Finding Chest X-Ray Pairs'
+  authors:
+    - OFM Riaz Rahman Aranya
+    - Peyman Najafirad
+    - Kevin Desai
+  publisher: BMVC 2026
+  date: '2026-08-18'
+  link: https://utsa-virlab.github.io/GRCD/
+  orcid: 0000-0002-8195-2710
+  plugin: orcid.py
+  file: orcid.yaml
+  image: images/publications/42-GRCD.png
+  bibtex: '@misc{aranya2026grcd,
+  title={GRCD: Grounded Region Change Detection for Multi-Finding Chest X-Ray Pairs},
+  author={Aranya,OFM Riaz Rahman and Najafirad,Peyman and Desai,Kevin},
+  year={2026},
+  eprint={2607.02719},
+  archivePrefix={arXiv},
+  primaryClass={cs.CV},
+  url={https://arxiv.org/abs/2607.02719}}'

@@ -103,4 +103,19 @@
         {% endif %}
         {% endif %}
     </div>
+
+    {%- if include.style == "rich" -%}
+    {%- assign award = include.citation.award -%}
+    {%- if award and award != "" -%}
+    {%- if award.first != nil -%}{%- assign award = award.first -%}{%- endif -%}
+    {%- assign award_img = include.citation.award_image | default: "images/awards/best-paper-award.png" -%}
+    <div class="citation-award" data-tooltip="{{ award | xml_escape }}" tabindex="0">
+        <img
+                src="{{ award_img | relative_url | uri_escape }}"
+                alt="{{ award | xml_escape }}"
+                loading="lazy"
+        >
+    </div>
+    {%- endif -%}
+    {%- endif -%}
 </div>

@@ -24,7 +24,7 @@ education:
 award:
   - Best Paper Award, Med-Reasoner workshop, CVPR 2026
   - 1st Runner UP, LICT Project Showcasing Jashore IT park, 2019
-email: ofmriazrahman.aranya@utsa.edu
+email: ofmriazrahman.aranya@utsa.edu aranya.riaz@gmail.com
 office: "SP1 Room: 340J, 506 Dolorosa St, San Antonio, TX 78204"
 cv: CVs/CV_Aranya.pdf
 links:
