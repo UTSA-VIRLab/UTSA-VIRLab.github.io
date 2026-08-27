@@ -975,7 +975,7 @@
   primaryClass={cs.CV},
   url={https://arxiv.org/abs/2607.02719}}'
 
-  - id: 'ahmed2026amgf3d'
+- id: 'ahmed2026amgf3d'
   title: 'AMGF3D: Adaptive Multi-scale Gated Fusion for Robust Indoor RGB-D 3D Object Detection'
   authors:
     - Faisal Ahmed
