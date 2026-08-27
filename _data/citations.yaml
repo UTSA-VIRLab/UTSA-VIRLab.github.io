@@ -974,3 +974,21 @@
   archivePrefix={arXiv},
   primaryClass={cs.CV},
   url={https://arxiv.org/abs/2607.02719}}'
+
+  - id: 'ahmed2026amgf3d'
+  title: 'AMGF3D: Adaptive Multi-scale Gated Fusion for Robust Indoor RGB-D 3D Object Detection'
+  authors:
+    - Faisal Ahmed
+    - John Quarles
+    - Kevin Desai
+  publisher: BMVC 2026
+  date: '2026-08-07'
+  link: https://utsa-virlab.github.io/AMGF3D/
+  image: images/publications/43-AMGF3D.png
+  bibtex: |
+    @inproceedings{ahmed2026amgf3d,
+      title     = {AMGF3D: Adaptive Multi-scale Gated Fusion for Robust Indoor RGB-D 3D Object Detection},
+      author    = {Ahmed, Faisal and Quarles, John and Desai, Kevin},
+      booktitle = {Proceedings of the British Machine Vision Conference},
+      year      = {2026}
+    }
