@@ -14,6 +14,9 @@
   plugin: orcid.py
   file: orcid.yaml
   image: images/publications/1-network-adaptive-mesh.png
+  acceptance_rate: '25.5%'
+  h5_index: 18
+  h5_median: 26
   bibtex: '@inproceedings{desai2015network,
   organization={IEEE},
   year={2015},
@@ -40,6 +43,9 @@
   plugin: orcid.py
   file: orcid.yaml
   image: images/publications/2-exergames.png
+  acceptance_rate: '28%'
+  h5_index: 34
+  h5_median: 65
   bibtex: '@inproceedings{desai2016augmented,
   year={2016},
   pages={1--10},
@@ -68,6 +74,10 @@
   plugin: orcid.py
   file: orcid.yaml
   image: images/publications/3-mmcvl.png
+  review_status: 'Invited'
+  acceptance_rate: '23.9%'
+  h5_index: 19
+  h5_median: 29
   bibtex: '@inproceedings{desai2017experiences,
   organization={IEEE},
   year={2017},
@@ -91,6 +101,8 @@
   plugin: orcid.py
   file: orcid.yaml
   image: images/publications/4-mesh-eval.png
+  h5_index: 35
+  h5_median: 57
   bibtex: '@inproceedings{desai2017learning,
   organization={IEEE},
   year={2017},
@@ -115,6 +127,9 @@
   plugin: orcid.py
   file: orcid.yaml
   image: images/publications/5-i3dti.png
+  acceptance_rate: '23.02%'
+  h5_index: 18
+  h5_median: 26
   bibtex: '@inproceedings{desai2017qoe,
   organization={IEEE},
   year={2017},
@@ -137,6 +152,9 @@
   plugin: orcid.py
   file: orcid.yaml
   image: images/publications/6-skel-calib.png
+  acceptance_rate: '26%'
+  h5_index: 34
+  h5_median: 65
   bibtex: '@inproceedings{desai2018skeleton,
   year={2018},
   pages={250--257},
@@ -159,6 +177,9 @@
   plugin: orcid.py
   file: orcid.yaml
   image: images/publications/7-skel-multi.png
+  acceptance_rate: '26%'
+  h5_index: 34
+  h5_median: 65
   bibtex: '@inproceedings{desai2018combining,
   year={2018},
   pages={40--51},
@@ -185,6 +206,9 @@
   plugin: orcid.py
   file: orcid.yaml
   image: images/publications/8-mrmapp.png
+  acceptance_rate: '27%'
+  h5_index: 65
+  h5_median: 107
   bibtex: '@inproceedings{bahirat2019using,
   year={2019},
   pages={1071--1075},
@@ -208,6 +232,9 @@
   plugin: orcid.py
   file: orcid.yaml
   image: images/publications/9-in-home-exergames.png
+  h5_index: 35
+  h5_median: 57
+  impact_factor: '2.5'
   bibtex: '@article{desai2021personalized,
   publisher={Taylor & Francis},
   year={2021},
@@ -231,6 +258,8 @@
   plugin: orcid.py
   file: orcid.yaml
   image: images/publications/10-smc-nihar.png
+  h5_index: 32
+  h5_median: 47
   bibtex: '@inproceedings{bendre2021show,
   organization={IEEE},
   year={2021},
@@ -254,6 +283,9 @@
   plugin: orcid.py
   file: orcid.yaml
   image: images/publications/11-icip-nihar-zero-shot.png
+  acceptance_rate: '46%'
+  h5_index: 60
+  h5_median: 89
   bibtex: '@inproceedings{bendre2021generalized,
   organization={IEEE},
   year={2021},
@@ -277,6 +309,9 @@
   plugin: orcid.py
   file: orcid.yaml
   image: images/publications/12-cs-pred-rifatul.png
+  acceptance_rate: '23.6%'
+  h5_index: 25
+  h5_median: 35
   bibtex: "@inproceedings{islam2021cybersickness,
   organization={IEEE},
   year={2021},
@@ -302,6 +337,8 @@
   plugin: orcid.py
   file: orcid.yaml
   image: images/publications/13-herb-iot-wac.png
+  h5_index: 13
+  h5_median: 20
   bibtex: '@inproceedings{guzman2021multimodal,
   organization={IEEE},
   year={2021},
@@ -325,6 +362,8 @@
   plugin: orcid.py
   file: orcid.yaml
   image: images/publications/14-hrstan-omar.png
+  h5_index: 89
+  h5_median: 154
   bibtex: '@inproceedings{medjaouri2022hr,
   year={2022},
   pages={2540--2549},
@@ -348,6 +387,9 @@
   plugin: orcid.py
   file: orcid.yaml
   image: images/publications/15-tmvnet-kebin.png
+  acceptance_rate: '60%'
+  h5_index: 89
+  h5_median: 154
   bibtex: '@inproceedings{peng2022tmvnet,
   year={2022},
   pages={222--230},
@@ -370,6 +412,8 @@
   plugin: orcid.py
   file: orcid.yaml
   image: images/publications/16-brdf-kebin.png
+  h5_index: 19
+  h5_median: 31
   bibtex: '@inproceedings{peng2022brdf,
   year={2022},
   pages={734--744},
@@ -393,6 +437,9 @@
   plugin: orcid.py
   file: orcid.yaml
   image: images/publications/17-virtepex-ninad.png
+  acceptance_rate: '21.5%'
+  h5_index: 41
+  h5_median: 58
   bibtex: '@inproceedings{khargonkar2022virtepex,
   year={2022},
   pages={1729--1742},
@@ -415,6 +462,9 @@
   plugin: orcid.py
   file: orcid.yaml
   image: images/publications/18-cs-forecast-rifatul.png
+  acceptance_rate: '21%'
+  h5_index: 25
+  h5_median: 35
   bibtex: '@inproceedings{islam2022towards,
   organization={IEEE},
   year={2022},
@@ -438,6 +488,9 @@
   plugin: orcid.py
   file: orcid.yaml
   image: images/publications/19-pmpnet-kebin.png
+  acceptance_rate: '47.8%'
+  h5_index: 43
+  h5_median: 61
   bibtex: '@inproceedings{peng2022pmpnet,
   organization={IEEE},
   year={2022},
@@ -468,6 +521,8 @@
   plugin: orcid.py
   file: orcid.yaml
   image: images/publications/no-preview.png
+  h5_index: 10
+  impact_factor: '1.22'
   bibtex: '@article{neely2023case,
   publisher={Springer International Publishing Cham},
   year={2023},
@@ -496,6 +551,7 @@
   plugin: orcid.py
   file: orcid.yaml
   image: images/publications/21-facial-geometry-young.png
+  impact_factor: '3.85'
   bibtex: '@article{young2023can,
   publisher={MDPI},
   year={2023},
@@ -522,6 +578,7 @@
   plugin: orcid.py
   file: orcid.yaml
   image: images/publications/22-ahtn.png
+  review_status: 'Non-Reviewed'
   bibtex: '@article{desai2023assessment,
   year={2023},
   journal={arXiv preprint arXiv:2302.05795},
@@ -544,6 +601,8 @@
   plugin: orcid.py
   file: orcid.yaml
   image: images/publications/no-preview.png
+  acceptance_rate: '50.3%'
+  h5_index: 13
   bibtex: '@inproceedings{shang2023study,
   organization={IEEE},
   year={2023},
@@ -569,6 +628,10 @@
   plugin: orcid.py
   file: orcid.yaml
   image: images/publications/24-cs-personalization-rifatul.png
+  acceptance_rate: '12.6%'
+  h5_index: 89
+  h5_median: 124
+  impact_factor: '4.7'
   bibtex: '@article{tasnim2024investigating,
   publisher={IEEE},
   year={2024},
@@ -617,6 +680,9 @@
   plugin: orcid.py
   file: orcid.yaml
   image: images/publications/26-ego-survey-mushfiq.png
+  acceptance_rate: '40%'
+  h5_index: 115
+  h5_median: 178
   bibtex: '@inproceedings{azam2024survey,
   year={2024},
   pages={1643--1654},
@@ -640,6 +706,9 @@
   plugin: orcid.py
   file: orcid.yaml
   image: images/publications/27-encodenet-hasanul.png
+  acceptance_rate: '45.7%'
+  h5_index: 56
+  h5_median: 91
   bibtex: '@inproceedings{mahmud2024encodenet,
   organization={Springer Nature Switzerland Cham},
   year={2024},
@@ -695,6 +764,9 @@
   plugin: orcid.py
   file: orcid.yaml
   image: images/publications/29-maze-setu.png
+  acceptance_rate: '30.4%'
+  h5_index: 25
+  h5_median: 35
   bibtex: '@inproceedings{setu2024mazed,
   organization={IEEE},
   year={2024},
@@ -723,6 +795,8 @@
   plugin: orcid.py
   file: orcid.yaml
   image: images/publications/no-preview.png
+  h5_index: 45
+  impact_factor: '4.1'
   bibtex: '@article{wu2025comparing,
   publisher={JMIR Publications Inc.,Toronto,Canada},
   year={2025},
@@ -801,6 +875,9 @@
   plugin: orcid.py
   file: orcid.yaml
   image: images/publications/33-cs-pred-explain-setu.png
+  h5_index: 94
+  h5_median: 132
+  impact_factor: '6.5'
   bibtex: '@article{setu2025predicting,
   publisher={IEEE},
   year={2025},
@@ -825,6 +902,7 @@
   plugin: orcid.py
   file: orcid.yaml
   image: images/publications/34-amir-tbi.png
+  impact_factor: '3.0'
   bibtex: 'Amirhossein Bagherian, O F M Riaz Rahman Aranya, Allison Kosub, Marissa Redington, Kevin Desai, Marzieh Memar, Comprehensive benchmarking of deep learning approaches for automated astrocyte segmentation in traumatic brain injury, Journal of Neuropathology & Experimental Neurology, 2025;, nlaf114, https://doi.org/10.1093/jnen/nlaf114'
   
 
@@ -841,6 +919,9 @@
   plugin: orcid.py
   file: orcid.yaml
   image: images/publications/35-SRA-Seg.png
+  acceptance_rate: '49.5%'
+  h5_index: 68
+  h5_median: 106
   bibtex: 'OFM Riaz Rahman Aranya, Kevin Desai, SRA-Seg: Synthetic to Real Alignment for Semi-Supervised Medical Image Segmentation, arXiv preprint arXiv:2602.02944, 2025, https://arxiv.org/abs/2602.02944'
 
 - id: 'aranya2026trace'
@@ -856,6 +937,9 @@
   plugin: orcid.py
   file: orcid.yaml
   image: images/publications/36-TRACE.png
+  acceptance_rate: '49.5%'
+  h5_index: 68
+  h5_median: 106
   bibtex: 'OFM Riaz Rahman Aranya, Kevin Desai, TRACE: Temporal Radiology with Anatomical Change Explanation for Grounded X-ray Report Generation, arXiv preprint arXiv:2602.02963, 2025, https://arxiv.org/abs/2602.02963'
 
 - id: 'aranya2026agree'
@@ -872,6 +956,8 @@
   plugin: orcid.py
   file: orcid.yaml
   image: images/publications/37-AgreeOrRight.png
+  h5_index: 117
+  h5_median: 194
   bibtex: 'OFM Riaz Rahman Aranya, Kevin Desai, To Agree or To Be Right? The Grounding-Sycophancy Tradeoff in Medical Vision-Language Models, CVPR 2026 Workshop (Med-Reasoner), 2026, https://arxiv.org/abs/2603.22623'
 
 - id: 'sakib2026dea'
@@ -889,6 +975,8 @@
   plugin: orcid.py
   file: orcid.yaml
   image: images/publications/38-DEA.png
+  h5_index: 117
+  h5_median: 194
   bibtex: 'Abu Noman Md Sakib, OFM Riaz Rahman Aranya, Kevin Desai, Zijie Zhang, Toward Faithful Segmentation Attribution via Benchmarking and Dual-Evidence Fusion, CVPR 2026 Workshop (HOW), 2026, https://arxiv.org/abs/2603.22624'
 
 - id: 'azam2026agegopose'
@@ -921,6 +1009,8 @@
   plugin: orcid.py
   file: orcid.yaml
   image: images/publications/40-CLOTH-HUG.png
+  h5_index: 55
+  h5_median: 89
   bibtex: '@misc{mubashshira2026clothhugsclothawarehuman,
   title={CLOTH-HUGS: Cloth Aware Human Gaussian Splatting},
   author={Mubashshira,Sadia and Amini,Nazanin and Desai,Kevin},
@@ -966,6 +1056,9 @@
   plugin: orcid.py
   file: orcid.yaml
   image: images/publications/42-GRCD.png
+  acceptance_rate: '28.04%'
+  h5_index: 57
+  h5_median: 96
   bibtex: '@misc{aranya2026grcd,
   title={GRCD: Grounded Region Change Detection for Multi-Finding Chest X-Ray Pairs},
   author={Aranya,OFM Riaz Rahman and Najafirad,Peyman and Desai,Kevin},
@@ -985,6 +1078,9 @@
   date: '2026-08-07'
   link: https://utsa-virlab.github.io/AMGF3D/
   image: images/publications/43-AMGF3D.png
+  acceptance_rate: '28.04%'
+  h5_index: 57
+  h5_median: 96
   bibtex: |
     @inproceedings{ahmed2026amgf3d,
       title     = {AMGF3D: Adaptive Multi-scale Gated Fusion for Robust Indoor RGB-D 3D Object Detection},

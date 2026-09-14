@@ -27,6 +27,9 @@
                 {% endif %}
                 class="citation-title"
         >
+            {%- if include.citation.review_status -%}
+            <span class="citation-review-status">({{ include.citation.review_status }})</span>
+            {% endif -%}
             {{ include.citation.title | default: "[no title info]" }}
         </a>
 
@@ -62,6 +65,38 @@
       {{- include.citation.doi | default: "[No DOI info]" | prepend: "DOI: " -}}
     </span>
         </div>
+
+        {%- if include.citation.acceptance_rate or include.citation.h5_index or include.citation.impact_factor -%}
+        <div class="citation-metrics">
+            {%- if include.citation.acceptance_rate -%}
+            <span
+                    class="citation-metric"
+                    data-tooltip="Acceptance rate from the published proceedings, at time of publication"
+                    tabindex="0"
+            >
+        Acceptance Rate: {{ include.citation.acceptance_rate }}
+      </span>
+            {%- endif -%}
+            {%- if include.citation.h5_index -%}
+            <span
+                    class="citation-metric"
+                    data-tooltip="Venue h5-index from Google Scholar, at time of publication"
+                    tabindex="0"
+            >
+        H-5 Index{% if include.citation.h5_median %} (Median){% endif %}: {{ include.citation.h5_index }}{% if include.citation.h5_median %} ({{ include.citation.h5_median }}){% endif %}
+      </span>
+            {%- endif -%}
+            {%- if include.citation.impact_factor -%}
+            <span
+                    class="citation-metric"
+                    data-tooltip="Journal impact factor from the journal website, at time of publication"
+                    tabindex="0"
+            >
+        Impact Factor: {{ include.citation.impact_factor }}
+      </span>
+            {%- endif -%}
+        </div>
+        {%- endif -%}
 
         {% if include.style == "rich" %}
         {% if include.citation.description %}

@@ -61,6 +61,48 @@ $thumb-size: 180px;
   color: #555;
 }
 
+.citation-metrics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.citation-metric {
+  padding: 2px 10px;
+  border: 1px solid var(--light-gray, #ccc);
+  border-radius: 999px;
+  background: transparent;
+  color: #555;
+  font-size: .8rem;
+  white-space: nowrap;
+  cursor: help;
+}
+
+.citation-review-status {
+  margin-right: 4px;
+  color: #666;
+  font-weight: var(--regular, 400);
+  font-style: italic;
+}
+
+.publication-notes {
+  max-width: 800px;
+  margin: 0 auto;
+  color: #555;
+  font-size: .85rem;
+  line-height: 1.5;
+  text-align: left;
+}
+
+.publication-notes ul {
+  margin: 0;
+  padding-left: 1.2em;
+}
+
+.publication-notes li {
+  margin: 0 0 .4em;
+}
+
 .citation-description {
   margin-top: .5rem;
   color: #666;
@@ -151,6 +193,9 @@ $award-size: 84px;
   .citation-award {
     align-self: center;
     padding: 0 0 18px;
+  }
+  .citation-metric {
+    white-space: normal;
   }
   .citation-award img {
     height: 72px;
