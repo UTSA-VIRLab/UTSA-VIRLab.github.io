@@ -1088,3 +1088,21 @@
       booktitle = {Proceedings of the British Machine Vision Conference},
       year      = {2026}
     }
+
+- id: 'ahmed2027egoshift'
+  title: 'EgoShift: Bounding the Action-Only Shortcut in Egocentric Spatial Updating for Vision-Language Models'
+  authors:
+    - Faisal Ahmed
+    - John Quarles
+    - Kevin Desai
+  publisher: WACV 2027
+  date: '2027-01-06'
+  link: https://utsa-virlab.github.io/EgoShift/
+  image: images/publications/44-EgoShift.png
+  bibtex: |
+    @inproceedings{ahmed2027egoshift,
+      title     = {EgoShift: Bounding the Action-Only Shortcut in Egocentric Spatial Updating for Vision-Language Models},
+      author    = {Ahmed, Faisal and Quarles, John and Desai, Kevin},
+      booktitle = {Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)},
+      year      = {2027}
+    }
