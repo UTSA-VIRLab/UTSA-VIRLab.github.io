@@ -1108,6 +1108,7 @@
     }
 
 - id: 'azam2026egobalanceformer'
+  doi: '10.1109/TVCG.2026.3748830'
   title: 'EgoBalanceFormer: Predicting Human Balance from Egocentric Pose and VR-Native Motion'
   project:
     - nsf-small-safety
@@ -1131,5 +1132,6 @@
       author  = {Azam, Md Mushfiqur and Anjum, Nipa and Quarles, John and Desai, Kevin},
       journal = {IEEE Transactions on Visualization and Computer Graphics},
       year    = {2026},
+      doi     = {10.1109/TVCG.2026.3748830},
       note    = {Accepted for presentation at IEEE ISMAR 2026}
     }
