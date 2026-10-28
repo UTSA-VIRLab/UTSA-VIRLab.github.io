@@ -92,6 +92,23 @@ layout: default
     </section>
     {% endif %}
 
+    {% if page.service %}
+    <section class="member-section">
+      <h2>Service</h2>
+      {% for category in page.service %}
+      <h3>{{ category[0] | capitalize }}</h3>
+      {% for group in category[1] %}
+      <p><strong>{{ group[0] | capitalize }}</strong></p>
+      <ul>
+        {% for s in group[1] %}
+        <li>{{ s }}</li>
+        {% endfor %}
+      </ul>
+      {% endfor %}
+      {% endfor %}
+    </section>
+    {% endif %}
+
     {%- assign all_pubs = site.data.citations
     | where_exp: "pub", "pub.authors contains page.name"
     | sort: "date" | reverse -%}

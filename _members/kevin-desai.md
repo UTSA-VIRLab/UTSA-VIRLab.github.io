@@ -33,6 +33,11 @@ award:
    - Outstanding Teaching Award, UTSA Computer Science Department, 2022.
    - Nominated for Teaching Excellence Award, UTSA President’s Distinguished Faculty Awards, 2022.
    - Nominated for Rising Star Award, UTSA University Excellence Staff Awards, 2022.
+service:
+  institutional:
+    university:
+      - "College of AI, Cyber, and Computing (CAICC) Bylaws Committee - 2025-2026"
+      - "MATRIX Booth at Diwali - 2025"
 email: kevin.desai@utsa.edu
 office: "SP1 Room: 340L, 506 Dolorosa St, San Antonio, TX 78204"
 cv: CVs/cv_desai.pdf
