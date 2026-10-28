@@ -1106,3 +1106,30 @@
       booktitle = {Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)},
       year      = {2027}
     }
+
+- id: 'azam2026egobalanceformer'
+  title: 'EgoBalanceFormer: Predicting Human Balance from Egocentric Pose and VR-Native Motion'
+  project:
+    - nsf-small-safety
+    - nsf-medium-audio
+  authors:
+    - Md Mushfiqur Azam
+    - Nipa Anjum
+    - John Quarles
+    - Kevin Desai
+  publisher: IEEE Transactions on Visualization and Computer Graphics (ISMAR 2026)
+  date: '2026-10-05'
+  link: https://utsa-virlab.github.io/EgoBalanceFormer/
+  image: images/publications/45-EgoBalanceFormer.png
+  acceptance_rate: '26.5%'
+  h5_index: 94
+  h5_median: 132
+  impact_factor: '6.8'
+  bibtex: |
+    @article{azam2026egobalanceformer,
+      title   = {EgoBalanceFormer: Predicting Human Balance from Egocentric Pose and VR-Native Motion},
+      author  = {Azam, Md Mushfiqur and Anjum, Nipa and Quarles, John and Desai, Kevin},
+      journal = {IEEE Transactions on Visualization and Computer Graphics},
+      year    = {2026},
+      note    = {Accepted for presentation at IEEE ISMAR 2026}
+    }
