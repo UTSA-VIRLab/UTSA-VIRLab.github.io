@@ -1,3 +1,11 @@
+- title: "BioModule: Pose-to-Biomechanics: Bridging 3D Human Pose Estimation and Biomechanical Attribute"
+  group: current
+  image: images/photo.jpg
+  link: https://utsa-virlab.github.io/BioModule/
+  description: "A lightweight transformer that predicts 17 biomechanical criteria per frame (ground reaction forces, joint torques, muscle activations, neural excitations, and more) from a sliding window of 3D skeletal pose, and plugs on top of any frozen 3D human pose estimator."
+  tags:
+    - research
+
 - title: "Enhancing collaboration and embodied learning in online virtual reality STEM laboratories through high-fidelity interactive avatars"
   id: "nsf-ritel"
   agency: "NSF - Research on Innovative Technologies for Enhanced Learning (RITEL)"
